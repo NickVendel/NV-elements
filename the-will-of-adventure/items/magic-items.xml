@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+        <description>Magic Items from TWOA</description>
+        <author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+        <update version="0.0.1">
+            <file name="magic-items.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/nick-vendel/the-will-of-adventure/items/magic-items.xml" />
+        </update>
+	</info>
+	<element name="Darklight Sword" type="Magic Item" source="The Will Of Adventure" id="ID_NV_TWOA_MAGIC_ITEM_DARKLIGHT_SWORD">
+		<description>
+			<p>This adamantine katana was made by best blacksmiths of Menzoberranzan, and granted by Lolth to her champion to slay her enemies.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">Whenever this <b>adamantine</b> sword hits an object, the hit becomes a critical hit.</p>
+			<p><b><i>Lolth's Aura.</i></b> Lolth infused sword with her power, giving it dark aura that deals additional 1d8 poison damage on hit. </p>
+            <p class="indent">In addition, when you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness.</p>
+			<p><b><i>Lolth's Stinger.</i></b> The most dangerous part of the sword's enchantment was ability to paralize those in whom the blade was stuck. User can choose to make an Attack which attempts to pierce creature with the blade, on hit, creature must succeed DC20 Constitution saving throw or become paralized as long as sword's blade is in its body. Creature can't use items, but can die from hunger, thirst or old age while its paralized. This ability cannot be used more than ones per day, and it's recharged at midnight. </p>
+		</description>
+		<setters>
+			<set name="keywords">adamantine, poison</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="katana">Weapon</set>
+			<set name="attunement" addition="by a drow">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Katana</set>
+		</setters>
+		<rules />
+	</element>
+</elements>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/nick-vendel/bladetide-setting/sources.xml" />
+		</update>
+	</info>
+	<element name="Bladetide Setting" type="Source" source="Bladetide Setting" id="ID_NV_SOURCE_BLADETIDE_SETTING">
+		<description>
+			<![CDATA[<p>Bladetide Setting, which includes few demensions with different gameplay rules.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">BDTD</set>
+			<set name="url">false</set>
+			<set name="author" abbreviation="NV" url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="The Great Houses Campaign" type="Source" source="Bladetide Setting" id="ID_NV_SOURCE_THE_GREAT_HOUSES_CAMPAIGN">
+		<description>
+			<![CDATA[<p>Bladetide Campaign, about early stages of first Human Civilization on Honep Archepelago.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">TGHC</set>
+			<set name="url">false</set>
+			<set name="author" abbreviation="NV" url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="Nightmare" type="Source" source="Bladetide Setting" id="ID_NV_SOURCE_NIGHTMARE">
+		<description>
+			<![CDATA[<p>Nightmare Campaign originally created by Nick Vendel.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">NM</set>
+			<set name="url">false</set>
+			<set name="author" abbreviation="NV" url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

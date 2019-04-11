@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Companions</name>
+		<description>Companions from The Great Houses Campaign.</description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.1">
+		    <file name="companions.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/nick-vendel/bladetide-setting/the-great-houses-campaign/companions.xml" />
+		</update>
+	</info>
+    <!-- Baby Dragon Turtle -->
+	<element name="Baby Dragon Turtle" type="Companion" source="The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE">
+		<description />
+		<setters>
+			<set name="strength">8</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">20</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">12</set>
+			<set name="ac">14</set>
+			<set name="hp">20</set>
+			<set name="speed">10 ft., swim 40 ft.</set>
+			<set name="senses">darkvision 120 ft.</set>
+			<set name="languages">Aquatic, Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Small</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1</set>
+			<set name="traits">ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_AMPHIBIOUS</set>
+			<set name="actions">ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_BITE, ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_STEAM_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="14" />
+			<stat name="companion:hp:max" value="20" bonus="base" />
+			<stat name="companion:speed" value="10" bonus="base" />
+			<stat name="companion:speed:swim" value="40" bonus="base" />
+			<stat name="companion:attack" value="6" bonus="base" />
+			<stat name="companion:damage" value="4" bonus="base" />
+		</rules>
+	</element>
+	<element name="Amphibious" type="Companion Trait" source="The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_AMPHIBIOUS">
+		<description>
+			<p>The baby dragon turtle can breathe air and water</p>
+		</description>
+		<sheet>
+			<description>The baby dragon turtle can breathe air and water</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_BITE">
+		<description>
+			<p><i>Melee Weapon Attack:</i> +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage.</p>
+		</description>
+		<sheet>
+			<description><i>Melee Weapon Attack:</i> +$(companion:attack) to hit, reach 5 ft., one target. Hit: 6 (1d4 + $(companion:damage)) piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Steam Breath (Recharge 6)" type="Companion Action" source="The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_STEAM_BREATH">
+		<description>
+			<p>The baby fragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 4d6 fire damage on a failed save, or half as much damage on successful one. Being underwater doesn't grant resistance against this damage.</p>
+		</description>
+		<sheet>
+			<description>The baby fragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 4d6 + $(Proficiency) fire damage on a failed save, or half as much damage on successful one. Being underwater doesn't grant resistance against this damage.</description>
+		</sheet>
+	</element>
+</elements>
