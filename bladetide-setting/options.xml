@@ -5,7 +5,7 @@
         <description>Options for Bladetide Campaigns.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
 		<update version="0.0.1">
-		<file name="options.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/nick-vendel/bladetide-setting/options.xml" />
+		<file name="options.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/options.xml" />
         </update>
     </info>
     <!-- Attunement Option -->
@@ -18,6 +18,18 @@
         </sheet>
         <rules>
             <stat name="attunement:max" value="proficiency" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Companion Option" type="Option" source="The Great Houses Campaign" id="ID_NV_TGHC_OPTION_COMPANION">
+        <description>
+            <p>This option allows player to choose one companion from any monster currently included in Aurora Builder.</p>
+        </description>
+        <sheet display="false">
+            <description>This option allows player to choose one companion from any monster.</description>
+        </sheet>
+        <rules>
+    	    <select type="Companion" name="Companion" level="1" />
         </rules>
     </element>
 </elements>

@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1">
-			<file name="source.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/nick-vendel/the-will-of-adventure/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/the-will-of-adventure/source.xml" />
 		</update>
 	</info>
 	<element name="The Will Of Adventure" type="Source" source="The Will Of Adventure" id="ID_NV_SOURCE_THE_WILL_OF_ADVENTURE">

@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/nick-vendel/bladetide-setting/sources.xml" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/sources.xml" />
 		</update>
 	</info>
 	<element name="Bladetide Setting" type="Source" source="Bladetide Setting" id="ID_NV_SOURCE_BLADETIDE_SETTING">
