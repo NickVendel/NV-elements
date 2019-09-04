@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Champion Background</name>
+		<description></description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.1">
+			<file name="champion-background.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/the-great-houses-campaign/backgrounds/champion-background.xml" />
+		</update>
+	</info>
+
+	<!-- placeholder -->
+</elements>

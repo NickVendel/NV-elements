@@ -10,8 +10,8 @@
 	</info>
 	<files>
 		<!-- classes -->
-		<file name="archetype-necromancer.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/the-will-of-adventure/classes/archetype-necromancer.xml" />
-		<file name="archetype-knowledge-of-the-ages.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/the-will-of-adventure/classes/archetype-knowledge-of-the-ages.xml" />
+		<!--<file name="archetype-necromancer.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/the-will-of-adventure/classes/archetype-necromancer.xml" /> -->
+		<!--<file name="archetype-knowledge-of-the-ages.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/the-will-of-adventure/classes/archetype-knowledge-of-the-ages.xml" /> -->
 
 		<!-- items -->
         <file name="magic-items.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/the-will-of-adventure/items/magic-items.xml" />

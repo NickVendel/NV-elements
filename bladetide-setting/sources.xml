@@ -7,7 +7,7 @@
 	</info>
 	<element name="Bladetide Setting" type="Source" source="Bladetide Setting" id="ID_NV_SOURCE_BLADETIDE_SETTING">
 		<description>
-			<![CDATA[<p>Bladetide Setting, which includes few demensions with different gameplay rules.</p>]]>
+			<![CDATA[<p>Bladetide Setting, which includes few dimensions with different gameplay rules.</p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">BDTD</set>
@@ -18,7 +18,7 @@
 	</element>
 	<element name="The Great Houses Campaign" type="Source" source="Bladetide Setting" id="ID_NV_SOURCE_THE_GREAT_HOUSES_CAMPAIGN">
 		<description>
-			<![CDATA[<p>Bladetide Campaign, about early stages of first Human Civilization on Honep Archepelago.</p>]]>
+			<![CDATA[<p>Bladetide Campaign, about early stages of first Human Civilization on Honep Archipelago.</p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">TGHC</set>
@@ -29,7 +29,7 @@
 	</element>
 	<element name="Nightmare" type="Source" source="Bladetide Setting" id="ID_NV_SOURCE_NIGHTMARE">
 		<description>
-			<![CDATA[<p>Nightmare Campaign originally created by Nick Vendel.</p>]]>
+			<![CDATA[<p>Bladetide Campaign, about turning point in history, where few people decide fate of the magic and all living creatures with it.</p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">NM</set>
