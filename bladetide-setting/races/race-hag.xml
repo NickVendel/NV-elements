@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hag Race</name>
+		<description></description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.1">
+			<file name="race-hag.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/races/race-hag.xml" />
+		</update>
+	</info>
+
+	<element name="Hag" type="Race" source="Bladetide Setting" id="ID_NV_BDTD_RACE_HAG">
+		<description>
+			<p class="flavor">Most of the Hags were human females, which were mutated through series of blood rituals and corrupting magic, allowing their bodies to live indefinitely. They became something else, more close to the magic forces, many lost their sanity and empathy, but the biggest cost was the ability to bear children.</p>
+			<h4>HIDDEN NIGHTMARE</h4>
+			<p>Hags use their innate magical ability to conceal their monstrous image, either through illusions or powerful transmutation spells. This allows them to gather knowledge from near by villages and towns, or make deals with strangers by charming them with unimaginable beauty of female form.</p>
+			<p class="indent">Although it's not common, some of the hags prefer to stay in their normal form, living far away from any societies as hermits and scaring random adventurers away.</p>
+			<h4>COVENS AND RECLUSIVE HAGS</h4>
+			<p>Living on the edges of Kingdoms and other societies, most of the hags either live alone as hermits, studying magic, it's effects on the world and creatures, and rarely contacting their own kind or other races, or live in covens of three or more. When creating covens, hags hope to protect each other and their land together, while also charing their knowledge about magic and world outside of their land. Some covens become small safe havens to young, less powerful hags, with its own land and protection from witch hunters, but because many hags have strong personalities and prone to becoming insane, most of the covens become chaotic fight for a position of coven's leader or idealogy.</p>
+			<h4>RITUALS OF LIFE</h4>
+			<p>Hags live incredibly long, many of them can prolong their life to few thousands years, while powerful minority could live even longer than that, challenging other long-living creatures, like Dragons or Vampires. But this is not their natural age, living usually as long as their original selves, they use powerful witchcraft and magic to power The Blood Ritual, which prolongs their life by stealing natural age from sacrificed corpses.</p>
+			<h4>A BROKEN GLASS</h4>
+			<p>Almost all of the hags had strong ties to the magic even before transformation, studying it and it's secrets, they've stopped protecting themselves from dangerous effect of it and were reborn as hags, but this mutation took an immense toll on their bodies and minds. Hags who live more than their original body was supposed to have a danger of become insane or that their memories going to be stolen from them. </p>
+			<p class="indent">While most hags ignore that mental damage, many hags can't forget physical damage that was inflicted on them, making them infertile. Since the first hags, hope of finding the cure was moving almost any research, but even after thousand years cure wasn't found. Some hags abandoned search for cure, others create children by cloning and transforming their bodies, while majority just stole children from other races and changed them with the same ritual that transformed them.</p>
+			<h4>HAG NAMES</h4>
+			<p>Hags that were transformed, usually sticked to their names that was given to them when they were born, some though choose different name to reflect changes. Hags which were created from clones or stolen children get names representing their abilities and skills, for example name "Greenhand" can represent natural talent for brewing potions, or "Sharpeye" can be uncanny hunter for ritual sacrifices. Sometimes, Hags use normal outsider names, while using these "character-names" as a family name.</p>
+			<h4>HAG TRAITS</h4>
+			<p>Hags have a variety of abilities, either natural ones, gained from years of studying magic and arcane secrets, or supernatural, gained from transformation, which are usually different between different types of hags.</p>
+			<p>
+				<span class="feature">Type.</span>Different rituals and effects of environmental energy create various types of hags, from human-like Island Hags to Battlefield Hags of orc origin.<br />
+				<span class="feature">Size.</span>Hags range from under 5 to over 6 feet tall, when they're standing tall, and have very thin, slender bodies. Your size is Medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
+				<span class="feature">The Blood Ritual.</span>Hags live as long as their original race, but can prolong it with The Blood Ritual, which absorbs life force from victims and transfers it to hag. Majority of hags live to become over 900 years old, while very small minority decides not to use prolonging ritual at all.<br />
+				<span class="feature">Magic Bond.</span>Hags are transformed by dark magic and natural environmental energy, scarring them forever and giving them connection to supernatural forces. After transformation hags either continue to hone their magical abilities or start exploring field of potion brewing in hopes to find a cure. Your hag character gains proficiency in Arcana skill or Alchemist's Supplies.<br />
+				<span class="feature">Secret Keepers.</span>Due to their nature, hags are natural at deceiving others, especially those who don't know about them and their abilities to hide their identities. Hags get proficiency in Deception, or if you are already proficient in this skill, you add double your proficiency bonus to it's checks. But you also have disadvantage on any Charisma based Deception checks when in a hag form.<br />
+				<span class="feature">Languages.</span>You can speak, read, and write Common and any language that you knew before transformation. If you wasn't transformed, then you can choose second language from any Starter ones.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<setters />
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Second Language (Hag)" supports="Starting" />
+			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_THE_BLOOD_RITUAL" />
+			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_MAGIC_BOND" />
+			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_SECRET_KEEPERS" />
+			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_HAG_TYPE" />
+		</rules>
+	</element>
+
+	<!-- Racial Traits -->
+	<element name="The Blood Ritual" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_THE_BLOOD_RITUAL">
+		<description>
+			<p>The Blood Ritual is both the worst and the greatest part of hags' life. When they use it for first time it changes and scars them, but every time they use it after it prolongs their life. The Blood Ritual have different versions in different cultures, but it's always requires sacrifice, either corpse or living creature which is killed in process, with its blood pentagram is drawn, which used to focus magic energy into user, after that user fills big enough container (usually bath) with remaining blood and takes a bath in it, while uttering magic words, ritual ends with massive surge of magic energy, which flows directly into them.</p>
+			<p class="indent">Sacrifice which required for this ritual <b>must die unnaturally</b>. Creature that died from natural causes (from old age, due to the decease, or from starvation) when used in a ritual, will not create proper effect and ritual will fail, since body doesn't have enough life force to prolong life of user. Ritual also requires difference between sacrifice's and user's life forces, removing possibility of using clones to power it.</p>
+			<p class="indent">The Blood Ritual is the most potent on darkest nights of Blood Moon, any sacrifice during it, will give double the amount of life, due to the anomalies created by the Moon.</p>
+		</description>
+		<sheet display="false" />
+		<rules />
+	</element>
+
+	<element name="Magic Bond" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_MAGIC_BOND">
+		<description>
+			<p>Through ritual hags are connected to magic, giving them deeper understanding behind effects, practices and metaphysics of those forces. After transformation hags either continue to hone their magical abilities or start exploring field of potion brewing in hopes to find a cure. Your hag character gains proficiency in Arcana skill or Alchemist's Supplies.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Magic Bond Proficiency (Hag)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Secret Keepers" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_SECRET_KEEPERS">
+		<description>
+			<p>Hags are natural at deceiving others, especially those who don't know about them and their abilities to hide their identities. You get proficiency in Deception skill, or if you are already proficient in this skill, you add double your proficiency bonus to it's checks. But you also have disadvantage on any Charisma based Deception checks when in a hag form.</p>
+		</description>
+		<sheet>
+			<description>You have disadvantage on any Charisma based Deception checks when in a hag form.</description>
+		</sheet>
+		<rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_DECEPTION" />
+		</rules>
+	</element>
+
+	<element name="Hag Type" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_HAG_TYPE">
+		<description>
+			<p>Depending on place of transformation, ritual used and race of user, or sometimes even character traits, they become different type of hag. Ritual always infuses body with magic, corrupts it with horrendous look and scares reproductive system, removing ability to bear children. But in return hags retrieve more powerful abilities than they had before.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Hag Type" supports="Hag Type" />
+		</rules>
+	</element>
+
+	<element name="Island Hag" type="Sub Race" source="Bladetide Setting" id="ID_NV_BDTD_HAG_TYPE_ISLAND_HAG">
+		<supports>Hag Type</supports>
+		<description>
+			<p>Island Hags were first type of hags on Fauldis, transformed from early humans of Honeph Archipelago. These hags have typical features: thin bodies with pale skin, long yellow nails, dry and brittled hair, but they also save eye and hair color from before transformation.</p>
+			<p class="indent">Their powerful magical ability to change image, gave them ways to walk alongside others without raising any suspicion, that other hags don't have. This talent made them into irreplaceable sources of knowledge about outside world for other hags or covens. But it also disallowed them to hide their broken psychic state, living among the other woman always reminds them about their loss and brakes them even more. Some live with pain, while others become completely insane or possessed by idea of finding the cure.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span>Your Intelligence and Charisma scores increase by 2, while Wisdom score decreases by 1.<br />
+				<span class="feature">Image of the Past.</span>You have incredible ability to transform your body into image of yourself before transformation, or into anybody who you've seen before, who's not larger than a Medium creature. This ability uses magical effect similar to transmutation spells, which counts as magic and can be removed by any dispelling magic if you don't succeed on saving throw. Otherwise, it can't be recognized or revealed as an image without your wish. You can transform into an image as an Action and end this effect as Bonus Action. After effect is ended, you need to finish Long Rest before using it again. <br />
+				<span class="feature">Major Image Spell.</span>You know <i>Major Image</i> spell and can use it once between each Long Rest, you also ignore material components for this use but use any other rules as you normally would when casting this spell. You can't use Higher Level spell slots for this spell.<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="2" />
+			<stat name="charisma" value="2" />
+			<stat name="wisdom" value="-1" />
+			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_IMAGE_OF_THE_PAST" />
+			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_MAJOR_IMAGE_SPELL" />
+		</rules>
+	</element>  
+
+	<!-- Traits for Island Hag type -->
+	<element name="Image of the Past" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_IMAGE_OF_THE_PAST">
+		<description>
+			<p>You have incredible ability to transform your body into image of yourself before transformation, or into anybody who you've seen before, who's not larger than a Medium creature. This ability uses magical effect similar to transmutation spells, which counts as magic and can be removed by any dispelling magic if you don't succeed on saving throw. Otherwise, it can't be recognized or revealed as an image without your wish. You can transform into an image as an Action and end this effect as Bonus Action. After effect is ended, you need to finish Long Rest before using it again.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>You can transform your body into image of yourself before transformation, or into anybody who you've seen before, who's not larger than a Medium creature. This ability uses magical effect similar to transmutation spells, which counts as magic and can be removed by any dispelling magic if you don't succeed on saving throw. Otherwise, it can't be recognized or revealed as an image without your wish. You can end this effect as Bonus Action.</description>
+		</sheet>
+	</element>
+	<element name="Major Image Spell" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_MAJOR_IMAGE_SPELL">
+		<description>
+			<p>You know <i>Major Image</i> spell and can use it once between each Long Rest, you also ignore material components for this use but use any other rules as you normally would when casting this spell. You can't use Higher Level spell slots for this spell. You can use spellcasting ability of your class, otherwise DC for this spell equals to 8 + Intelligence/Charisma (your choice).</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You know <i>Major Image</i> spell, you also ignore material components for this use but use any other rules as you normally would when casting this spell. You can't use Higher Level spell slots for this spell. You can use spellcasting ability of your class, otherwise DC for this spell equals to 8 + Intelligence/Charisma (your choice).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" />
+		</rules>
+	</element>
+
+	<element name="Blood Hag" type="Sub Race" source="Bladetide Setting" id="ID_NV_BDTD_HAG_TYPE_BLOOD_HAG">
+		<supports>Hag Type</supports>
+		<description>
+		<p>On rare occasions, if The Blood Ritual used under the Blood Moon, in a place where multiple innocents were brutally killed, or have a strong connection to Blood magic, they're transformed into Blood Hags. Bright red eyes, without irises, almost white skin, with blood pulsing in their veins, gray hair, stiletto-like claws and two rows of sharp teeth, made them one of the most horrifying creatures in the world.</p>
+		<p class="indent">Morrah Nailspire known mostly as "Blood Mother", was one of the first Blood Hags and the one who created first vampires through her experiments with blood magic, zombies, humans and her own powers. Blood Hag's horrifying look makes enemies shake in fear, their long claws tear through armor and skin, after which they will sink their teeth into victims to suck remaining life force from them directly.</p>
+		<p>
+			<span class="feature">Ability Score Increase.</span>Your Constitution score increased by 2 and Dexterity score increased by 1, while Charisma score decreases by 2.<br />
+			<span class="feature">Hollow Image.</span>You know <i>Disguise Self</i> spell and can use it twice between each Long Rest. You can use spellcasting ability of your class, otherwise DC for this spell equals to 8 + Intelligence/Wisdom (your choice).<br />
+			<span class="feature">Scarlet Nightmare.</span>Your body became a tool of your survival, you get following features:<br />
+			<ul>
+				<li><b>Hag Claws.</b> Claws count as a finesse weapon, that deal 1d6 + Strength/Dexterity modifier of slashing damage, can be enhanced by magic, and can be use  for off-hand attack. But because of claws' length you can't hold any weapons or shields, which weren't specifically crafted for you.</li>
+				<li><b>Banshee's Shriek.</b> While in your hag form, you can use an Action to scream, trying to scare creatures around you. Everybody, including allies, within 60 feet of you, must make Wisdom saving throw against DC15, on fail creature is scared and will run from you on it's turn, creature can make another saving throw to resist the effect at the end of it's turn. Effect continues until creature sees you fall unconscious or successfully makes saving throw.</li>
+				<li><b>Life Steal.</b> You have ability to bite living creatures, who are not construct, plant, ooze, undead or elemental, and absorb their vitality. When you're grappling creature, you can use your Bonus Action to make an attack, using either your Strength or Dexterity, to bite creature and deal 1d6 + Strength/Dexterity modifier of piercing damage, while regaining HP equal to damage dealt, you don't gain HP over your HP maximum. If attack is successful and you still got target grappled at the start of your next turn, you can continue to sucking creature's blood using an Action and rolling damage again. After three turns of continuous bloodsucking, target loses power to resist and becomes incapacitated, can't move or speak. Bite is interrupted if you're no longer grappling target, if you fall prone, become incapacitated, or target dies, after which if creature's alive it's no longer incapacitated. If you roll 20 on your attack with this ability, rather than dealing double damage, bite causes shock to a creature and it becomes paralyzed, and stays that way until makes Wisdom saving throw against DC15.</li>
+			</ul>
+		</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="1" />
+			<stat name="constitution" value="2" />
+			<stat name="charisma" value="-2" />
+			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_HALLOW_IMAGE" />
+			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_SCARLET_NIGHTMARE" />
+		</rules>
+	</element>  
+
+	<!-- Traits for Blood Hag type -->
+	<element name="Hallow Image" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_HALLOW_IMAGE">
+		<description>
+			<p>You know <i>Disguise Self</i> spell and can use it twice between each Long Rest. You can use spellcasting ability of your class, if it grants spellcasting feature, otherwise DC for this spell equals to 8 + Intelligence/Wisdom (your choice).</p>
+		</description>
+		<sheet usage="2/Long Rest">
+			<description>You know <i>Disguise Self</i> spell. You can use spellcasting ability of your class, or otherwise DC for this spell equals to 8 + Intelligence/Wisdom (your choice).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+	<element name="Scarlet Nightmare" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_SCARLET_NIGHTMARE">
+		<description>
+			<p>Your body became a tool of your survival, you get following features:<br />
+				<ul>
+					<li><b>Hag Claws.</b> Claws count as a finesse weapon, that deal 1d6 + Strength/Dexterity modifier of slashing damage, can be enhanced by magic, and can be use  for off-hand attack. But because of claws' length you can't hold any weapons or shields, which weren't specifically crafted for you.</li>
+					<li><b>Banshee's Shriek.</b> While in your hag form, you can use an Action to scream, trying to scare creatures around you. Everybody, including allies, within 60 feet of you, must make Wisdom saving throw against DC15, on fail creature is scared and will run from you on it's turn, creature can make another saving throw to resist the effect at the end of it's turn. Effect continues until creature sees you fall unconscious or successfully makes saving throw.</li>
+					<li><b>Life Steal.</b> You have ability to bite living creatures, who are not construct, plant, ooze, undead or elemental, and absorb their vitality. When you're grappling creature, you can use your Bonus Action to make an attack, using either your Strength or Dexterity, to bite creature and deal 1d6 + Strength/Dexterity modifier of piercing damage, while regaining HP equal to damage dealt, you don't gain HP over your HP maximum. If attack is successful and you still got target grappled at the start of your next turn, you can continue to sucking creature's blood using an Action and rolling damage again. After three turns of continuous bloodsucking, target loses power to resist and becomes incapacitated, can't move or speak. Bite is interrupted if you're no longer grappling target, if you fall prone, become incapacitated, or target dies, after which if creature's alive it's no longer incapacitated. If you roll 20 on your attack with this ability, rather than dealing double damage, bite causes shock to a creature and it becomes paralyzed, and stays that way until makes Wisdom saving throw against DC15.</li>
+				</ul>
+			</p>
+		</description>
+		<sheet>
+			<description>Your body became a tool of your survival, you get following features: your claws count as a finesse weapon, that deal 1d6 + Strength/Dexterity modifier of slashing damage, can be enhanced by magic, and can be use  for off-hand attack. But because of claws' length you can't hold any weapons or shields, which weren't specifically crafted for you. While in your hag form, you can use an Action to scream, trying to scare creatures around you. Everybody, including allies, within 60 feet of you, must make Wisdom saving throw against DC15, on fail creature is scared and will run from you on it's turn, creature can make another saving throw to resist the effect at the end of it's turn. Effect continues until creature sees you fall unconscious or successfully makes saving throw. When you're grappling creature, who are not construct, plant, ooze, undead or elemental, you can use your Bonus Action to make an attack, using either your Strength or Dexterity, to bite creature and deal 1d6 + Strength/Dexterity modifier of piercing damage, while regaining HP equal to damage dealt, you don't gain HP over your HP maximum. If attack is successful and you still got target grappled at the start of your next turn, you can continue to sucking creature's blood using an Action and rolling damage again. After three turns of continuous bloodsucking, target loses power to resist and becomes incapacitated, can't move or speak. Bite is interrupted if you're no longer grappling target, if you fall prone, become incapacitated, or target dies, after which if creature's alive it's no longer incapacitated. If you roll 20 on your attack with this ability, rather than dealing double damage, bite causes shock to a creature and it becomes paralyzed, and stays that way until makes Wisdom saving throw against DC15.</description>
+		</sheet>
+	</element>
+
+	<element name="Dark Hag" type="Sub Race" source="Bladetide Setting" id="ID_NV_BDTD_HAG_TYPE_DARK_HAG">
+		<supports>Hag Type</supports>
+		<description>
+		<p>Cavern Hags, mostly known by the name Dark Hags, were one of the most common type of hags on the [Western Continent]. Born in the darkness of deep caves or Underworld, they change into those who travel in shadows and when nobody's looking. Ritual changes everything in the user, hair becomes jet black, body transforms into thin and pale version of the one you had before, nails lose their color, and it almost feels like they're rotting. But the biggest change is the eyes, your irises become black, but they also react to your magic abilities, when you casting a spell, or hide in shadows, your irises extend covering whites of the eye. Dark Hags always feel themselves uncomfortable in brightly lit spaces, they feel vulnerable, even if light doesn't harm them in any way.</p>
+		<p class="indent">These hags have ability to hide in shadows, and even in shadows of other people, traveling besides allies or stalking and waiting for the right moment to strike down the victim.</p>
+		<p>
+			<span class="feature">Ability Score Increase.</span>Your Dexterity and Wisdom score increased by 2, while Charisma score decreases by 1.<br />
+			<span class="feature">Shadow Soul.</span>You have powerful ability to blend yourself into a shadow of other creature. As an action, choose any creature you can sense within your walking speed, your body disappears and your shadow fuses with shadow of your target. If targeted creature sees you, when using this ability, it makes Wisdom (Perception) check against your Dexterity (Stealth), if target succeeds it knows that you possessing his shadow and can use Reaction to interrupt merging, by making attack against you, if it hits then you revert into your normal form, and can't use this feature again until Long Rest. If target fails Wisdom (Perception) check, you discretely become its shadow. Other characters who see you using this ability can also make Intelligence (Perception) checks against your Dexterity (Stealth). While in shadow form you can control placement of shadow, regain health at the normal recovering speed and can strike the target. If target is oblivious to your presence, you can make normal weapon attack which automatically critically hits and gains 2d6 sneak damage. If creature's aware of your possession, you can make normal attack with advantage. Or you can attempt to strangle the target, this unique attack uses Action and is automatic hit, which immobilizes the target and deals 1d6 bludgeoning damage initially, and every time you use your Action to continue the choking. While you possessing shadow of aware target, you instinctively evade its line of sight by changing placement of shadow, so target can't rely on sight when making attacks against you. Characters who didn't see you merge with a shadow, cannot differentiate your shadow form from target's shadow, until they damage you, which will force you to reveal your image, while still staying in shadow form. This counts as magic and can be dispelled, if you fail against spell DC of a caster, in that case you emerge behind your target in your hag form. Once you use this ability, you can't use it again until Long Rest.<br />
+		</p>
+		<p class="indent">You also gain proficiency in Stealth, or if you are already proficient in this skill, you add double your proficiency bonus to it's checks.</p>
+		<p>
+			<span class="feature">Onyx Glance.</span>Your black eyes can pierce through darkness. You gain darkvision out to a range of 60 feet. If you already had darkvision from your original race, its range increases by 30 feet.<br />
+		</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="2" />
+			<stat name="wisdom" value="2" />
+			<stat name="charisma" value="-1" />
+			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_SHADOW_SOUL" />
+			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_ONYX_GLANCE" />
+		</rules>
+	</element>  
+
+	<!-- Traits for Dark Hag type -->
+	<element name="Shadow Soul" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_SHADOW_SOUL">
+		<description>
+			<p>You have powerful ability to blend yourself into a shadow of other creature. As an action, choose any creature you can sense within your walking speed, your body disappears and your shadow fuses with shadow of your target. If targeted creature sees you, when using this ability, it makes Wisdom (Perception) check against your Dexterity (Stealth), if target succeeds it knows that you possessing his shadow and can use Reaction to interrupt merging, by making attack against you, if it hits then you revert into your normal form, and can't use this feature again until Long Rest. If target fails Wisdom (Perception) check, you discretely become its shadow. Other characters who see you using this ability can also make Intelligence (Perception) checks against your Dexterity (Stealth). While in shadow form you can control placement of shadow, regain health at the normal recovering speed and can strike the target. If target is oblivious to your presence, you can make normal weapon attack which automatically critically hits and gains 2d6 sneak damage. If creature's aware of your possession, you can make normal attack with advantage. Or you can attempt to strangle the target, this unique attack uses Action and is automatic hit, which immobilizes the target and deals 1d6 bludgeoning damage initially, and every time you use your Action to continue the choking. While you possessing shadow of aware target, you instinctively evade its line of sight by changing placement of shadow, so target can't rely on sight when making attacks against you. Characters who didn't see you merge with a shadow, cannot differentiate your shadow form from target's shadow, until they damage you, which will force you to reveal your image, while still staying in shadow form. This counts as magic and can be dispelled, if you fail against spell DC of a caster, in that case you emerge behind your target in your hag form. Once you use this ability, you can't use it again until Long Rest.</p>
+			<p class="indent">You also gain proficiency in Stealth, or if you are already proficient in this skill, you add double your proficiency bonus to it's checks.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>Choose any creature you can sense within your walking speed, your body disappears and your shadow fuses with shadow of your target. If targeted creature sees you, when using this ability, it makes Wisdom (Perception) check against your Dexterity (Stealth), if target succeeds it knows that you possessing his shadow and can use Reaction to interrupt merging, by making attack against you, if it hits then you revert into your normal form, and can't use this feature again until Long Rest. If target fails Wisdom (Perception) check, you discretely become its shadow. Other characters who see you using this ability can also make Intelligence (Perception) checks against your Dexterity (Stealth). While in shadow form you can control placement of shadow, regain health at the normal recovering speed and can strike the target. If target is oblivious to your presence, you can make normal weapon attack which automatically critically hits and gains 2d6 sneak damage. If creature's aware of your possession, you can make normal attack with advantage. Or you can attempt to strangle the target, this unique attack uses Action and is automatic hit, which immobilizes the target and deals 1d6 bludgeoning damage initially, and every time you use your Action to continue the choking. While you possessing shadow of aware target, you instinctively evade its line of sight by changing placement of shadow, so target can't rely on sight when making attacks against you. Characters who didn't see you merge with a shadow, cannot differentiate your shadow form from target's shadow, until they damage you, which will force you to reveal your image, while still staying in shadow form. This counts as magic and can be dispelled, if you fail against spell DC of a caster, in that case you emerge behind your target in your hag form.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_STEALTH" />
+		</rules>
+	</element>
+	<element name="Onyx Glance" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_ONYX_GLANCE">
+		<description>
+			<p>Your black eyes can pierce through darkness. You gain darkvision out to a range of 60 feet. If you already had darkvision from your original race, its range increases by 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Your black eyes can pierce through darkness. You gain darkvision out to a range of 60 feet. If you already had darkvision from your original race, its range increases by 30 feet.</description>
+		</sheet>
+		
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+
+	<!-- Subraces. Three base types of hags from 2nd part of The Great Houses Campaign are: Island/Honeph (Хонеп) Hags, Blood/Daggermaw/Middle-Western Hags of the [continent name], Dark/Underworld/Cavern Hags. Also there's two types of hags from after Resurrection of Humanity: High/Mountain-Top Hags (rarest subrace and most reclusive one) and Deep Forest/Elven/North Hags of the [continent name]. In rages of Orc-Goblin Independence war, one more type was born - Battlefield/Orc/Eastern Hags of the [continent name]. There's also another subrace of Hags that lives on second continent - Trench/Hags of Blindstorm Ocean -->
+
+</elements>
