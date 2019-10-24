@@ -49,7 +49,7 @@
 				<item id="3">I wish to be higher in hierarchy of the tribe, so i will try to please my superiors.</item>
 				<item id="4">I lost everybody who i cared about... now i'm trying to find anybody who will care about me.</item>
 				<item id="5">I'm looking for new faces and stories, everybody have something to tell.</item>
-				<item id="6">I want everyone to know my name and for my legacy to live even after hundreds of years.</item>
+				<item id="6">I want everyone to know my name and for my legacy to live on even hundred years later.</item>
 			</select>
 			<select name="Flaw" type="List">
 				<item id="1">I think bad omens can predict future, i always believe them.</item>
