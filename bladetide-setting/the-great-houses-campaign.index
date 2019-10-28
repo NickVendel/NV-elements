@@ -10,7 +10,7 @@
 	</info>
 	<files>
 		<!-- Classes -->
-		<file name="class-ranger-constructor.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/the-great-houses-campaign/classes/class-ranger-constructor.xml" />
+		<!-- <file name="class-ranger-constructor.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/the-great-houses-campaign/classes/class-ranger-constructor.xml" />  -->
 
 		<!-- Backgrounds -->
 		<file name="champion-background.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/the-great-houses-campaign/backgrounds/champion-background.xml" />
@@ -18,7 +18,7 @@
 		<file name="house-member-background.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/the-great-houses-campaign/backgrounds/house-member-background.xml" />
 
 		<!-- Items -->
-		<file name="weapon-types.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/the-great-houses-campaign/items/weapon-types.xml" />
+		<!-- <file name="weapon-types.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/the-great-houses-campaign/items/weapon-types.xml" /> -->
 		<!-- <file name="armor-types.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/the-great-houses-campaign/items/armor-types.xml" /> -->
 		<!-- <file name="wondrous-items.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/the-great-houses-campaign/items/wondrous-items.xml" /> -->
 		<!-- include this when enchantments are implemented in Aurora -->
