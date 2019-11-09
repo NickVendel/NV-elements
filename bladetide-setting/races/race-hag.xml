@@ -42,7 +42,7 @@
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
-			<select type="Language" name="Second Language (Hag)" supports="Starting" />
+			<select type="Language" name="Original Language (Hag)" />
 			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_THE_BLOOD_RITUAL" />
 			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_MAGIC_BOND" />
 			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_SECRET_KEEPERS" />
@@ -101,7 +101,7 @@
 			<p>
 				<span class="feature">Ability Score Increase.</span>Your Intelligence and Charisma scores increase by 2, while Wisdom score decreases by 1.<br />
 				<span class="feature">Image of the Past.</span>You have incredible ability to transform your body into image of yourself before transformation, or into anybody who you've seen before, who's not larger than a Medium creature. This ability uses magical effect similar to transmutation spells, which counts as magic and can be removed by any dispelling magic if you don't succeed on saving throw. Otherwise, it can't be recognized or revealed as an image without your wish. You can transform into an image as an Action and end this effect as Bonus Action. After effect is ended, you need to finish Long Rest before using it again. <br />
-				<span class="feature">Major Image Spell.</span>You know <i>Major Image</i> spell and can use it once between each Long Rest, you also ignore material components for this use but use any other rules as you normally would when casting this spell. You can't use Higher Level spell slots for this spell.<br />
+				<span class="feature">Major Image Spell.</span>You know <i>Major Image</i> spell and can cast it once between each Long Rest, without spell slots or material components, but must use all other rules for casting the spell. You can't use Higher Level spell slots for this spell. You can use spellcasting ability of your class, otherwise DC for this spell equals to 8 + Intelligence/Charisma  (your choice) modifier.<br />
 			</p>
 		</description>
 		<sheet display="false" />
@@ -129,10 +129,10 @@
 	</element>
 	<element name="Major Image Spell" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_MAJOR_IMAGE_SPELL">
 		<description>
-			<p>You know <i>Major Image</i> spell and can use it once between each Long Rest, you also ignore material components for this use but use any other rules as you normally would when casting this spell. You can't use Higher Level spell slots for this spell. You can use spellcasting ability of your class, otherwise DC for this spell equals to 8 + Intelligence/Charisma (your choice).</p>
+			<p>You know <i>Major Image</i> spell and can cast it once between each Long Rest, without spell slots or material components, but must use all other rules for casting the spell. You can't use Higher Level spell slots for this spell. You can use spellcasting ability of your class, otherwise DC for this spell equals to 8 + Intelligence/Charisma (your choice) modifier.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>You know <i>Major Image</i> spell, you also ignore material components for this use but use any other rules as you normally would when casting this spell. You can't use Higher Level spell slots for this spell. You can use spellcasting ability of your class, otherwise DC for this spell equals to 8 + Intelligence/Charisma (your choice).</description>
+			<description>You know <i>Major Image</i> spell, and can cast it once without spell slots or material components, but must use all other rules for casting the spell. You can't use Higher Level spell slots for this spell. You can use spellcasting ability of your class, otherwise DC for this spell equals to 8 + Intelligence/Charisma (your choice) modifier.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" />
@@ -146,7 +146,7 @@
 		<p class="indent">Morrah Nailspire known mostly as "Blood Mother", was one of the first Blood Hags and the one who created first vampires through her experiments with blood magic, zombies, humans and her own powers. Blood Hag's horrifying look makes enemies shake in fear, their long claws tear through armor and skin, after which they will sink their teeth into victims to suck remaining life force from them directly.</p>
 		<p>
 			<span class="feature">Ability Score Increase.</span>Your Constitution score increased by 2 and Dexterity score increased by 1, while Charisma score decreases by 2.<br />
-			<span class="feature">Hollow Image.</span>You know <i>Disguise Self</i> spell and can use it twice between each Long Rest. You can use spellcasting ability of your class, otherwise DC for this spell equals to 8 + Intelligence/Wisdom (your choice).<br />
+			<span class="feature">Hollow Image.</span>You know <i>Disguise Self</i> spell and can cast it twice between each Long Rest, without spell slots or material components. You can use spellcasting ability of your class, otherwise DC for this spell equals to 8 + Intelligence/Wisdom (your choice) modifier.<br />
 			<span class="feature">Scarlet Nightmare.</span>Your body became a tool of your survival, you get following features:<br />
 			<ul>
 				<li><b>Hag Claws.</b> Claws count as a finesse weapon, that deal 1d6 + Strength/Dexterity modifier of slashing damage, can be enhanced by magic, and can be use  for off-hand attack. But because of claws' length you can't hold any weapons or shields, which weren't specifically crafted for you.</li>
@@ -164,18 +164,18 @@
 			<stat name="dexterity" value="1" />
 			<stat name="constitution" value="2" />
 			<stat name="charisma" value="-2" />
-			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_HALLOW_IMAGE" />
+			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_HOLLOW_IMAGE" />
 			<grant type="Racial Trait" id="ID_NV_BDTD_RACIAL_TRAIT_SCARLET_NIGHTMARE" />
 		</rules>
 	</element>  
 
 	<!-- Traits for Blood Hag type -->
-	<element name="Hallow Image" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_HALLOW_IMAGE">
+	<element name="Hollow Image" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_HOLLOW_IMAGE">
 		<description>
-			<p>You know <i>Disguise Self</i> spell and can use it twice between each Long Rest. You can use spellcasting ability of your class, if it grants spellcasting feature, otherwise DC for this spell equals to 8 + Intelligence/Wisdom (your choice).</p>
+			<p>You know <i>Disguise Self</i> spell and can cast it twice between each Long Rest, without spell slots or material components, but must use all other rules for casting the spell. You can use spellcasting ability of your class, if it grants spellcasting feature, otherwise DC for this spell equals to 8 + Intelligence/Wisdom (your choice) modifier.</p>
 		</description>
 		<sheet usage="2/Long Rest">
-			<description>You know <i>Disguise Self</i> spell. You can use spellcasting ability of your class, or otherwise DC for this spell equals to 8 + Intelligence/Wisdom (your choice).</description>
+			<description>You know <i>Disguise Self</i> spell, and can cast it twice without spell slots or material components, but must use all other rules for casting the spell. You can use spellcasting ability of your class, or otherwise DC for this spell equals to 8 + Intelligence/Wisdom (your choice) modifier.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
