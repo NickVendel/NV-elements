@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Member of the Great House Background</name>
+		<description></description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.1">
+			<file name="member-of-the-great-house-background.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/the-great-houses-campaign/backgrounds/member-of-the-great-house-background.xml" />
+		</update>
+	</info>
+
+	<element name="Member of the Great House" type="Background" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_MEMBER_OF_THE_GREAT_HOUSE">
+		<description>
+			<p>You are a Member of the Great House, which are now become powerful guilds. After you joined years ago, you were trained by the best masters in the realm to be sure that while you're wearing House's emblem you'll do the best job you can to protect it and it's members.</p>
+			<ul>
+				<li><strong>Skill Proficiencies:</strong> You can select any two skills to be proficient with</li>
+				<li><strong>Legacy Bonus — Progenitor's Fortitude (Optional):</strong> Due to your legacy, you can select additional skill from the ones your Champion character had.</li>
+				<li><strong>Legacy Bonus — Will of the Heir (Optional):</strong> Due to your legacy, you can select additional feat.</li>
+				<li><strong>Tool Proficiencies (Optional):</strong> One type of artisan’s tools or one musical instrument</li>
+				<li><strong>Languages (Optional):</strong> Choose any starting or exotic language</li>
+				<li><strong>Equipment:</strong> a House emblem (small symbol, that fits in the hand), a set of common clothes, 5 torches, a writing kit (small pouch with a quill, ink, folded parchment, and a small penknife), and a pouch containing 20 gp.</li>
+			</ul>
+			<div element="ID_NV_TGHC_BACKGROUND_FEATURE_REQUEST_OF_THE_GREAT_HOUSE" />
+		</description>
+		<sheet alt="House Member" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Member of the Great House)" supports="Skill" number="2" />
+			<select type="Proficiency" name="Skill Proficiency (Progenitor's Fortitude)" supports="Skill" optional="true" />
+			<select type="Feat" name="Feat (Will of the Heir)" optional="true" />
+			<select type="Proficiency" name="Tool Proficiency (Member of the Great House)" supports="Tool" optional="true" />
+			<select type="Language" name="Language (Member of the Great House)" optional="true" />
+			<grant type="Background Feature" id="ID_NV_TGHC_BACKGROUND_FEATURE_REQUEST_OF_THE_GREAT_HOUSE" />
+			<select name="Personality Trait" type="List">
+				<item id="1">I idolize a particular hero of my faith and constantly refer to that person's deeds and example.</item>
+				<item id="2">I pocket anything I see that might have some value.</item>
+				<item id="3">When I set my mind to something, I follow through no matter what gets in my way.</item>
+				<item id="4">I'm oblivious to etiquette and social expectations.</item>
+				<item id="5">I've read every book in the world's greatest libraries--or like to boast that I have.</item>
+				<item id="6">I stretch the truth for the sake of a good story.</item>
+				<item id="7">I bluntly say what other people are hinting or hiding.</item>
+				<item id="8">I often get lost in my own thoughts and contemplations, becoming oblivious to my surroundings.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">I'm loyal to my friends, not to any ideals.</item>
+				<item id="2">My talents were given to me so that I could use them to benefit the world.</item>
+				<item id="3">Meddling in the affairs of others only causes trouble.</item>
+				<item id="4">If I dishonor myself, I dishonor my whole House.</item>
+				<item id="5">My city, nation, or people are all that matter.</item>
+				<item id="6">Emotions must not cloud our sense of what is right and true, or our logical thinking.</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">I didn't know my real family, but i care a lot for the new one.</item>
+				<item id="2">My job as Member of the Great House is to protect wellbeing of other members, i take this very seriously.</item>
+				<item id="3">I fight for those who cannot fight for themselves.</item>
+				<item id="4">One powerful man in this country killed someone i cared about, now i'm seeking vengeance.</item>
+				<item id="5">My town or city is my home, and I'll fight to defend it.</item>
+				<item id="6">I want people to forget about my misdeeds in the past.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">I see everything in clear-cut black and white.</item>
+				<item id="2">I am inflexible in my thinking.</item>
+				<item id="3">I secretly believe that everyone is beneath me.</item>
+				<item id="4">I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me.</item>
+				<item id="5">I'm easily scared, and when i'm scared i make up "reasons" to run away.</item>
+				<item id="6">My hatred of my enemies is blind and unreasoning.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Feature: Request of the Great House" type="Background Feature" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_FEATURE_REQUEST_OF_THE_GREAT_HOUSE">
+		<description>
+			<p>After you joined the Great House, you received necessary training and knowledge of goals and methods that your House uses to achieve them, since then you tried your best to support deals and complete requests of your House. You gain the following benefits:</p>
+            <ul>
+				<li><strong>Loyalty of the House.</strong> You can request help from your fellow members. Despite the fact that many members have their own personal agendas and could refuse you request, generally, you can expect that other members will help you, as long as your request doesn't go against goals or rules of your Great House.</li>
+				<li><strong>Deals with the Partners.</strong> Sometimes when you request help from allies of your House (this can include other Great Houses), they can decide that you and them should make a deal, after they help you, they expected that you return the favor.</li>
+				<li><strong>Help of the Subordinates.</strong> Those who work on your House sometimes can confuse your own agenda with goals of the Great House. You have advantage on any Charisma check to convince them to help you with something, that isn't obviously dangerous or impossible for them to do.</li>
+			</ul>
+		</description>
+		<sheet alt="Request of the Great House">
+			<description>You can request help from your fellow members, as long as your request doesn't go against goals or rules of your Great House. You can also request help from allies of your House, but often they will ask for a favor in return. And you have advantage on any Charisma check to convince those who work on your House to help you with something, that isn't obviously dangerous or impossible for them to do.</description>
+		</sheet>
+	</element>
+</elements>

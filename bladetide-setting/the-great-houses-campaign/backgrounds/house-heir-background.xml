@@ -29,7 +29,7 @@
 			<grant type="Background Feature" id="ID_NV_TGHC_BACKGROUND_FEATURE_HEIRS_RIGHT" />
 			<select name="Personality Trait" type="List">
 				<item id="1">Common folk respects me and my House, in return, i don't judge other people by their origin.</item>
-				<item id="2">My father taught me value of hard work, i prefer to deal with problems myself and like those who do the same.</item>
+				<item id="2">My father taught me value of hard work, i prefer to deal with problems myself and i like people who do the same.</item>
 				<item id="3">Money is true power in this world, i always think what is the best way to use this power.</item>
 				<item id="4">I always keep my promises and pay my debts, you shouldn't waste time on people without honor.</item>
 				<item id="5">I don’t like to get my hands dirty, and I won’t be caught dead in unsuitable accommodations.</item>
