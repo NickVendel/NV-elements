@@ -2,12 +2,88 @@
 <elements>
 	<info>
 		<name>Champion Background</name>
-		<description></description>
+		<description>Basic background of Champions, chosen warriors of their tribes</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
 		<update version="0.0.1">
 			<file name="champion-background.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/bladetide-setting/the-great-houses-campaign/backgrounds/champion-background.xml" />
 		</update>
 	</info>
 
-	<!-- placeholder -->
+	<element name="Champion" type="Background" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_CHAMPION">
+		<description>
+			<p>You were chosen by your Tribe Leader to complete an important mission, this mission could decide not only your fate, but your whole tribe, and even future of the humanity itself.</p>
+			<ul>
+				<li><strong>Skill Proficiencies:</strong> You can select any two skills to be proficient with</li>
+				<li><strong>Tool Proficiencies (Optional):</strong> One type of artisan’s tools or one musical instrument</li>
+				<li><strong>Languages (Optional):</strong> Choose any starting or exotic language</li>
+				<li><strong>Equipment:</strong> A set of other tribal clothes, 10 torches, backpack made out of big animal, amount of food equal to 3 rations, hempen rope (50 ft).</li>
+			</ul>
+			<div element="ID_NV_TGHC_BACKGROUND_FEATURE_GUILD_MEMBER" />
+		</description>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Champion)" supports="Skill" number="2" />
+			<select type="Proficiency" name="Tool Proficiency (Champion)" supports="Tool" optional="true"/>
+			<select type="Language" name="Language (Champion)" optional="true" />
+			<grant type="Background Feature" id="ID_NV_TGHC_BACKGROUND_FEATURE_GUILD_MEMBER" />
+			<select name="Personality Trait" type="List">
+				<item id="1">My tribe name is "Sky Eye", because sometimes i daydream watching the clouds move through the sky.</item>
+				<item id="2">My tribe name is "Night Wind", because i prefer to attack my enemies under the moonlight.</item>
+				<item id="3">My tribe name is "Sharp Grass", because i hide in high grass, while spying on my prey, before striking it's weak point.</item>
+				<item id="4">My tribe name is "Bone Wings", because i have tattoo of white wings on my back.</item>
+				<item id="5">My tribe name is "Calm Sand", due to my ability to stay calm and move through obstacles like grains of sand on the wind.</item>
+				<item id="6">My tribe name is "Black Guard", because i usually stay up all night and defend other's sleep.</item>
+				<item id="7">My tribe name is "Red Wall", due to my physique and multiple scars from burns on my body.</item>
+				<item id="8">My tribe name is "Light Walker", because i believe that sun is protecting me and others and will only sleep if it's night.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">I never surrender until my mission is complete, whatever the cost.</item>
+				<item id="2">I don't like starting fights, i always think twice before attacking anybody.</item>
+				<item id="3">I never underestimate others, all people have hidden talents.</item>
+				<item id="4">People are just another type of animal, give them the chance and they will tore each other apart, that's why i'm always ready to kill.</item>
+				<item id="5">I give anyone second chance, but i despise anyone who runs from the danger.</item>
+				<item id="6">I always listen to opinions of others, even if they don't know what they're talking about.</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Tribe is everything to me.</item>
+				<item id="2">My family made me into who i am today, i will always be thankful to them.</item>
+				<item id="3">I wish to be higher in hierarchy of the tribe, so i will try to please my superiors.</item>
+				<item id="4">I lost everybody who i cared about... now i'm trying to find anybody who will care about me.</item>
+				<item id="5">I'm looking for new faces and stories, everybody have something to tell.</item>
+				<item id="6">I want everyone to know my name and for my legacy to live on even hundred years later.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">I think bad omens can predict future, i always believe them.</item>
+				<item id="2">I'm the worst at navigation, if people say "go right", i will go left.</item>
+				<item id="3">I sleep like a dead man, nothing can wake me up... sometimes i think even getting stabbed will not awake me.</item>
+				<item id="4">I egregiously underestimate or overestimate the risks a job represents.</item>
+				<item id="5">I don't care about other people's feelings, it's their problem not mine.</item>
+				<item id="6">I vastly underestimate value (both monetary and emotional) of any unique and/or interesting item. </item>
+			</select>
+		</rules>
+	</element>
+	<element name="Feature: Guild Member" type="Background Feature" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_FEATURE_GUILD_MEMBER">
+		<description>
+			<p>As part of the Tribe all workers are included in five different Guilds. Usually you either chosen to be part of the particular Guild, because of your skills or personality that fits, or you can ask Guild Leader to apply for any other Guild, if Guild Leader finds your skills to be useful, he will ask Tribe Leader to allow change of the Guilds. Different Tribes have different hierarchy systems, but non-workers are always at the bottom of it and Tribe Leader at the top. These Guilds are:</p>
+			<ul>
+				<li><strong>Hunters' Guild.</strong> Members of Hunters' Guild responsible for providing food for the Tribe and scaring away predatory animals. Even though Foragers gather some fruit and berries, meat brought by the Hunters is the biggest part of other tribe's diet. Rarely Hunters can be used as last resort guards or assassins, if Tribe Leader requires it. Guild prefers those with calm, patient, quick-to-react personalities or overall dextrous people.</li>
+				<li><strong>Foragers' Guild.</strong> Members of Foragers' Guild responsible for exploring tribe's territory for hazards and providing resources, from plant food, like fruit and mushrooms, to building resources, like stone and wood. Foragers usually don't get their part of respect, but without them any project would slow down to a crawl. Sometimes Foragers are used for scouting enemy territory or building, if Tribe Leader requires it. Guild prefers those with tactical, cautious, energetic personalities or overall dextrous people, who know right time to retreat.</li>
+				<li><strong>Warriors' Guild.</strong> Members of Warriors' Guild act as law keepers and general fighting force of the tribe. Tribe Leader has right to militarize Guild when needed, otherwise they're ordered by Guild Leader. Sometimes Warriors used as bodyguards or wardens, if required. Guild prefers those with aggressive, initiative personalities with sense of justice or people with strong builds.</li>
+				<li><strong>Healers' Guild.</strong> Members of Healers' Guild responsible for producing medicine and healing other members of the tribe. Good healers are rare and nobody in their right mind will be aggressive towards them. Rarely Healers used as poisoners or personal physicians for Tribe Leader. Guild prefers those with flexible, thoughtful, meticulous personalities or great medical skills.</li>
+				<li><strong>Tribe Elders.</strong> Though not a Guild, Elders are the mind of the tribe. They share their knowledge and wisdom, helping people self-improve and solve their life problems. And serve as representatives of the tribesmen. Most people have utmost respect for the Elders. Sometimes they can act as judges, negotiators or retinue. You become part of the Elders as soon as you lose the ability to effectively perform your Guild duties and Guild Leader allows you to retire.</li>
+			</ul>
+			<p>Years of work weren't left unnoticed. Everybody in your tribe recognizes you as valuable part of the Guild and respect what you did for the whole tribe. As their Champion and part of the Guild you can always find place to rest, get your share of food and learn local rumors or opinion of other tribesmen on any topic, while in settlements of your tribe.</p>
+		</description>
+		<sheet alt="Guild Member">
+			<description>Years of work weren't left unnoticed. Everybody in your tribe recognizes you as valuable part of the Guild and respect what you did for the whole tribe. As their Champion and part of the Guild you can always find place to rest, get your share of food and learn local rumors or opinion of other tribesmen on any topic, while in settlements of your tribe.</description>
+		</sheet>
+		<rules>
+			<select name="Tribe Guild" type="List" optional="true">
+				<item id="1">Hunters' Guild</item>
+				<item id="2">Foragers' Guild</item>
+				<item id="3">Warriors' Guild</item>
+				<item id="4">Healers' Guild</item>
+				<item id="5">Tribe Elders</item>
+			</select>
+		</rules>
+	</element>
 </elements>

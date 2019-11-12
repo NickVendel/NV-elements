@@ -9,5 +9,72 @@
 		</update>
 	</info>
 
-	<!-- placeholder -->
+	<element name="House Heir" type="Background" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_HOUSE_HEIR">
+		<description>
+			<p>You are an heir of Great House, to prove that it has a place in the Kingdom and your own worth, you were sent to discover source of Branch Plague and cure it. You weren't prepared for this mission, and never could've been, but you will prove those who doubt your skills wrong... or at least try.</p>
+			<ul>
+				<li><strong>Skill Proficiencies:</strong> You can select any two skills to be proficient with</li>
+				<li><strong>Legacy Bonus — Progenitor's Fortitude (Optional):</strong> Due to your legacy, you can select additional skill from the ones your Champion character had.</li>
+				<li><strong>Tool Proficiencies (Optional):</strong> One type of artisan’s tools or one musical instrument</li>
+				<li><strong>Languages (Optional):</strong> Choose any starting or exotic language</li>
+				<li><strong>Equipment:</strong> a family relic (artifact of your House, heirloom, or other valuable, to your family, item), a set of fine clothes, a map of the city you grew up in, and a purse containing 25 sp.</li>
+			</ul>
+			<div element="ID_NV_TGHC_BACKGROUND_FEATURE_HEIRS_RIGHT" />
+		</description>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (House Heir)" supports="Skill" number="2" />
+			<select type="Proficiency" name="Skill Proficiency (Progenitor's Fortitude)" supports="Skill" optional="true" />
+			<select type="Proficiency" name="Tool Proficiency (House Heir)" supports="Tool" optional="true" />
+			<select type="Language" name="Language (House Heir)" optional="true" />
+			<grant type="Background Feature" id="ID_NV_TGHC_BACKGROUND_FEATURE_HEIRS_RIGHT" />
+			<select name="Personality Trait" type="List">
+				<item id="1">Common folk respects me and my House, in return, i don't judge other people by their origin.</item>
+				<item id="2">My father taught me value of hard work, i prefer to deal with problems myself and i like people who do the same.</item>
+				<item id="3">Money is true power in this world, i always think what is the best way to use this power.</item>
+				<item id="4">I always keep my promises and pay my debts, you shouldn't waste time on people without honor.</item>
+				<item id="5">I don’t like to get my hands dirty, and I won’t be caught dead in unsuitable accommodations.</item>
+				<item id="6">Despite my noble birth, I do not place myself above other folk. We all have the same blood.</item>
+				<item id="7">I have immense trust in my family, i will do anything to keep it's reputation as high as possible.</item>
+				<item id="8">If you do me an injury, I will crush you, ruin your name, and salt your fields.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">I must prove that I can handle myself without the coddling of my family.</item>
+				<item id="2">I'm looking for more power, when i get it, no one will tell me what to do.</item>
+				<item id="3">I judge people by their actions and expect them to do the same.</item>
+				<item id="4">I respect the law, even if i dislike rule or two, i won't break them.</item>
+				<item id="5">Morals are relative, but i will prefer to suffer myself than force it on others.</item>
+				<item id="6">You can't protect those who don't have a way or don't want to protect themselves in the first place, so i will not waste my time.</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Nothing is more important than the other members of my family.</item>
+				<item id="2">In the past, one person has done me a great favor, I wish to repay the debt.</item>
+				<item id="3">My friends are the most valuable thing for me, i will stand by them and will aid them in need.</item>
+				<item id="4">Though i may not have many connections now, i want to extend my circle of acquaintances and maybe learn a favor or two.</item>
+				<item id="5">I'm looking for fame and ways to learn good reputation in higher places.</item>
+				<item id="6">My whole life i felt very lonely, i hope to find someone with whom I can spend the rest of it.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">I judge others harshly, and myself even more severely.</item>
+				<item id="2">I'm a sucker for a pretty face.</item>
+				<item id="3">If I'm outnumbered, I always run away from a fight.</item>
+				<item id="4">I'll say anything to avoid having to do extra work.</item>
+				<item id="5">I am inflexible in my thinking.</item>
+				<item id="6">Once I start drinking, it's hard for me to stop. </item>
+			</select>
+		</rules>
+	</element>
+	<element name="Feature: Heir's Right" type="Background Feature" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_FEATURE_HEIRS_RIGHT">
+		<description>
+			<p>As a heir of your Great House and part of the nobility, you live life of the privilege. Since Great Houses are the highest elite besides Lords and Kings, you have a great influence on lower nobility, while common folk will try to help you, in hopes of getting reward or at least your favor in return. When it comes to dealing with money or the law, you're judged more harshly, even if still not as hard as middle-class. You gain the following benefits:</p>
+			<ul>
+				<li><strong>Compliance of the Commoners.</strong> You get advantage on any Persuasion checks made that targets middle or lower-class citizens, as long as they know or think that you're member of the upper-class. This also applies to merchants and members of the law enforcement, but only outside of working hours.</li>
+				<li><strong>Sympathy of the Nobility.</strong> You're always welcome to speak with upper-class citizens and most of them at least heard of you. They will listen to you and even will take your advice, if to them it doesn't sounds as obviously bad or ill motivated. You also get advantage on any Deception (Charisma) check made while talking with members of upper-class, excluding those that higher than you in hierarchy.</li>
+				<li><strong>Favorite of the Merchants.</strong> Merchants are cautious when it comes to the money and deals, but they also know the value of high-class buyers. You get a discount that stacks with any other discounts, this discount usually comes as -10% to the item or service cost, but can vary from merchant to merchant.</li>
+				<li><strong>Supporter of the Law.</strong> Members of law enforcement will not turn blind eye to your crimes, but they will be more susceptible to the bribery. You have advantage on any check that is used for bribing members of the law enforcement.</li>
+			</ul>
+		</description>
+		<sheet alt="Heir's Right">
+			<description>You get advantage on any Persuasion checks made that targets middle or lower-class citizens, as long as they know or think that you're member of the upper-class. Upper-class citizens will listen to you and even will take your advice, if to them it doesn't sounds as obviously bad or ill motivated. You also get advantage on any Deception (Charisma) check made while talking with members of upper-class, excluding those that higher than you in hierarchy. You get a discount (usually around -10%) on items or services that stacks with any other discounts and can vary from merchant to merchant. You have advantage on any check that is used for bribing members of the law enforcement.</description>
+		</sheet>
+	</element>
 </elements>
