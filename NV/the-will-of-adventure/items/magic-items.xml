@@ -5,7 +5,7 @@
         <description>Magic Items from TWOA</description>
         <author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
         <update version="0.0.1">
-            <file name="magic-items.xml" url="https://raw.githubusercontent.com/NickVendel/NV/master/the-will-of-adventure/items/magic-items.xml" />
+            <file name="magic-items.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/the-will-of-adventure/items/magic-items.xml" />
         </update>
 	</info>
 	<element name="Darklight Sword" type="Magic Item" source="The Will Of Adventure" id="ID_NV_TWOA_MAGIC_ITEM_DARKLIGHT_SWORD">
