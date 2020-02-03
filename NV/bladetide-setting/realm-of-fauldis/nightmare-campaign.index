@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Nightmare Campaign Index</name>
+		<description>The content from the Nightmare Campaign.</description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.2">
+			<file name="nightmare-campaign.index" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/nightmare-campaign.index" />
+		</update>
+	</info>
+	<files>
+		<!-- Backgrounds -->
+		<!-- <file name="-.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/backgrounds/-.xml" /> -->
+
+		<!-- Items -->
+		<!-- <file name="weapon-types.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/nightmare-campaign/items/weapon-types.xml" /> -->
+		<!-- <file name="armor-types.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/nightmare-campaign/items/armor-types.xml" /> -->
+		<!-- <file name="wondrous-items.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/nightmare-campaign/items/wondrous-items.xml" /> -->
+		<!-- include this when enchantments are implemented in Aurora -->
+		<!-- <file name="enchantments.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/nightmare-campaign/items/enchantments.xml" /> -->
+
+		<!-- Companions/Monsters: do not include this before changes to companions-->
+		<!-- <file name="companions.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/nightmare-campaign/companions.xml" /> -->
+
+		<!-- Deities -->
+		<!-- <file name="deities.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/nightmare-campaign/deities.xml" /> -->
+
+		<!-- Feats -->
+		<!-- <file name="feats.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/nightmare-campaign/feats.xml" /> -->
+	</files>
+</index>

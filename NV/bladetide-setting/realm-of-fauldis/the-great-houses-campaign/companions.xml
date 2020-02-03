@@ -4,8 +4,8 @@
 		<name>Companions</name>
 		<description>Companions from The Great Houses Campaign.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.1">
-		    <file name="companions.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/the-great-houses-campaign/companions.xml" />
+		<update version="0.0.2">
+		    <file name="companions.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/companions.xml" />
 		</update>
 	</info>
     <!-- Baby Dragon Turtle -->
