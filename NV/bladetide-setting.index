@@ -4,7 +4,7 @@
 		<name>Bladetide Setting</name>
 		<description>The content from the Bladetide Setting.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="bladetide-setting.index" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting.index" />
 		</update>
 	</info>
@@ -16,38 +16,7 @@
 		<!-- Options -->
 		<file name="options.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/options.xml" />
 
-    <!-- Realm of Fauldis -->
-		<!-- Races, Sub-Races and Variation -->
-		<!-- <file name="human-subraces.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/human-subraces.xml" /> -->
-		<!-- <file name="tiefling-subraces.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/tiefling-subraces.xml" /> -->
-		<!-- <file name="race-undead.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/race-undead.xml" /> -->
-		<file name="race-hag.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/race-hag.xml" />
-
-		<!-- Classes -->
-		<!-- <file name="class-anti-mage.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/class-anti-mage.xml" /> -->
-		<!-- <file name="class-alchemist.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/class-alchemist.xml" /> -->
-		<!-- Alchemist Archetype:
-			1. [Comprehension] Scribe: First Feature - can learn new transmutation circles by copying them from circle scrolls (spell scroll analog), or from already created ones (but you need 3 hours to understand what materials required and what effect is created. Also you can't use circles from other Archetypes, but you understand mechanics of them).
-			2. [Deconstruction] Shatter (Eradicators): First Feature - gets ability to break any type of material completely destroying it (there are some limits to this, for example magic/enchanted objects and some shielding spells) by the material inside "Complete Deconstruction" circle.
-				Second Feature - Eradicator can create glove with unique personalized circle, or you can carve it on your hand. Choose any circle from those that you already know (needs balancing, can't be just any spell at all) to include in your signature circle, while this circle is intact you don't expend spell slots or waste time to cast this circle. This circle also includes elements for other transmutation circles. You can use your signature circle as second transmutation circle if it's required to produce the effect (for example, "Blazing Beam" circle can be placed on a wall and you can use your hand to create beam between transmutation and your signature circles).
-			3. [Reconstruction] Shifter: First Feature - chooses new transmutation circles which grant Shifter the ability to change properties of already existent items by replacing one material component to another and making sure it perfectly fits (this is called shifting). For example, one of these circles (dev. name "Weight Mutation") can remove Heavy property from weapon.
-				Second to last/Last Feature "Matter Shifter" - now, every circle from this Archetype can also replace one property with the other, so "Weight Mutation" now can replace Heavy property of weapon to Light. -->
-		<!-- <file name="archetype-trickster.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/archetype-trickster.xml" /> -->
-		<!-- <file name="archetype-chronomancer.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/archetype-chronomancer.xml" /> -->
-			<!-- Prestige Classes -->
-			<!-- <file name="prestige-class-titan-slayer.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/prestige-class-titan-slayer.xml" /> -->
-			<!-- <file name="prestige-class-shapechanger.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/prestige-class-shapechanger.xml" /> -->
-			<!-- <file name="prestige-class-vampire.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/prestige-class-vampire.xml" /> -->
-		<!-- /Classes -->
-
-		<!-- Backgrounds -->
-		<!-- <file name="-.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/backgrounds/-.xml" /> -->
-
-		<!-- Sources -->
-		<file name="sources.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/sources.xml" />
-
 		<!-- Index Files -->
-		<file name="nightmare-campaign.index" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/nightmare-campaign.index" />
-		<file name="the-great-houses-campaign.index" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign.index" />
+		<file name="realm-of-fauldis.index" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis.index" />
 	</files>
 </index>
