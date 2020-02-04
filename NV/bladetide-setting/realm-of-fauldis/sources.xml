@@ -2,15 +2,26 @@
 <elements>
 	<info>
 		<name>Sources</name>
-		<description>Sources of Bladetide Setting.</description>
+		<description>Sources from the Realm of Fauldis.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
 		<update version="0.0.2">
 			<file name="sources.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/sources.xml" />
 		</update>
 	</info>
-	<element name="The Great Houses Campaign" type="Source" source="Bladetide Setting" id="ID_NV_SOURCE_THE_GREAT_HOUSES_CAMPAIGN">
+	<element name="Bladetide: Realm of Fauldis" type="Source" source="Bladetide: Realm of Fauldis" id="ID_NV_BDTD_SOURCE_REALM_OF_FAULDIS">
 		<description>
-			<![CDATA[<p>Bladetide Campaign, about early stages of first Human Civilization on Honep Archipelago.</p>]]>
+			<![CDATA[<p>Realm of Fauldis is a dimension of heroic god-less fantasy inside Bladetide Multiverse. Large amounts of magical energy that is mystically produced by the planet Fauldis and possibly it's system, force elemental mutations, natural disasters and fast growth of humanoid population, thus making it both dangerous and romantic.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">FLDS</set>
+			<set name="url">false</set>
+			<set name="author" abbreviation="NV" url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+	<element name="Fauldis: The Great Houses Campaign" type="Source" source="Fauldis: The Great Houses Campaign" id="ID_NV_BDTD_FLDS_SOURCE_THE_GREAT_HOUSES_CAMPAIGN">
+		<description>
+			<![CDATA[<p>Bladetide Campaign, about early stages of first Human Civilization on Honeph Archipelago.</p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">TGHC</set>
@@ -19,7 +30,7 @@
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
-	<element name="Nightmare" type="Source" source="Bladetide Setting" id="ID_NV_SOURCE_NIGHTMARE">
+	<element name="Fauldis: Nightmare" type="Source" source="Fauldis: Nightmare" id="ID_NV_BDTD_FLDS_SOURCE_NIGHTMARE">
 		<description>
 			<![CDATA[<p>Bladetide Campaign, about turning point in history, where few people decide fate of the magic and all living creatures with it.</p>]]>
 		</description>

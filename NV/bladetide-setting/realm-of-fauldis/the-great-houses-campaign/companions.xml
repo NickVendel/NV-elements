@@ -9,7 +9,7 @@
 		</update>
 	</info>
     <!-- Baby Dragon Turtle -->
-	<element name="Baby Dragon Turtle" type="Companion" source="The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE">
+	<element name="Baby Dragon Turtle" type="Companion" source="Fauldis: The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE">
 		<description />
 		<setters>
 			<set name="strength">8</set>
@@ -39,7 +39,7 @@
 			<stat name="companion:damage" value="4" bonus="base" />
 		</rules>
 	</element>
-	<element name="Amphibious" type="Companion Trait" source="The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_AMPHIBIOUS">
+	<element name="Amphibious" type="Companion Trait" source="Fauldis: The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_AMPHIBIOUS">
 		<description>
 			<p>The baby dragon turtle can breathe air and water</p>
 		</description>
@@ -47,7 +47,7 @@
 			<description>The baby dragon turtle can breathe air and water</description>
 		</sheet>
 	</element>
-	<element name="Bite" type="Companion Action" source="The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_BITE">
+	<element name="Bite" type="Companion Action" source="Fauldis: The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_BITE">
 		<description>
 			<p><i>Melee Weapon Attack:</i> +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage.</p>
 		</description>
@@ -55,7 +55,7 @@
 			<description><i>Melee Weapon Attack:</i> +{{companion:attack}} to hit, reach 5 ft., one target. Hit: 6 (1d4 + {{companion:damage}}) piercing damage.</description>
 		</sheet>
 	</element>
-	<element name="Steam Breath (Recharge 6)" type="Companion Action" source="The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_STEAM_BREATH">
+	<element name="Steam Breath (Recharge 6)" type="Companion Action" source="Fauldis: The Great Houses Campaign" id="ID_NV_TGHC_COMPANION_BABY_DRAGON_TURTLE_STEAM_BREATH">
 		<description>
 			<p>The baby dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 4d6 fire damage on a failed save, or half as much damage on successful one. Being underwater doesn't grant resistance against this damage.</p>
 		</description>

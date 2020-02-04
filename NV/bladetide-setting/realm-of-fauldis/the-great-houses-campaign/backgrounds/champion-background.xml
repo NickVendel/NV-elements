@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
-	<element name="Champion" type="Background" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_CHAMPION">
+	<element name="Champion" type="Background" source="Fauldis: The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_CHAMPION">
 		<description>
 			<p>You were chosen by your Tribe Leader to complete an important mission, this mission could decide not only your fate, but your whole tribe, and even future of the humanity itself.</p>
 			<ul>
@@ -61,7 +61,7 @@
 			</select>
 		</rules>
 	</element>
-	<element name="Feature: Guild Member" type="Background Feature" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_FEATURE_GUILD_MEMBER">
+	<element name="Feature: Guild Member" type="Background Feature" source="Fauldis: The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_FEATURE_GUILD_MEMBER">
 		<description>
 			<p>As part of the Tribe all workers are included in five different Guilds. Usually you either chosen to be part of the particular Guild, because of your skills or personality that fits, or you can ask Guild Leader to apply for any other Guild, if Guild Leader finds your skills to be useful, he will ask Tribe Leader to allow change of the Guilds. Different Tribes have different hierarchy systems, but non-workers are always at the bottom of it and Tribe Leader at the top. These Guilds are:</p>
 			<ul>

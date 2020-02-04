@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
-	<element name="Member of the Great House" type="Background" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_MEMBER_OF_THE_GREAT_HOUSE">
+	<element name="Member of the Great House" type="Background" source="Fauldis: The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_MEMBER_OF_THE_GREAT_HOUSE">
 		<description>
 			<p>You are a Member of the Great House, which are now become powerful guilds. After you joined years ago, you were trained by the best masters in the realm to be sure that while you're wearing House's emblem you'll do the best job you can to protect it and it's members.</p>
 			<ul>
@@ -66,7 +66,7 @@
 			</select>
 		</rules>
 	</element>
-	<element name="Feature: Request of the Great House" type="Background Feature" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_FEATURE_REQUEST_OF_THE_GREAT_HOUSE">
+	<element name="Feature: Request of the Great House" type="Background Feature" source="Fauldis: The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_FEATURE_REQUEST_OF_THE_GREAT_HOUSE">
 		<description>
 			<p>After you joined the Great House, you received necessary training and knowledge of goals and methods that your House uses to achieve them, since then you tried your best to support deals and complete requests of your House. You gain the following benefits:</p>
             <ul>
