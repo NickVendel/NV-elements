@@ -4,12 +4,12 @@
 		<name>House Heir Background</name>
 		<description></description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.1">
-			<file name="house-heir-background.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/the-great-houses-campaign/backgrounds/house-heir-background.xml" />
+		<update version="0.0.2">
+			<file name="house-heir-background.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/backgrounds/house-heir-background.xml" />
 		</update>
 	</info>
 
-	<element name="House Heir" type="Background" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_HOUSE_HEIR">
+	<element name="House Heir" type="Background" source="Fauldis: The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_HOUSE_HEIR">
 		<description>
 			<p>You are an heir of Great House, to prove that it has a place in the Kingdom and your own worth, you were sent to discover source of Branch Plague and cure it. You weren't prepared for this mission, and never could've been, but you will prove those who doubt your skills wrong... or at least try.</p>
 			<ul>
@@ -63,7 +63,7 @@
 			</select>
 		</rules>
 	</element>
-	<element name="Feature: Heir's Right" type="Background Feature" source="The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_FEATURE_HEIRS_RIGHT">
+	<element name="Feature: Heir's Right" type="Background Feature" source="Fauldis: The Great Houses Campaign" id="ID_NV_TGHC_BACKGROUND_FEATURE_HEIRS_RIGHT">
 		<description>
 			<p>As a heir of your Great House and part of the nobility, you live life of the privilege. Since Great Houses are the highest elite besides Lords and Kings, you have a great influence on lower nobility, while common folk will try to help you, in hopes of getting reward or at least your favor in return. When it comes to dealing with money or the law, you're judged more harshly, even if still not as hard as middle-class. You gain the following benefits:</p>
 			<ul>

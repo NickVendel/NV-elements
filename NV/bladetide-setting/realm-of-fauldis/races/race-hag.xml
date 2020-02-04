@@ -4,12 +4,12 @@
 		<name>Hag Race</name>
 		<description></description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.1">
-			<file name="race-hag.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/races/race-hag.xml" />
+		<update version="0.0.2">
+			<file name="race-hag.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/race-hag.xml" />
 		</update>
 	</info>
 
-	<element name="Hag" type="Race" source="Bladetide Setting" id="ID_NV_BDTD_RACE_HAG">
+	<element name="Hag" type="Race" source="Bladetide: Realm of Fauldis" id="ID_NV_BDTD_FLDS_RACE_HAG">
 		<description>
 			<p class="flavor">Most of the Hags were human females, which were mutated through series of blood rituals and corrupting magic, allowing their bodies to live indefinitely. They became something else, more close to the magic forces, many lost their sanity and empathy, but the biggest cost was the ability to bear children.</p>
 			<h4>HIDDEN NIGHTMARE</h4>
@@ -85,7 +85,7 @@
 
 	<element name="Hag Type" type="Racial Trait" source="Bladetide Setting" id="ID_NV_BDTD_RACIAL_TRAIT_HAG_TYPE">
 		<description>
-			<p>Depending on place of transformation, ritual used and race of user, or sometimes even character traits, they become different type of hag. Ritual always infuses body with magic, corrupts it with horrendous look and scares reproductive system, removing ability to bear children. But in return hags retrieve more powerful abilities than they had before.</p>
+			<p>Depending on place of transformation, ritual used and race of user, or sometimes even character traits, they become different type of hag. Ritual always infuses body with magic, corrupts it with horrendous look and scars reproductive system, removing ability to bear children. But in return hags retrieve more powerful abilities than they had before.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
