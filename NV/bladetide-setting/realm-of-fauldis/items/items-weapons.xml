@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<description>Weapons used on the planet Fauldis.</description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/items/items-weapons.xml" />
+		</update>
+	</info>
+
+	<element name="Handwraps" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_HANDWRAPS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">—</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1</set>
+			<set name="proficiency">ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_HANDWRAPS</set>
+		</setters>
+	</element>
+
+	<element name="Cestus" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_CESTUS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_GROUP_KNUCKLES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_CESTUS</set>
+		</setters>
+	</element>
+
+	<element name="Brass Knuckles" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_BRASS_KNUCKLES">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_GROUP_KNUCKLES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_BRASS_KNUCKLES</set>
+		</setters>
+	</element>
+
+	<element name="Push Dagger" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_PUSH_DAGGER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_PROPERTY_FINESSE,ID_INTERNAL_WEAPON_GROUP_KNUCKLES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="proficiency">ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_PUSH_DAGGER</set>
+		</setters>
+	</element>
+
+	<element name="Claw Blades" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_CLAW_BLADES">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_PROPERTY_FINESSE,ID_INTERNAL_WEAPON_GROUP_KNUCKLES</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d4</set>
+			<set name="proficiency">ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_CLAW_BLADES</set>
+		</setters>
+	</element>
+
+
+	<element name="Spring Dagger" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_SPRING_DAGGER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_PROPERTY_FINESSE,ID_INTERNAL_WEAPON_PROPERTY_THROWN,ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT</supports>
+		<description>
+			<p></p>
+			<div element="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+		</setters>
+	</element>
+
+	<element name="Hidden Blade" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_HIDDEN_BLADE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_HIDDEN</supports>
+		<description>
+			<p></p>
+			<div element="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_HIDDEN" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="proficiency">ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_HIDDEN_BLADE</set>
+		</setters>
+	</element>
+	<element name="Special (Hidden)" type="Weapon Property" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_HIDDEN">
+		<description>
+			<p>A weapon with the hidden property is designed to be easily concealed by the user. Hidden weapons can be revealed by body searching the user and making successful Dexterity (Investigation) check against DC20.</p>
+		</description>
+	</element>
+
+	<element name="Chakram" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_CHAKRAM">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_CHAKRAM</supports>
+		<description>
+<!-- 			<p>This bladed circular disc is an unusual thrown weapon. It glides through the air, slicing through anything in its path. Warriors who specialize with the chakram can learn to throw it in such a way that it returns to them after cutting the enemy.</p>
+ -->			<div element="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_CHAKRAM" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">60/120</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="proficiency">ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM</set>
+		</setters>
+	</element>
+	<element name="Special (Chakram)" type="Weapon Property" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_CHAKRAM">
+		<description>
+			<p>The chakram returns to you when thrown, unless you rolled 1 on the attack roll.</p>
+		</description>
+	</element>
+
+	<element name="Telescopic Shortsword" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_TELESCOPIC_SHORTSWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_SWORDS,ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT</supports>
+		<description>
+			<p></p>
+			<div element="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">60</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD</set>
+		</setters>
+	</element>
+
+	<element name="Telescopic Longsword" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_TELESCOPIC_LONGSWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS,ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT</supports>
+		<description>
+			<p></p>
+			<div element="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">70</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
+		</setters>
+	</element>
+
+	<element name="Sliding Greatsword" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_SLIDING_GREATSWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS,ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT</supports>
+		<description>
+			<p></p>
+			<div element="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set>
+		</setters>
+	</element>
+
+	<element name="Telescopic Baton" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_TELESCOPIC_BATON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_CLUBS,ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT</supports>
+		<description>
+			<p></p>
+			<div element="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+
+	<element name="Expanding Quarterstaff" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_WOTC_PHB_WEAPON_QUARTERSTAFF">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE,ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT,ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_EXPANDING_STRIKE</supports>
+		<description>
+			<p></p>
+			<div element="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT" />
+			<div element="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_EXPANDING_STRIKE" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="versatile">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
+		</setters>
+	</element>
+	<element name="Special (Expanding Strike)" type="Weapon Property" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_EXPANDING_STRIKE">
+		<description>
+			<p>Weapons with Expanding Strike property can deal damage when expanded from their folded state.</p>
+			<p class="indent"><b>Quarterstaff.</b> You can use bonus action to instantly expand folded quarterstaff to strike your foe. You make an attack against the target, on a hit, target takes 1d6 bludgeoning damage. If you rolled 1 on the attack, you lose grip and drop quarterstaff to the ground.</p>
+		</description>
+	</element>
+
+	<element name="Special (Compact)" type="Weapon Property" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT">
+		<description>
+			<p>Weapons with Compact property can fold or reduce their length. You can use bonus action to reduce your weapon into folded state, or to expand it to its full length. Bladed weapons can either hide their blades inside the hilt or separate the blade into different pieces, to save space. Blunt weapons can similarly be reduced, usually via telescopic mechanism. Weapon's weight isn't affected.</p>
+		</description>
+	</element>
+    
+    <element name="Weapon Group (Knuckles)" type="Weapon Group" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_GROUP_KNUCKLES" />
+
+	<element name="Weapon Proficiency (Handwraps)" type="Proficiency" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_HANDWRAPS">
+		<supports>Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_HANDWRAPS" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Cestus)" type="Proficiency" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_CESTUS">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_GROUP_KNUCKLES</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_CESTUS" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Brass Knuckles)" type="Proficiency" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_BRASS_KNUCKLES">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_GROUP_KNUCKLES</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_BRASS_KNUCKLES" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Push Dagger)" type="Proficiency" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_PUSH_DAGGER">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_PROPERTY_FINESSE,ID_INTERNAL_WEAPON_GROUP_KNUCKLES</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_PUSH_DAGGER" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Claw Blades)" type="Proficiency" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_CLAW_BLADES">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_PROPERTY_FINESSE,ID_INTERNAL_WEAPON_GROUP_KNUCKLES</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_CLAW_BLADES" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Hidden Blade)" type="Proficiency" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_HIDDEN_BLADE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT,ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_HIDDEN</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_HIDDEN_BLADE" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Chakram)" type="Proficiency" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM">
+		<supports>Weapon, Martial, Melee, Thrown, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_CHAKRAM</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM" />
+		</rules>
+	</append>
+
+</elements>
