@@ -239,8 +239,8 @@
 			<p>Weapons with Compact property can fold or reduce their length. You can use bonus action to reduce your weapon into folded state, or to expand it to its full length. Bladed weapons can either hide their blades inside the hilt or separate the blade into different pieces, to save space. Blunt weapons can similarly be reduced, usually via telescopic mechanism. Weapon's weight isn't affected.</p>
 		</description>
 	</element>
-    
-    <element name="Weapon Group (Knuckles)" type="Weapon Group" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_GROUP_KNUCKLES" />
+
+	<element name="Weapon Group (Knuckles)" type="Weapon Group" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_GROUP_KNUCKLES" />
 
 	<element name="Weapon Proficiency (Handwraps)" type="Proficiency" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_PROFICIENCY_WEAPON_PROFICIENCY_HANDWRAPS">
 		<supports>Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>

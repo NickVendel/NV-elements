@@ -38,7 +38,7 @@
 		<supports>Exotic</supports>
 		<description>
 			<p>Is a progenitor of the Modern Human language, and has similar structure and alphabet, consisting of 33 letters. It was also known under the name "Language of Sunshore Isle". Due to it's popularity as a replacement of Ancient Human language in first Human nations, which later became <b>Confederation of Sunshore</b>, Old Human is believed to be the first official language of the entire Human race.</p>
-            <p>Consists of few different dialects:<br />
+			<p>Consists of few different dialects:<br />
 				<ul>
 					<li><b>Sunshore dialect.</b> Was primary dialect of Old Human used by populous of all states on Sunshore Island.</li>
 					<li><b>Flatcliff dialect.</b> Was created by those who left Sunshore Island, because they had differences with Confederation's states or for other reasons. Dialect survived colonization of the Isle by Confederation and even spread to other islands of Archipelago.</li>
@@ -66,4 +66,18 @@
 		</setters>
 	</element>  
  -->
+
+	<element name="Common" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_COMMON">
+		<requirements>!(ID_NV_FLDS_LANGUAGE_MODERN_HUMAN||ID_NV_FLDS_LANGUAGE_OLD_HUMAN||ID_NV_FLDS_LANGUAGE_ANCIENT_HUMAN)</requirements>
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by humans.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Humans</set>
+			<set name="script">Common</set>
+		</setters>
+	</element>
+
 </elements>
