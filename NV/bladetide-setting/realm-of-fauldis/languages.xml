@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<description>Languages used on the planet Fauldis.</description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/languages.xml" />
+		</update>
+	</info>
+
+	<!-- Standard -->
+	<element name="Modern Human" type="Language" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_LANGUAGE_MODERN_HUMAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Language used in modern Human societies, consists of 30 letters and has multiple dialects across whole continent.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Humans</set>
+			<set name="script">Human</set>
+		</setters>
+	</element>
+
+	<!-- Exotic -->
+	<element name="Ancient Human" type="Language" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_LANGUAGE_ANCIENT_HUMAN">
+		<supports>Exotic</supports>
+		<description>
+			<p>Is logographic dead language, which used hieroglyphic writing system, and was one of the first, if not the first language that was used by human societies located on Honeph Archipelago. It was replaced by Old Human and later was completely forgotten, but rare sites where Ancient Human hieroglyphs were used still can be found on the Archipelago.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers"></set>
+			<set name="script">Ancient Human</set>
+		</setters>
+	</element>
+	<element name="Old Human" type="Language" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_LANGUAGE_OLD_HUMAN">
+		<supports>Exotic</supports>
+		<description>
+			<p>Is a progenitor of the Modern Human language, and has similar structure and alphabet, consisting of 33 letters. It was also known under the name "Language of Sunshore Isle". Due to it's popularity as a replacement of Ancient Human language in first Human nations, which later became <b>Confederation of Sunshore</b>, Old Human is believed to be the first official language of the entire Human race.</p>
+			<p>Consists of few different dialects:<br />
+				<ul>
+					<li><b>Sunshore dialect.</b> Was primary dialect of Old Human used by populous of all states on Sunshore Island.</li>
+					<li><b>Flatcliff dialect.</b> Was created by those who left Sunshore Island, because they had differences with Confederation's states or for other reasons. Dialect survived colonization of the Isle by Confederation and even spread to other islands of Archipelago.</li>
+					<li><b>Northground dialect.</b> Following colonization of Flatcliff Isle, those who stood against Confederation and lost, moved to Northground Island, their previous dialect changed further, thus creating most unpopular and even somewhat despised dialect.</li>
+					<li><b>Magnarum dialect.</b> Children of those who survived <i><b>Cataclysm of Lost Ancestors</b></i> slowly formed last dialect, before First Human-Elves War, since Modern Human was created and gain popularity in the century following the War, this dialect and whole Old Human language was slowly phased away, yet still there's quite a lot of people who use it on day-to-day basis or learn it to study History.</li>
+				</ul>
+			</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Humans</set>
+			<set name="script">Human</set>
+		</setters>
+	</element>
+
+	<!-- Secret -->
+<!-- 	<element name="Druidic" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_DRUIDIC">
+		<supports>Secret</supports>
+		<description>
+			<p>The secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Wisdom (Perception) check but can’t decipher it without magic.</p>
+		</description>
+		<setters>
+			<set name="secret">true</set>
+			<set name="speakers">Druids</set>
+		</setters>
+	</element>  
+ -->
+
+	<element name="Common" type="Language" source="Player’s Handbook" id="ID_LANGUAGE_COMMON">
+		<requirements>!(ID_NV_FLDS_LANGUAGE_MODERN_HUMAN||ID_NV_FLDS_LANGUAGE_OLD_HUMAN||ID_NV_FLDS_LANGUAGE_ANCIENT_HUMAN)</requirements>
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by humans.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Humans</set>
+			<set name="script">Common</set>
+		</setters>
+	</element>
+
+</elements>
