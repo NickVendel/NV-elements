@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Magic Weapons</name>
+		<description>Some magic weapons, unique weapons and enchantments used on the planet Fauldis.</description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.1">
+			<file name="items-magic-weapons.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/items/items-magic-weapons.xml" />
+		</update>
+	</info>
+
+	<!-- Ancient Artifacts of Human Civilization -->
+	<!-- Justice -->
+	<element name="Justice (Primal)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_JUSTICE_PRIMAL">
+		<description>
+			<p>This magical sword with straight, marble-like white, stone blade is a relic of forgotten times. Name <b>"Justice"</b> was first mentioned for this sword in ancient Human books, it's said that sword makes those who wield it more heroic, fair, just and overall good. <br />
+			Even though <b>Justice</b> was mainly spotted throughout the history in the hands of heroes and fair rulers, there can be found some examples of those who history remembers as tyrants and usurpers. </p>
+			<p>When user isn't attuned to <b>Justice</b>, it has following properties: </p>
+				<p class="indent"><b><i>Aged.</i></b> This weapon had more than a century of being unused and became charged with natural magical energy. It becomes magical and gains +1 enchantment bonus to attack rolls. </p>
+			<p>When creature attunes to <b>Justice</b> in its primal form, sword reactivates its additional properties: </p>
+				<p class="indent"><b><i>Presence.</i></b> The <b>Justice</b> has unnatural aura that affects it's user. This aura has limited sentience, mostly reacting to specific triggers or acting in accord to it's instincts. </p>
+				<p class="indent">This presence can't communicate, see or hear, but it reacts to emotions of it's user and those around him. </p>
+				<p class="indent"><b><i>Instinctive Behavior.</i></b> Presence within the sword affects mind of the user and can completely change it's behavior. Presence forces those who attuned to the sword to protect the weak, to tell the truth, to follow the law of the land, to be fair and just. When user tries to do something that goes against one or more of those behaviors, it must make Wisdom saving throw against DC15, on a fail, user changes his mind and decides to act in accord to sword's will. In addition, user must make the same saving throw when trying to give sword to someone else, when trying to throw it away or when trying to end attunement with it, on fail user changes his mind, and cannot repeat any of these actions until next midday.</p>
+				<p class="indent"><b><i>Honest.</i></b> Sword despises deception and unfair play, because of this blade rejects poison and acid. Whenever you try to apply poison or acid to the blade, it's unaffected and dose of the liquid is wasted.</p>
+				<p class="indent"><b><i>Righteous Cause.</i></b> When wielder protects those in need, <b>Justice</b> shows it's potential. If wielder willingly decides (rather than being forced by the sword) to protect those who can't protect themselves (this includes unconscious allies), blade unleashes it's magical energy and deals additional 1d6 radiant damage.</p>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can only grow in power. <b>Justice</b> in primal form, can be enhanced to its original form by a great personal sacrifice for the good cause. It's believed that one of the first users of this weapon gave up his life to protect people, others gave up their noble titles to follow greater cause or sacrificed their reputation when fighting against those in power.</p>
+		</description>
+		<setters>
+			<set name="keywords">shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="weapon">Shortsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Justice</set>
+		</setters>
+	</element>
+
+	<element name="Justice (Original)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_JUSTICE_ORIGINAL">
+		<description>
+			<p>This magical sword with straight, marble-like white, stone blade is a relic of forgotten times. Name <b>"Justice"</b> was first mentioned for this sword in ancient Human books, it's said that sword makes those who wield it more heroic, fair, just and overall good. <br />
+			Even though <b>Justice</b> was mainly spotted throughout the history in the hands of heroes and fair rulers, there can be found some examples of those who history remembers as tyrants and usurpers. </p>
+			<p>When user isn't attuned to <b>Justice</b>, it has following properties: </p>
+				<p class="indent"><b><i>Magic Weapon.</i></b> Magical energy flows from this weapon. You gain a +1 bonus to attack and damage rolls made with this sword.</p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact can lose it's powers by magical means. <b>Justice</b> in original form, can only degrade to primal form by a <i>wish</i> spell, or <i>dispel evil and good</i> spell but in that case caster must make a check with its spellcasting ability against DC20 to succeed.</p>
+			<p>When creature attunes to <b>Justice</b> in its original form, sword reactivates its additional properties:</p>
+				<p class="indent"><b><i>Presence.</i></b> The <b>Justice</b> has unnatural aura that affects it's user. This aura has limited sentience, mostly reacting to specific triggers or acting in accord to it's instincts. </p>
+				<p class="indent">This presence can't communicate, see or hear, but it reacts to emotions of it's user and those around him. </p>
+				<p class="indent"><b><i>Instinctive Behavior.</i></b> Presence within the sword affects mind of the user and can completely change it's behavior. Presence forces those who attuned to the sword to protect the weak, to tell the truth, to follow the law of the land, to be fair and just. When user tries to do something that goes against one or more of those behaviors, it must make Wisdom saving throw against DC15, on a fail, user changes his mind and decides to act in accord to sword's will. In addition, user must make the same saving throw when trying to give sword to someone else, when trying to throw it away or when trying to end attunement with it, on fail user changes his mind, and cannot repeat any of these actions until next midday.</p>
+				<p class="indent"><b><i>Honest.</i></b> Sword despises deception and unfair play, because of this blade rejects poison and acid. Whenever you try to apply poison or acid to the blade, it's unaffected and dose of the liquid is wasted.</p>
+				<p class="indent"><b><i>Righteous Cause.</i></b> When wielder protects those in need, <b>Justice</b> shows it's potential. If wielder willingly decides (rather than being forced by the sword) to protect those who can't protect themselves (this includes unconscious allies), blade unleashes it's magical energy and deals additional 2d6 radiant damage.</p>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can grow in power. <b>Justice</b> in original form, can be further enhanced to its superior form by having a great success in your noble quest. Recorded history talks how it was achieved by healing a plague and thus saving countless lives, achieving piece between two warring factions, or defeating horde of monsters that were assaulting a village.</p>
+		</description>
+		<setters>
+			<set name="keywords">shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="weapon">Shortsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Justice</set>
+		</setters>
+	</element>
+
+	<element name="Justice (Superior)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_JUSTICE_SUPERIOR">
+		<description>
+			<p>This magical sword with straight, marble-like white, stone blade is a relic of forgotten times. Name <b>"Justice"</b> was first mentioned for this sword in ancient Human books, it's said that sword makes those who wield it more heroic, fair, just and overall good. <br />
+			Even though <b>Justice</b> was mainly spotted throughout the history in the hands of heroes and fair rulers, there can be found some examples of those who history remembers as tyrants and usurpers. </p>
+			<p>When user isn't attuned to <b>Justice</b>, it has following properties: </p>
+				<p class="indent"><b><i>Magic Weapon.</i></b> Magical energy flows from this weapon. You gain a +2 bonus to attack and damage rolls made with this sword.</p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact slowly loses it's power without attunement. <b>Justice</b> in superior form, can degrade into original form after a 500 years since last attunement or degradation. It also can degrade to primal form by a <i>wish</i> spell, or <i>dispel evil and good</i> spell but in that case caster must make a check with its spellcasting ability against DC20 to succeed.</p>
+			<p>When creature attunes to <b>Justice</b> in its superior form, sword reactivates its additional properties:</p>
+				<p class="indent"><b><i>Presence.</i></b> The <b>Justice</b> has unnatural aura that affects it's user. This aura has limited sentience, mostly reacting to specific triggers or acting in accord to it's instincts. </p>
+				<p class="indent">This presence can't communicate, see or hear, but it reacts to emotions of it's user and those around him. </p>
+				<p class="indent"><b><i>Instinctive Behavior.</i></b> Presence within the sword affects mind of the user and can completely change it's behavior. Presence forces those who attuned to the sword to protect the weak, to tell the truth, to follow the law of the land, to be fair and just. When user tries to do something that goes against one or more of those behaviors, it must make Wisdom saving throw against DC17, on a fail, user changes his mind and decides to act in accord to sword's will. In addition, user must make the same saving throw when trying to give sword to someone else, when trying to throw it away or when trying to end attunement with it, on fail user changes his mind, and cannot repeat any of these actions until next midday.</p>
+				<p class="indent"><b><i>Honest.</i></b> Sword despises deception and unfair play, because of this blade rejects poison and acid. Whenever you try to apply poison or acid to the blade, it's unaffected and dose of the liquid is wasted.</p>
+				<p class="indent"><b><i>Righteous Cause.</i></b> When wielder protects those in need, <b>Justice</b> shows it's potential. If wielder willingly decides (rather than being forced by the sword) to protect those who can't protect themselves (this includes unconscious allies), blade unleashes it's magical energy and deals additional 2d6 radiant damage.</p>
+				<p class="indent"><b><i>Spells.</i></b> The sword has 4 charges and regains 2 expanded charges daily at dawn. You can use an action and expend 1 or more charges to cast one of the following spells (spellcasting ability +3, save DC13) from it: <i>compelled duel</i> (1 charge), <i>heroism</i> (1 charge) <i>zone of truth</i> (2 charges), <i>crusader's mantle</i> (3 charges), <i>beacon of hope</i> (4 charges). </p>
+				<p class="indent">Presence within the weapon can take upon itself to maintain concentration on sword's spells, but it channels this ability through it's user. You can concentrate on 2 spells while holding the sword, one of those spells must be from this weapon. If you forced to make Constitution saving throw to maintain concentration on both spells, the DC is 10 + level of both spells combined or half the damage you take, whichever number is higher, if you fail this saving throw, sword loses it's concentration and you must make another Constitution saving throw for your personal spell which follows normal concentration rules, otherwise you maintain concentration on both spells.</p>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can grow in power. <b>Justice</b> in superior form, can be further enhanced to its legendary form by defeating major enemy, rival or evildoer. Recorded history mentions few such cases: slaying great warlord who thought to be undefeated before, having revenge on tyrant who killed innocents, or stopping a cult (and sometimes even religious) leader before they could achieve their horrific goals.</p>
+		</description>
+		<setters>
+			<set name="keywords">shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="weapon">Shortsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">2</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Justice</set>
+		</setters>
+	</element>
+
+	<element name="Justice (Legendary)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_JUSTICE_LEGENDARY">
+		<description>
+			<p>This magical sword with straight, marble-like white, stone blade is a relic of forgotten times. Name <b>"Justice"</b> was first mentioned for this sword in ancient Human books, it's said that sword makes those who wield it more heroic, fair, just and overall good. <br />
+			Even though <b>Justice</b> was mainly spotted throughout the history in the hands of heroes and fair rulers, there can be found some examples of those who history remembers as tyrants and usurpers. </p>
+			<p>When user isn't attuned to <b>Justice</b>, it has following properties: </p>
+				<p class="indent"><b><i>Magic Weapon.</i></b> Magical energy flows from this weapon. You gain a +2 bonus to attack and damage rolls made with this sword. </p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact slowly loses it's power without attunement. <b>Justice</b> in legendary form, can degrade into superior form after a 50 years since last attunement. It also can degrade to primal form by a <i>wish</i> spell. </p>
+			<p>When creature attunes to <b>Justice</b> in its legendary form, sword reactivates its additional properties: </p>
+				<p class="indent"><b><i>Presence.</i></b> The <b>Justice</b> has unnatural aura that affects it's user. This aura has limited sentience, mostly reacting to specific triggers or acting in accord to it's instincts. </p>
+				<p class="indent">This presence can't communicate, see or hear, but it reacts to emotions of it's user and those around him. </p>
+				<p class="indent"><b><i>Instinctive Behavior.</i></b> Presence within the sword affects mind of the user and can completely change it's behavior. Presence forces those who attuned to the sword to protect the weak, to tell the truth, to follow the law of the land, to be fair and just. When user tries to do something that goes against one or more of those behaviors, it must make Wisdom saving throw against DC20, on a fail, user changes his mind and decides to act in accord to sword's will. In addition, user must make the same saving throw when trying to give sword to someone else, when trying to throw it away or when trying to end attunement with it, on fail user changes his mind, and cannot repeat any of these actions until next midday. </p>
+				<p class="indent"><b><i>Honest.</i></b> Sword despises deception and unfair play, because of this blade rejects poison and acid. Whenever you try to apply poison or acid to the blade, it's unaffected and dose of the liquid is wasted. </p>
+				<p class="indent"><b><i>Righteous Cause.</i></b> When wielder protects those in need, <b>Justice</b> shows it's potential. If wielder willingly decides (rather than being forced by the sword) to protect those who can't protect themselves (this includes unconscious allies), blade unleashes it's magical energy and deals additional 3d6 radiant damage. </p>
+				<p class="indent"><b><i>Spells.</i></b> The sword has 7 charges and regains 1d4+3 expanded charges daily at dawn. You can use an action and expend 1 or more charges to cast one of the following spells (spellcasting ability +5, save DC15) from it: <i>compelled duel</i> (1 charge), <i>heroism</i> (1 charge) <i>zone of truth</i> (2 charges), <i>crusader's mantle</i> (3 charges), <i>beacon of hope</i> (4 charges), <i>aura of life</i> (4 charges), <i>circle of power</i> (5 charges) and <i>destructive wave</i> (5 charges). </p>
+				<p class="indent">Presence within the weapon can take upon itself to maintain concentration on sword's spells, but it channels this ability through it's user. You can concentrate on 2 spells while holding the sword, one of those spells must be from this weapon. If you forced to make Constitution saving throw to maintain concentration on both spells, the DC is 10 + level of both spells combined or half the damage you take, whichever number is higher, if you fail this saving throw, sword loses it's concentration and you must make another Constitution saving throw for your personal spell which follows normal concentration rules, otherwise you maintain concentration on both spells. </p>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can grow in power. <b>Justice</b> in legendary form, can be further enhanced to its ultimate form by facing the greatest threat or challenge to your heroic way. History doesn't have many records of people who were able to achieve full potential of <b>Justice</b>, but it's believed that those who stand against impossible odds, and those who follow their ideals even in the worst times, able to unleash the ultimate power of this ancient relic. </p>
+		</description>
+		<setters>
+			<set name="keywords">shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="weapon">Shortsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">2</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Justice</set>
+		</setters>
+	</element>
+
+	<element name="Justice (Ultimate)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_JUSTICE_ULTIMATE">
+		<description>
+			<p>This magical sword with straight, marble-like white, stone blade is a relic of forgotten times. Name <b>"Justice"</b> was first mentioned for this sword in ancient Human books, it's said that sword makes those who wield it more heroic, fair, just and overall good. <br />
+			Even though <b>Justice</b> was mainly spotted throughout the history in the hands of heroes and fair rulers, there can be found some examples of those who history remembers as tyrants and usurpers. </p>
+			<p>When creature is attuned to <b>Justice</b> in its ultimate form, sword has following properties: </p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact fueled by the will of it's master. <b>Justice</b> in ultimate form, degrades into its legendary form once user ends attunement with it. It cannot degrade by any other means. </p>
+				<p class="indent"><b><i>Blade of Light.</i></b> The sword's blade emits pure white bright light in a 15-foot radius and dim light for an additional 15 feet. And you gain a +3 bonus to attack and damage rolls made with this sword. </p>
+				<p class="indent"><b><i>Sentience.</i></b> When <b>Justice</b> enhances to ultimate form it gains sentience with an Intellect of 14, Wisdom of 18 and Charisma of 20. It can hear, has normal vision, and a truesight out to a range of 60 ft. </p>
+				<p class="indent">The weapon communicates telepathically with its wielder and can speak, read, and understands all languages that knows its user. </p>
+				<p class="indent"><b><i>Personality.</i></b> The entity within the sword believes that user proven himself to be worthy and trusts its wielder to not question his motives or actions, believing them to be always inline with path of benevolence. Sword knows or remembers only information that knows or remembers its current wielder and has the same perspective on any subject as its user, besides subjects of justice or judgement, entity is interested in perspectives of these subjects and thinks that there's ultimately no absolute justice, but people who are forthright and have great empathy for others are the ones who came the closest to have a clear, unclouded judgement. </p>
+				<p class="indent">Additionally, entity is always on guard. Sword will always warn you about magical effects that it can see with its truesight. Additionally, you can't be surprised, except when incapacitated by something other than nonmagical sleep. The weapon magically awakens you, if you are sleeping naturally when combat begins. </p>
+				<p class="indent"><b><i>Honest.</i></b> Sword despises deception and unfair play, because of this blade rejects poison and acid. Whenever you try to apply poison or acid to the blade, it's unaffected and dose of the liquid is wasted. </p>
+				<p class="indent"><b><i>Paragon of Benevolence.</i></b> You earned trust of this weapon, in return its blade shines with pure white energy that deals additional 3d6 radiant damage. </p>
+				<p class="indent"><b><i>Spells.</i></b> The sword has 10 charges and regains 1d6+4 expanded charges daily at dawn. You can use an action and expend 1 or more charges to cast one of the following spells (spellcasting ability +8, save DC18) from it: <i>compelled duel</i> (1 charge), <i>heroism</i> (1 charge) <i>zone of truth</i> (2 charges), <i>crusader's mantle</i> (3 charges), <i>beacon of hope</i> (4 charges), <i>aura of life</i> (4 charges), <i>circle of power</i> (5 charges) and <i>destructive wave</i> (5 charges). </p>
+				<p class="indent">Entity within the weapon can take upon itself to maintain concentration on sword's spells, but it channels this ability through it's user. You can concentrate on 2 spells while holding the sword, one of those spells must be from this weapon. If you forced to make Constitution saving throw to maintain concentration on both spells, the DC is 10 + level of both spells combined or half the damage you take, whichever number is higher, if you fail this saving throw, sword loses it's concentration and you must make another Constitution saving throw for your personal spell which follows normal concentration rules, otherwise you maintain concentration on both spells. </p>
+		</description>
+		<setters>
+			<set name="keywords">shortsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="weapon">Shortsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">3</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Justice</set>
+		</setters>
+	</element>
+
+	<!-- Conqueror -->
+	<element name="Conqueror (Primal)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_CONQUEROR_PRIMAL">
+		<description>
+			<p>Long ago this was a weapon of great warchief who created this blade by crudely melting bronze ore over his stone greatsword in a volcano, he called this new weapon <b>"Conqueror"</b> in hopes that it would help him defeat his enemies. <br />
+			This massive bronze greatsword can intimidate even those with great physical strength, while its poorly made blade makes it look like it's more of a bludgeoning weapon than a sword, but those who wield it know that with this seemingly useless sword they can become an unstoppable force to be reckoned with. </p>
+			<p>When user isn't attuned to <b>Conqueror</b>, it has following properties: </p>
+				<p class="indent"><b><i>Oversized.</i></b> This weapon requires its user to have Strength of 13 to wield it and gains +1 to damage rolls with it. </p>
+				<p class="indent"><b><i>Close to Unbreakable.</i></b> Sword's blade is so thick and strong, that even the most powerful weapons cannot destroy it. <b>Conqueror</b> has immunity to all types of damage, except for fire damage which deals double amount of damage. Once blade suffers 100 points of damage, it starts to endlessly melt and becomes unusable until it's magically repaired via <i>fabricate</i>, or if you use <i>wish</i> spell it will automatically return sword to its original form.</p>
+			<p>When creature attunes to <b>Conqueror</b> in its primal form, sword reactivates its additional properties: </p>
+				<p class="indent"><b><i>The Obstacle Destroyer.</i></b> Whenever you hit an object that isn't worn by a creature with this weapon, you deal additional 2d6 bludgeoning damage.</p>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can only grow in power. <b>Conqueror</b> in primal form, can be enhanced to its original form by stealing victory from jaws of defeat. Stories talk about those wielders who came up after falling in battle and because of that they would win the battle, they also talk about those who lose their control or temperate only to regain it once again in a critical moment, weapon will react to user's display of will power.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="weapon">Greatsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Conqueror</set>
+		</setters>
+	</element>
+
+	<element name="Conqueror (Original)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_CONQUEROR_ORIGINAL">
+		<description>
+			<p>Long ago this was a weapon of great warchief who created this blade by crudely melting bronze ore over his stone greatsword in a volcano, he called this new weapon <b>"Conqueror"</b> in hopes that it would help him defeat his enemies. <br />
+			This massive bronze greatsword can intimidate even those with great physical strength, while its poorly made blade makes it look like it's more of a bludgeoning weapon than a sword, but those who wield it know that with this seemingly useless sword they can become an unstoppable force to be reckoned with. </p>
+			<p>When user isn't attuned to <b>Conqueror</b>, it has following properties: </p>
+				<p class="indent"><b><i>Oversized and Magical.</i></b> This weapon had more than a century of being unused and it's oversized blade became charged with natural magical energy. It becomes magical and gains +1 enchantment bonus to attack and damage rolls.
+				This weapon no longer requires its user to have Strength of 13 to wield it, it seems as light as any other greatsword. </p>
+				<p class="indent"><b><i>Close to Unbreakable.</i></b> Sword's blade is so thick and strong, that even the most powerful weapons cannot destroy it. <b>Conqueror</b> has immunity to all types of damage, except for fire damage which deals normal amount of damage.</p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact has weakness to fire and heat. Once <b>Conqueror</b> in its original form suffers 150 points of damage, it starts to glow from intense heat and becomes unstable, if it isn't magically repaired with either <i>fabricate</i> or <i>wish</i> spell, next time it's hit with fire damage, magic of the blade disperses and sword degrades to its primal form.</p>
+			<p>When creature attunes to <b>Conqueror</b> in its original form, sword reactivates its additional properties: </p>
+				<p class="indent"><b><i>The Obstacle Destroyer.</i></b> Whenever you hit an object that isn't worn by a creature with this weapon, you deal additional 2d6 bludgeoning damage.</p>
+				<p class="indent" style="margin-bottom:0px"><b><i>Conqueror's Charge.</i></b> The sword has 4 charges and regains 1d4 expanded charges daily at dawn. You can expend 1 or more charges to use one of the following abilities: </p>
+				<ul style="margin-top:0px">
+						<li><strong><em>Tremor Blow.</em></strong> When attacking a creature you can choose to use this ability instead of your normal attack with this weapon by spending 1 charge. On hit, you strike target with blunt side of the blade that causes violent vibrations inside its body dealing normal amount of damage that is then transformed into a bludgeoning type, and if the target is Medium or smaller, pushing it 5 feet back. Target then must succeed on Constitution saving throw against DC12 or lose it's balance and fall prone.</li>
+						<li><strong><em>Backlash Block.</em></strong> When creature hits you with a weapon attack, you can use your Reaction and expend 2 charges to block that attack. When you do so, the damage you take from the attack is reduced by 2d6 and you deal this amount of damage back to the weapon you blocked.</li>
+						<li><strong><em>Strike of Resonance.</em></strong> When you hit a creature that is wearing metal armor or is partially or completely made of metal, you can expend 2 charges to use this ability. You deal normal amount of damage with your strike, that creates resonance within the metal which bends it and damages the creature, dealing additional 2d6 bludgeoning damage that can't be reduced by a resistance and target must make a Constitution saving throw against DC12. On a failed save, target receives 2d6 bludgeoning damage that can't be reduced by a resistance at the start of its turn. It repeats saving throw at the end of its turn, ending effect on a success.</li>
+					</ul>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can only grow in power. <b>Conqueror</b> in original form, can be enhanced to its superior form by conquering its weakness to fire. The same force that created it - intense heat of the volcano - can become the force of its destruction, and sword must overcome this weakness before achieving next step of its power. History has rare mentions of this step, sword can go through suffering massive amount of damage or defeating dangerous opponents with blade at its weakest, can cause transformation to take place.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="weapon">Greatsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Conqueror</set>
+		</setters>
+	</element>
+
+	<element name="Conqueror (Superior)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_CONQUEROR_SUPERIOR">
+		<description>
+			<p>Long ago this was a weapon of great warchief who created this blade by crudely melting bronze ore over his stone greatsword in a volcano, he called this new weapon <b>"Conqueror"</b> in hopes that it would help him defeat his enemies. <br />
+			This massive bronze greatsword can intimidate even those with great physical strength, while its poorly made blade makes it look like it's more of a bludgeoning weapon than a sword, but those who wield it know that with this seemingly useless sword they can become an unstoppable force to be reckoned with. </p>
+			<p>When user isn't attuned to <b>Conqueror</b>, it has following properties: </p>
+				<p class="indent"><b><i>Oversized and Magical.</i></b> This weapon had more than a century of being unused and it's oversized blade became charged with natural magical energy. You gain a +2 enchantment bonus to attack and damage rolls made with this sword.
+				This weapon no longer requires its user to have Strength of 13 to wield it, it seems as light as any other greatsword. </p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact slowly loses it's power without attunement. <b>Conqueror</b> in superior form, can degrade into original form after a 500 years since last attunement or degradation. It also can degrade to primal form by a <i>wish</i> spell, or <i>heat metal</i> as a 5th level spell but in that case caster must make a check with its spellcasting ability against DC20 to succeed.</p>
+			<p>When creature attunes to <b>Conqueror</b> in its superior form, sword reactivates its additional properties: </p>
+				<p class="indent"><b><i>The Obstacle Destroyer.</i></b> Whenever you hit an object that isn't worn by a creature with this weapon, you deal additional 4d6 bludgeoning damage and ignore damage threshold.</p>
+				<p class="indent" style="margin-bottom:0px"><b><i>Conqueror's Charge.</i></b> The sword has 6 charges and regains 1d4+2 expanded charges daily at dawn. You can expend 1 or more charges to use one of the following abilities: </p>
+				<ul style="margin-top:0px">
+						<li><strong><em>Tremor Blow.</em></strong> You can expend 1 charge and replace one of your weapon attacks with this ability. On hit, you strike target with blunt side of the blade that causes violent vibrations inside its body dealing normal amount of damage that is then transformed into a bludgeoning type, and if the target is Large or smaller, pushing it 10 feet back. Target then must succeed on Constitution saving throw against DC14 or lose it's balance and fall prone.</li>
+						<li><strong><em>Scorching Blade.</em></strong> You can use Bonus action and expend 1 charge to heat the blade glowing hot. You pierce the earth with your blade, small lava fissure opens and engulfs it, when you retract the sword its blade glows with bright yellow color that sheds bright light in a 5-foot radius and dim light for an additional 5 feet, and deals additional 2d6 fire damage. These effects end after 1 hour.</li>
+						<li><strong><em>Backlash Block.</em></strong> When creature hits you with a weapon attack, you can use your Reaction and expend 2 charges to block that attack. When you do so, the damage you take from the attack is reduced by 2d6 + your Strength modifier and you deal this amount of damage back to the weapon you blocked.</li>
+						<li><strong><em>Strike of Resonance.</em></strong> When you hit a creature that is wearing metal armor or is partially or completely made of metal, you can expend 2 charges to use this ability. You deal normal amount of damage with your strike, that creates resonance within the metal which bends it and damages the creature, dealing additional 2d6 bludgeoning damage that can't be reduced by a resistance and target must make a Constitution saving throw against DC14. On a failed save, target receives 3d6 bludgeoning damage that can't be reduced by a resistance at the start of its turn. It repeats saving throw at the end of its turn, ending effect on a success.</li>
+						<li><strong><em>Crushing Wave.</em></strong> When you hit a creature with <b>Conqueror</b> you can expend 3 charges to use this ability. You deal normal damage to the target of the attack, which creates devastating vibration in the air that tears and crushes it and those behind it, each creature in a 15-foot cube originating from you must make a Constitution saving throw against DC14. On a failed save, a creature takes 4d8 bludgeoning damage that can't be reduced by a resistance and has its speed halved until the end of your next turn. On a successful save, the creature takes half as much damage and its speed is unaffected.</li>
+						<li><strong><em>Seismic Strike.</em></strong> You use your action to strike the ground and expend 5 charges, creating a burst of seismic activity around you. Each creature you choose within 30 feet of you must succeed on a Dexterity saving throw against DC14 or take 4d6 bludgeoning damage and fall prone. A creature that succeeds on its saving throw takes half as much damage and doesn't fall prone.</li>
+					</ul>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can only grow in power. <b>Conqueror</b> in superior form, can be enhanced to its legendary form when its user earns respect of important person. Multiple times it's recorded how sword gained more power after its user was recognized  for its achievements by a lord, king or other authority figure, or when they received piece of land as a reward from this authority. But it's also rumored that even respect of commonfolk or lowlifes can sometimes be as much or even more rewarding as recognition of those with noble titles.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="weapon">Greatsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">2</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Conqueror</set>
+		</setters>
+	</element>
+
+	<element name="Conqueror (Legendary)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_CONQUEROR_LEGENDARY">
+		<description>
+			<p>Long ago this was a weapon of great warchief who created this blade by crudely melting bronze ore over his stone greatsword in a volcano, he called this new weapon <b>"Conqueror"</b> in hopes that it would help him defeat his enemies. <br />
+			This massive bronze greatsword can intimidate even those with great physical strength, while its poorly made blade makes it look like it's more of a bludgeoning weapon than a sword, but those who wield it know that with this seemingly useless sword they can become an unstoppable force to be reckoned with. </p>
+			<p>When user isn't attuned to <b>Conqueror</b>, it has following properties: </p>
+				<p class="indent"><b><i>Oversized and Magical.</i></b> This weapon had more than a century of being unused and it's oversized blade became charged with natural magical energy. You gain a +2 enchantment bonus to attack and damage rolls made with this sword.
+				This weapon no longer requires its user to have Strength of 13 to wield it, it seems as light as any other greatsword. </p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact slowly loses it's power without attunement. <b>Conqueror</b> in legendary form, can degrade into superior form after a 50 years since last attunement or degradation. It also can degrade to primal form by a <i>wish</i> spell, or <i>heat metal</i> as a 5th level spell but in that case caster must make a check with its spellcasting ability against DC20 to succeed.</p>
+			<p>When creature attunes to <b>Conqueror</b> in its legendary form, sword reactivates its additional properties: </p>
+				<p class="indent"><b><i>The Obstacle Destroyer.</i></b> Whenever you hit a structure or an object that isn't worn by a creature with this weapon, you deal additional 6d6 bludgeoning damage and ignore damage threshold.</p>
+				<p class="indent" style="margin-bottom:0px"><b><i>Conqueror's Charge.</i></b> The sword has 8 charges and regains 1d6+2 expanded charges daily at dawn. You can expend 1 or more charges to use one of the following abilities: </p>
+				<ul style="margin-top:0px">
+						<li><strong><em>Tremor Blow.</em></strong> You can expend 1 charge and replace one of your weapon attacks with this ability. On hit, you strike target with blunt side of the blade that causes violent vibrations inside its body dealing normal amount of damage that is then transformed into a bludgeoning type, and if the target is Huge or smaller, pushing it 15 feet back. Target then must succeed on Constitution saving throw against DC16 or lose it's balance and fall prone.</li>
+						<li><strong><em>Scorching Blade.</em></strong> You can use Bonus action and expend 1 charge to heat the blade glowing hot. You pierce the earth with your blade, small lava fissure opens and engulfs it, when you retract the sword its blade glows with bright yellow color that sheds bright light in a 5-foot radius and dim light for an additional 5 feet, and deals additional 3d6 fire damage. These effects end after 1 hour.</li>
+						<li><strong><em>Backlash Block.</em></strong> When creature hits you with a weapon attack, you can use your Reaction and expend 2 charges to block that attack. When you do so, the damage you take from the attack is reduced by 3d6 + your Strength modifier and you deal this amount of damage back to the weapon you blocked.</li>
+						<li><strong><em>Strike of Resonance.</em></strong> When you hit a creature that is wearing metal armor or is partially or completely made of metal, you can expend 2 charges to use this ability. You deal normal amount of damage with your strike, that creates resonance within the metal which bends it and damages the creature, dealing additional 2d6 bludgeoning damage that can't be reduced by a resistance and target must make a Constitution saving throw against DC16. On a failed save, target receives 4d6 bludgeoning damage that can't be reduced by a resistance at the start of its turn. It repeats saving throw at the end of its turn, ending effect on a success.</li>
+						<li><strong><em>Crushing Wave.</em></strong> When you hit a creature with <b>Conqueror</b> you can expend 3 charges to use this ability. You deal normal damage to the target of the attack, which creates devastating vibration in the air that tears and crushes it and those behind it, each creature in a 15-foot cube originating from you must make a Constitution saving throw against DC16. On a failed save, a creature takes 4d8 bludgeoning damage that can't be reduced by a resistance and has its speed halved until the end of your next turn. On a successful save, the creature takes half as much damage and its speed is unaffected.</li>
+						<li><strong><em>Magma Geyser.</em></strong> You use your action to pierce the ground with the blade and expend 3 charges, a fissure opens and fountain of magma and fire erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw against DC16. A creature takes 4d8 fire damage on a failed save, or half as much damage on a successful one. Additionally, the ground in that area becomes difficult terrain for 1 hour.</li>
+						<li><strong><em>Overwhelming Attack.</em></strong> You can expend 4 charges and replace one of your weapon attacks with this ability. On hit, you deal normal amount of damage with your strike, that creates powerful tremor within the target's body. Target then must succeed on Constitution saving throw against DC16 or be stunned until the end of your next turn.</li>
+						<li><strong><em>Seismic Strike.</em></strong> You use your action to strike the ground and expend 5 charges, creating a burst of seismic activity around you. Each creature you choose within 30 feet of you must succeed on a Dexterity saving throw against DC16 or take 4d6 bludgeoning damage and fall prone. A creature that succeeds on its saving throw takes half as much damage and doesn't fall prone.</li>
+					</ul>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can grow in power once again. <b>Conqueror</b> in legendary form, can be enhanced to its ultimate form when it's used to protect something that was previously gained from a major threat to its existence. Almost no mentions of this last step can be found in history, it's believed that those who are on the brink of defeat or those who stand against impossible odds, when they're ready to give their life to protect their land, people or family and friends are able to reveal sword's ultimate potential.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="weapon">Greatsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">2</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Conqueror</set>
+		</setters>
+	</element>
+
+	<element name="Conqueror (Ultimate)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_CONQUEROR_ULTIMATE">
+		<description>
+			<p>Long ago this was a weapon of great warchief who created this blade by crudely melting bronze ore over his stone greatsword in a volcano, he called this new weapon <b>"Conqueror"</b> in hopes that it would help him defeat his enemies. <br />
+			This massive bronze greatsword can intimidate even those with great physical strength, while its poorly made blade makes it look like it's more of a bludgeoning weapon than a sword, but those who wield it know that with this seemingly useless sword they can become an unstoppable force to be reckoned with. </p>
+			<p>When creature is attuned to <b>Conqueror</b> in its ultimate form, sword has following properties: </p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact fueled by the will of it's master. <b>Conqueror</b> in ultimate form, degrades into its legendary form once user ends attunement with it. It cannot degrade by any other means.</p>
+				<p class="indent"><b><i>Oversized and Magical.</i></b> Through this weapon flows concentrated magical energy. You gain a +3 enchantment bonus to attack and damage rolls made with this sword.
+				This weapon no longer requires its user to have Strength of 13 to wield it, it seems as light as any other greatsword. </p>
+				<p class="indent"><b><i>The Obstacle Destroyer.</i></b> Whenever you hit a structure or an object that isn't worn by a creature with this weapon, you deal additional 8d6 bludgeoning damage and ignore damage threshold.</p>
+				<p class="indent"><b><i>Conqueror's Stance.</i></b> Wielder of this weapon will go against the worst tide if it will accomplish his goals. User is immune to frightened condition, can't be knocked prone or be pushed away, and its speed can't be reduced by anything other than difficult terrain.</p>
+				<p class="indent" style="margin-bottom:0px"><b><i>Conqueror's Charge.</i></b> The sword has 10 charges and regains 1d8+2 expanded charges daily at dawn. You can expend 1 or more charges to use one of the following abilities: </p>
+				<ul style="margin-top:0px">
+					<li><strong><em>Tremor Blow.</em></strong> You can expend 1 charge and replace one of your weapon attacks with this ability. On hit, you strike target with blunt side of the blade that causes violent vibrations inside its body dealing normal amount of damage that is then transformed into a bludgeoning type, and pushing it 15 feet back. Target then must succeed on Constitution saving throw against DC18 or lose it's balance and fall prone.</li>
+					<li><strong><em>Scorching Blade.</em></strong> You can use Bonus action and expend 1 charge to heat the blade glowing hot. You pierce the earth with your blade, small lava fissure opens and engulfs it, when you retract the sword its blade glows with bright yellow color that sheds bright light in a 5-foot radius and dim light for an additional 5 feet, and deals additional 3d6 fire damage. These effects end after 1 hour.</li>
+					<li><strong><em>Backlash Block.</em></strong> When creature hits you with a weapon attack, you can use your Reaction and expend 2 charges to block that attack. When you do so, the damage you take from the attack is reduced by 3d6 + your Strength modifier and you deal this amount of damage back to the weapon you blocked.</li>
+					<li><strong><em>Strike of Resonance.</em></strong> When you hit a creature that is wearing metal armor or is partially or completely made of metal, you can expend 2 charges to use this ability. You deal normal amount of damage with your strike, that creates resonance within the metal which bends it and damages the creature, dealing additional 2d6 bludgeoning damage that can't be reduced by a resistance and target must make a Constitution saving throw against DC18. On a failed save, target receives 5d6 bludgeoning damage that can't be reduced by a resistance at the start of its turn. It repeats saving throw at the end of its turn, ending effect on a success.</li>
+					<li><strong><em>Crushing Wave.</em></strong> When you hit a creature with <b>Conqueror</b> you can expend 3 charges to use this ability. You deal normal damage to the target of the attack, which creates devastating vibration in the air that tears and crushes it and those behind it, each creature in a 15-foot cube originating from you must make a Constitution saving throw against DC18. On a failed save, a creature takes 4d8 bludgeoning damage that can't be reduced by a resistance and has its speed halved until the end of your next turn. On a successful save, the creature takes half as much damage and its speed is unaffected.</li>
+					<li><strong><em>Magma Geyser.</em></strong> You use your action to pierce the ground with the blade and expend 3 charges, a fissure opens and fountain of magma and fire erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw against DC18. A creature takes 5d8 fire damage on a failed save, or half as much damage on a successful one. Additionally, the ground in that area becomes difficult terrain for 1 hour.</li>
+					<li><strong><em>Overwhelming Attack.</em></strong> You can expend 4 charges and replace one of your weapon attacks with this ability. On hit, you deal normal amount of damage with your strike, that creates powerful tremor within the target's body. Target then must succeed on Constitution saving throw against DC18 or be stunned until the end of your next turn.</li>
+					<li><strong><em>Seismic Strike.</em></strong> You use your action to strike the ground and expend 5 charges, creating a burst of seismic activity around you. Each creature you choose within 30 feet of you must succeed on a Dexterity saving throw against DC18 or take 5d6 bludgeoning damage and fall prone. A creature that succeeds on its saving throw takes half as much damage and doesn't fall prone.</li>
+					<li><strong><em>Planet-Shaping Earth.</em></strong> You use your action to strike the ground and expend 8 charges, kinetic energy blasts through the earth and creates destructive earthquake. This ability allows you to use unique version of <i>earthquake</i> spell. When you cast spell in this way, its duration becomes 30 seconds (5 rounds) and doesn't require concentration but still forces DC18 Dexterity saving throw each round, the spell is centered on you, you're able to select concentrating creatures who must make DC18 Constitution saving throw. You're unaffected by this spell and difficult terrain that it creates. Effects of this ability can't be dispelled.</li>
+					<li><strong><em>Planet-Forging Fire.</em></strong> You use your action to strike the ground and expend 9 charges, to create burst of intense heat and blazing fire that engulfs everything in it's way. Each creature that you choose in a 100-foot-radius sphere centered on you must make a DC18 Dexterity saving throw. A creature takes 10d10 fire damage on a failed save, or half as much damage on a successful one.</li>
+				</ul>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="weapon">Greatsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">3</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Conqueror</set>
+		</setters>
+	</element>
+
+	<!-- Darkwood's Memory -->
+	<element name="Darkwood's Memory (Primal)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_DARKWOODS_MEMORY_PRIMAL">
+		<description>
+			<p>It is believed that this recurved bow was one of the first longbows in human history. Carvings that were carefully made on its wooden limbs represent hunters, woodland creatures and interactions between man and nature. It was made out of incredibly hard darkwood, that could withstand almost impossible force, but would still bend to apply immense force to a shot.<br />
+			Creation of this weapon is a mystery, but it's theorized that wood used in creation was living darkwood, potentially part of conscious creature that imbued weapon with its unique properties. </p>
+			<p>When user isn't attuned to <b>Darkwood's Memory</b>, it has following properties: </p>
+				<p class="indent"><b><i>Natural Resistance.</i></b> Longbow's darkwood has unique innate resistance to bludgeoning and slashing damage and it's immune to any kind of piercing damage. Additionally, it has 40 hit point maximum and regains 1d4 hit points each midnight.</p>
+			<p>When creature attunes to <b>Darkwood's Memory</b> in its primal form, bow reactivates its additional properties: </p>
+				<p class="indent"><b><i>Eyes of the Woods.</i></b> When targeting creature with this longbow, you can ignore any plant-based half or three quarters cover, including high grass, wines, bushes, trees and other naturally produces flora.</p>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can only grow in power. <b>Darkwood's Memory</b> in primal form, can be enhanced to its original form by killing worthy prey, preferably from a great distance. A worthy pray can be a greater enemy of the group, personal foe on your quest or even regular animal when you struggling to survive, this ritual summons primal hunter instincts, and allowing user to wield the bow as if it was natural part of them.</p>
+		</description>
+		<setters>
+			<set name="keywords">longbow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="weapon">Longbow</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Darkwood's Memory</set>
+		</setters>
+	</element>
+
+	<element name="Darkwood's Memory (Original)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_DARKWOODS_MEMORY_ORIGINAL">
+		<description>
+			<p>It is believed that this recurved bow was one of the first longbows in human history. Carvings that were carefully made on its wooden limbs represent hunters, woodland creatures and interactions between man and nature. It was made out of incredibly hard darkwood, that could withstand almost impossible force, but would still bend to apply immense force to a shot.<br />
+			Creation of this weapon is a mystery, but it's theorized that wood used in creation was living darkwood, potentially part of conscious creature that imbued weapon with its unique properties. </p>
+			<p>When user isn't attuned to <b>Darkwood's Memory</b>, it has following properties: </p>
+				<p class="indent"><b><i>Natural Resistance.</i></b> Longbow's darkwood has unique innate resistance to bludgeoning and slashing damage and it's immune to any kind of piercing damage. When weapon suffers more than 50 points of damage, it's unusable until next midday.</p>
+				<p class="indent"><b><i>Natural Magic.</i></b> This weapon had more than a century of being unused and became charged with natural magical energy. It becomes magical and gains +1 enchantment bonus to attack and damage rolls.</p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact can lose it's powers by magical means. <b>Darkwood's Memory</b> bow in its original form, can only degrade to primal form by a <i>wish</i> spell, or <i>blight</i> spell casted at 5th level but in that case caster must make a check with its spellcasting ability against DC20 to succeed.</p>
+			<p>When creature attunes to <b>Darkwood's Memory</b> in its original form, bow reactivates its additional properties: </p>
+				<p class="indent"><b><i>Eyes of the Wilds.</i></b> When targeting creature with this longbow, you can ignore any nature-based nonmagical half or three quarters cover, including high grass, wines, bushes, trees, other naturally produced flora, natural rock or cave formations and any beast type creatures. </p>
+				<p class="indent"><b><i>Longshot.</i></b> You can strike distant targets with increased accuracy. Once per turn, you can replace one of your attacks with a Darkwood's Memory ranged attack that doesn't impose disadvantage from distance when your target is within bow's long range.</p>
+				<p class="indent"><b><i>Nature's Knowledge.</i></b> By touching a tree with bow's limb, you instantly gain knowledge about events that transpired within the 1 mile area in the past day, gaining information about creatures that have passed through, weather, and other circumstances. Once you use this ability, you can't use it again until you finish a long rest.</p>
+				<p class="indent">Additionally, you're unaffected by nonmagical plant-based difficult terrain.</p>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can grow further in power. <b>Darkwood's Memory</b> in original form, can be enhanced to its superior form by gaining a deeper understanding of natural world around you. Throughout the time, historians and druids debate on what is and how can you obtain such understanding, while druids say that users need to acknowledge forces of nature and be in their favor, before unleashing weapon's potential, historians point out those wielders who can be called enemies of nature, those who encouraged changes to the natural world and its processes, yet still were able to achieve next form of this weapon.</p>
+		</description>
+		<setters>
+			<set name="keywords">longbow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="weapon">Longbow</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Darkwood's Memory</set>
+		</setters>
+	</element>
+
+	<element name="Darkwood's Memory (Superior)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_DARKWOODS_MEMORY_SUPERIOR">
+		<description>
+			<p>It is believed that this recurved bow was one of the first longbows in human history. Carvings that were carefully made on its wooden limbs represent hunters, woodland creatures and interactions between man and nature. It was made out of incredibly hard darkwood, that could withstand almost impossible force, but would still bend to apply immense force to a shot.<br />
+			Creation of this weapon is a mystery, but it's theorized that wood used in creation was living darkwood, potentially part of conscious creature that imbued weapon with its unique properties. </p>
+			<p>When user isn't attuned to <b>Darkwood's Memory</b>, it has following properties: </p>
+				<p class="indent"><b><i>Natural Resistance.</i></b> Longbow's darkwood has unique innate resistance to bludgeoning and slashing damage and it's immune to any kind of piercing damage. When weapon suffers more than 75 points of damage, it's unusable until next midday.</p>
+				<p class="indent"><b><i>Magic Weapon.</i></b> Magical energy flows from this weapon. You gain a +2 bonus to attack and damage rolls that you make with this weapon.</p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact slowly loses it's power without attunement. <b>Darkwood's Memory</b> in superior form, can degrade into original form after a 500 years since last attunement or degradation. It also can degrade to primal form by a <i>wish</i> spell, or <i>blight</i> spell casted at 5th level but in that case caster must make a check with its spellcasting ability against DC20 to succeed.</p>
+			<p>When creature attunes to <b>Darkwood's Memory</b> in its superior form, bow reactivates its additional properties: </p>
+				<p class="indent"><b><i>Eyes of the Land.</i></b> When targeting creature with this longbow, you can ignore any nature-based nonmagical and magical half or three quarters cover, including high grass, wines, bushes, trees, other naturally or magically produced flora, natural or unnatural rock or cave formations and any beast type creatures. </p>
+				<p class="indent"><b><i>Longshot.</i></b> You can strike distant targets with increased accuracy. Once per turn, you can replace one of your attacks with a Darkwood's Memory ranged attack that doesn't impose disadvantage from distance when your target is within bow's long range.</p>
+				<p class="indent"><b><i>Nature's Knowledge.</i></b> By touching a tree with bow's limb, you instantly gain knowledge about events that transpired within the 1 mile area in the past day, gaining information about creatures that have passed through, weather, and other circumstances. Once you use this ability, you can't use it again until you finish a long rest.</p>
+				<p class="indent">Additionally, you're unaffected by nonmagical or magical plant-based difficult terrain.</p>
+				<p class="indent"><b><i>Hunter's Watch.</i></b> When enemy creature that you can see moves in or within normal range of Darkwood's Memory, you can use your Reaction to make ranged attack with it against moving creature. You can use this ability a number of times equal to your Dexterity modifier (a minimum of once). You regain any expended uses when you finish a long rest.</p>
+				<p class="indent"><b><i>Land's Interference.</i></b> As an action, you can shoot a creature or the ground with unique magical arrow that designates area of nature's wrath. When hitting land, you create 30-foot-radius circle of thick high grass centered on the targeted point, this area counts as difficult terrain, this effect lasts for 1 minute. When hitting a creature, it receives additional 3d12 piercing damage and it's speed is reduced to 0 as grass or any other natural plants wrap around its legs, this effect lasts until the start of your next turn. Once you use this ability you need to finish short or long rest before using it again.</p>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can grow further in power. <b>Darkwood's Memory</b> in superior form, can be enhanced to its legendary form by mastering the weapon and its abilities. It's believed that only incredible show of marksmanship and masterful use of bow's abilities allows wielder to further enhance power of this weapon, but some skeptics say that this can be achieved by different methods, like defeating great and powerful foe or overcoming your weaknesses.</p>
+		</description>
+		<setters>
+			<set name="keywords">longbow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="weapon">Longbow</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">2</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Darkwood's Memory</set>
+		</setters>
+	</element>
+
+	<element name="Darkwood's Memory (Legendary)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_DARKWOODS_MEMORY_LEGENDARY">
+		<description>
+			<p>It is believed that this recurved bow was one of the first longbows in human history. Carvings that were carefully made on its wooden limbs represent hunters, woodland creatures and interactions between man and nature. It was made out of incredibly hard darkwood, that could withstand almost impossible force, but would still bend to apply immense force to a shot.<br />
+			Creation of this weapon is a mystery, but it's theorized that wood used in creation was living darkwood, potentially part of conscious creature that imbued weapon with its unique properties. </p>
+			<p>When user isn't attuned to <b>Darkwood's Memory</b>, it has following properties: </p>
+				<p class="indent"><b><i>Natural Resistance.</i></b> Longbow's darkwood has unique innate resistance to bludgeoning and slashing damage and it's immune to any kind of piercing damage. When weapon suffers more than 100 points of damage, it's unusable until next midday.</p>
+				<p class="indent"><b><i>Magic Weapon.</i></b> Magical energy flows from this weapon. You gain a +2 bonus to attack and damage rolls that you make with this weapon.</p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact slowly loses it's power without attunement. <b>Darkwood's Memory</b> in legendary form, can degrade into original form after a 50 years since last attunement or degradation. It also can degrade to primal form by a <i>wish</i> spell, or <i>blight</i> spell casted at 5th level but in that case caster must make a check with its spellcasting ability against DC20 to succeed.</p>
+			<p>When creature attunes to <b>Darkwood's Memory</b> in its legendary form, bow reactivates its additional properties: </p>
+				<p class="indent"><b><i>Eyes of the Nature.</i></b> When targeting creature with this longbow, you can ignore any nature-based nonmagical and magical half or three quarters cover, including high grass, wines, bushes, trees, other naturally or magically produced flora, natural or unnatural rock or cave formations and any beast type creatures. Additionally, negative weather conditions don't affect your attack or damage rolls, and you don't receive any penalties from fighting underwater when making ranged attacks with this weapon.</p>
+				<p class="indent"><b><i>Longshot.</i></b> You can strike distant targets with increased accuracy. Once per turn, you can replace one of your attacks with a Darkwood's Memory ranged attack that doesn't impose disadvantage from distance when your target is within bow's long range.</p>
+				<p class="indent"><b><i>Nature's Knowledge.</i></b> By touching a tree with bow's limb, you instantly gain knowledge about events that transpired within the 1 mile area in the past day, gaining information about creatures that have passed through, weather, and other circumstances. Once you use this ability, you can't use it again until you finish a long rest.</p>
+				<p class="indent">Additionally, you're unaffected by nonmagical or magical nature-based difficult terrain.</p>
+				<p class="indent"><b><i>Hunter's Watch.</i></b> When enemy creature that you can see moves in or within normal range of Darkwood's Memory, you can use your Reaction to make ranged attack with it against moving creature. You can use this ability a number of times equal to double your Dexterity modifier (a minimum of twice) per long rest.</p>
+				<p class="indent"><b><i>Land's Interference.</i></b> As an action, you can shoot a creature or the ground with unique magical arrow that designates area of nature's wrath. When hitting land, you create 30-foot-radius circle of thick high grass centered on the targeted point, this area counts as difficult terrain and each creature that enters the area of effect or starts its turn there suffers 4d6 slashing damage due to cuts from extremely sharp grass blades, this effect lasts for 1 minute. When hitting a creature, it receives additional 3d12 piercing damage and is restrained by large vines or any other natural plants that wrap around its body, this effect lasts until the start of your next turn. You can use this ability twice before finishing short or long rest.</p>
+				<p class="indent"><b><i>Conjure Leaf Tornado.</i></b> As an action you choose point within 120 feet of you, a 15-foot-radius, 50-foot-high cylindrical tornado of sharp as blades leaves appears at that point. When a creature enters the area of the effect for the first time on a turn or starts its turn there, it must make Dexterity saving throw against DC16 as leaves start slicing their skin apart. Creature takes 5d8 slashing damage on a failed save, or half as much damage on a successful one, this damage can't be reduced by a resistance as wounds are forced open by a powerful wind. On each of your turns after you used this ability, you can use a bonus action to move tornado up to 20 feet in any direction. This ability lasts for 1 minute or until you end it with a bonus action, and once you use this ability you can't use it again until you finish long rest.</p>
+				<p class="indent"><b><i>Enhancement.</i></b> You feel like this artifact can grow in power once again. <b>Darkwood's Memory</b> in legendary form, can be enhanced to its ultimate form by standing against impending doom. History mentions only few people, who were able to survive such challenge, but those who witnessed users that were able to achieve this weapon's greatest potential say it was when wielder was standing as firm as great darkwood trees against force akin to world-shaping storm, only then bow was able to protect its user and grant them ability to hold their ground against impossible odds.</p>
+		</description>
+		<setters>
+			<set name="keywords">longbow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="weapon">Longbow</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">2</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Darkwood's Memory</set>
+		</setters>
+	</element>
+
+	<element name="Darkwood's Memory (Ultimate)" type="Magic Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_MAGIC_ITEM_WEAPON_DARKWOODS_MEMORY_ULTIMATE">
+		<description>
+			<p>It is believed that this recurved bow was one of the first longbows in human history. Carvings that were carefully made on its wooden limbs represent hunters, woodland creatures and interactions between man and nature. It was made out of incredibly hard darkwood, that could withstand almost impossible force, but would still bend to apply immense force to a shot.<br />
+			Creation of this weapon is a mystery, but it's theorized that wood used in creation was living darkwood, potentially part of conscious creature that imbued weapon with its unique properties. </p>
+			<p>When user isn't attuned to <b>Darkwood's Memory</b>, it has following properties: </p>
+			<p>When creature attunes to <b>Darkwood's Memory</b> in its legendary form, bow reactivates its additional properties: </p>
+				<p class="indent"><b><i>Degradation.</i></b> This artifact fueled by the will of it's master. <b>Darkwood's Memory</b> in ultimate form, degrades into its legendary form once user ends attunement with it. It cannot degrade by any other means.</p>
+				<p class="indent"><b><i>Magical Armament.</i></b> Through this weapon flows concentrated magical energy. You gain a +3 enchantment bonus to attack and damage rolls made with this weapon. Additionally, magical energy protects <b>Darkwood's Memory</b> from all damage.</p>
+				<p class="indent"><b><i>Eyes of the World.</i></b> When targeting creature with this longbow, you can ignore any nature-based nonmagical and magical half or three quarters cover, including high grass, wines, bushes, trees, other naturally or magically produced flora, natural or unnatural rock or cave formations and any beast type creatures. Additionally, negative weather conditions don't affect your attack or damage rolls, you don't receive any penalties from fighting underwater when making ranged attacks with this weapon, and your attacks with this weapon are not affected by enemy-imposed disadvantage.</p>
+				<p class="indent"><b><i>Longshot.</i></b> You can strike distant targets with increased accuracy. Once per turn, you can replace one of your attacks with a Darkwood's Memory ranged attack that doesn't impose disadvantage from distance when your target is within bow's long range.</p>
+				<p class="indent"><b><i>Nature's Knowledge.</i></b> By touching a tree with bow's limb, you instantly gain knowledge about events that transpired within the 1 mile area in the past day, gaining information about creatures that have passed through, weather, and other circumstances. Once you use this ability, you can't use it again until you finish a long rest.</p>
+				<p class="indent">Additionally, you're unaffected by nonmagical or magical nature-based difficult terrain.</p>
+				<p class="indent"><b><i>Hunter's Watch.</i></b> When enemy creature that you can see moves in or within normal range of Darkwood's Memory, you can use your Reaction to make ranged attack with it against moving creature. You can use this ability a number of times equal to double your Dexterity modifier (a minimum of twice) per short rest.</p>
+				<p class="indent"><b><i>Land's Interference.</i></b> As an action, you can shoot a creature or the ground with unique magical arrow that designates area of nature's wrath. When hitting land, you create 30-foot-radius circle of thick high grass centered on the targeted point, this area counts as difficult terrain and each creature that enters the area of effect or starts its turn there suffers 5d6 slashing damage due to cuts from extremely sharp grass blades and high grass blocks line of sight, this effect lasts for 1 minute. When hitting a creature, it receives additional 3d12 piercing damage and as long as creature is Medium or smaller, it gets engulfed by a Shambling Mound that appears to fight on your side, otherwise Shambling Mound takes multiattack action against the target which gets restrained by large vines or any other natural plants wrap around its body, this effect lasts until the start of your next turn, summoned Shambling Mound uses your initiative and fights on your side until defeated or until the end of the combat. You can use this ability three times before finishing short or long rest.</p>
+				<p class="indent"><b><i>Conjure Leaf Tornado.</i></b> As an action you choose point within 120 feet of you, a 15-foot-radius, 50-foot-high cylindrical tornado of sharp as blades leaves appears at that point. When a creature enters the area of the effect for the first time on a turn or starts its turn there, it must make Dexterity saving throw against DC18 as leaves start slicing their skin apart. Creature takes 6d8 slashing damage on a failed save, or half as much damage on a successful one, this damage can't be reduced by a resistance as wounds are forced open by a powerful wind. On each of your turns after you used this ability, you can use a bonus action to move tornado up to 20 feet in any direction. This ability lasts for 1 minute or until you end it with a bonus action, and once you use this ability you can't use it again until you finish long rest.</p>
+				<p class="indent" style="margin-bottom:0px"><b><i>Darkwood's Armor.</i></b> As an action, you can allow Darkwood's Memory to expand and cover your body with bark-like armor made out of darkwood. While in this form you have following abilities: </p>
+				<ul style="margin-top:0px">
+					<li>Your Armor Class becomes 20, if it wasn't equal or higher already.</li>
+					<li>If your armor imposes disadvantage on Stealth checks or has Strength requirements, this form negates those.</li>
+					<li>Whenever creature attacks you or your armor, armor shoots poisoned thorns back at it, target receives 1d6 points of poison damage per each attack.</li>
+					<li>Armor recreates Darkwood's Memory within your grasp, allowing you to shoot and use its abilities like normal. Additionally, when using basic arrows that do piercing damage, you can instead choose to use magical arrows that do same amount in poison damage.</li>
+					<li>You gain resistance to fire damage and damage from non-magical attacks, you're immune to lightning and poison damage, you have advantage on saving throws against being charmed, frightened, can't be knocked prone, and magic can't put you to sleep.</li>
+				</ul>
+		</description>
+		<setters>
+			<set name="keywords">longbow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="weapon">Longbow</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">3</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Darkwood's Memory</set>
+		</setters>
+	</element>
+</elements>
