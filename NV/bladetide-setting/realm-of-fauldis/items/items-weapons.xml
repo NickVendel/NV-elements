@@ -4,7 +4,7 @@
 		<name>Weapons</name>
 		<description>Weapons used on the planet Fauldis.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -210,7 +210,7 @@
 		</setters>
 	</element>
 
-	<element name="Expanding Quarterstaff" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_WOTC_PHB_WEAPON_QUARTERSTAFF">
+	<element name="Expanding Quarterstaff" type="Weapon" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WEAPON_QUARTERSTAFF">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE,ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_COMPACT,ID_NV_FLDS_WEAPON_PROPERTY_SPECIAL_EXPANDING_STRIKE</supports>
 		<description>
 			<p></p>
