@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Cognitivist Subclass</name>
+		<description>Wizard who studies mind, thought and conscience.</description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.1">
+			<file name="wizard-subclass-cognitivist.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/wizard-subclass-cognitivist.xml" />
+		</update>
+	</info>
+
+	<element name="Cognitivist" type="Archetype" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>By reading great amount of books and scrolls, Wizard is able to absorb knowledge of past centuries. From scientific treatises, books of lore and fables to spellcasting theories and magic spells, you've read so much that you lost count, your mind is an archive of theoretical information. This way often linked to deep research in the field of consciousness, memories and learning, due to this people call these Wizards - Cognitive Arcanists, sometimes Cognitive Scientists - which usually shortened to Cognitivists.</p>
+			<p class="indent">Followers of this tradition gain power from their memories, that hold knowledge from hundreds if not thousands of books. Many spells are written in their tomes, and bestiaries hold facts that even the great scientists of their time may not know about.</p>
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_POLYGLOT" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MAGIC_WAND_MASTER" />
+			<div class="reference">
+				<div element="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MAGIC_WAND_MASTER_SPELL_WAND_MAKING" />
+			</div>
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MIND_ARCHIVE" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_SECRETS_OF_THE_BESTIARY" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_ONE_IN_A_MILLION" />
+		</description>
+		<sheet>
+			<description>Followers of this tradition gain power from their memories, that hold knowledge from hundreds if not thousands of books. Many spells are written in their tomes, and bestiaries hold facts that even the great scientists of their time may not know about.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_POLYGLOT" level="2"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MAGIC_WAND_MASTER" level="2"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MIND_ARCHIVE" level="6"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_SECRETS_OF_THE_BESTIARY" level="10"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_ONE_IN_A_MILLION" level="14"/>
+		</rules>
+	</element>
+	<element name="Polyglot" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_POLYGLOT">
+		<description>
+			<p style="margin-bottom:5px"><i>2nd-level Cognitivist feature</i></p>
+			<p style="margin-top:0px">You're able to recall relevant parts from books of different languages in order to gain great insight into languages you don't know. Whenever you hear or read language you don't know, you can use your Action to temporarily understand and speak it as if you were a typical speaker, after 1 hour you lose this insight. If you hear multiple languages, you must choose one to gain this insight with. After you use this feature once, you must finish long rest before using it again.</p>
+			<p class="indent">You gain additional usage of this feature at 6th and 10th level. At 14th level, you're able to use this ability number of times equal to your Intelligence modifier (minimum of 4).</p>
+		</description>
+		<sheet action="Action" usage="{{polyglot:usage}}/Long Rest">
+			<description>Whenever you hear or read language you don't know, you can gain temporarily understanding and ability to speak it as if you were a typical speaker, after 1 hour you lose this insight. If you hear multiple languages, you must choose one to gain this insight with.</description>
+		</sheet>
+		<rules>
+			<stat name="polyglot:usage" value="1" level="2" bonus="base" />
+			<stat name="polyglot:usage" value="2" level="6" bonus="base" />
+			<stat name="polyglot:usage" value="3" level="10" bonus="base" />
+			<stat name="polyglot:usage" value="4" level="14" bonus="base" />
+			<stat name="polyglot:usage" value="intelligence:modifier" level="14" bonus="base" />
+		</rules>
+	</element>
+	<element name="Magic Wand Master" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MAGIC_WAND_MASTER">
+		<description>
+			<p style="margin-bottom:5px"><i>2nd-level Cognitivist feature</i></p>
+			<p style="margin-top:0px">In each generation of Wizards you can find concepts and instructions to create and how to use magical wands, you adapt best parts for your own process. You gain following benefits:</p>
+			<ul>
+				<li><b>Wand Making:</b> Using simple wooden stick or bar of any metal, a gem and a scroll with special pentagram (to create one you need blank scroll and something to draw pentagram with), Wizard can take 1 hour to transform these material components into one magic wand.
+				When you make a wand using scroll with pentagram, Wizard creates <i>Magic Wand of Accuracy</i>, which allows your spell attacks to ignore half cover and three-quarters cover. Additionally, wand can receive enchantment bonus to spell attack and DC, which depends on the value of the gem that was used in the process of wand making (see table below).</li>
+				<table class="class-features">
+					<thead>
+						<tr><td class="col-5">Gem's value</td><td class="col-5">Enchantment bonus</td></tr>
+					</thead>
+					<tr><td>500 gp</td><td class="col-5">+1</td></tr>
+					<tr><td>5000 gp</td><td class="col-5">+2</td></tr>
+					<tr><td>50000 gp</td><td class="col-5">+3</td></tr>
+				</table>
+				<li><b>Smart Wand:</b> Anytime you can use your Reaction while holding a spell wand with enough charges, that wasn't used last round, to activate it. If you hold wand that doesn't contain a spell, you gain additional +1 bonus to attack, damage and DC of your next spell. You can use this ability number of times equal to your Intelligence modifier (minimum of 1) after each long rest.
+				Additionally, you can perform the somatic components of spells with any magic wand.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MAGIC_WAND_MASTER_WAND_MAKING" />
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MAGIC_WAND_MASTER_SMART_WAND" />
+		</rules>
+	</element>
+	<element name="Optional Rule: Spell Wand Making" type="Rule" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MAGIC_WAND_MASTER_SPELL_WAND_MAKING">
+		<description>
+			<p>DM can also allow you to create spell wands. By replacing pentagram scroll with spell scroll, you can use gem of appropriate value (see table below) to create one wand with that spell. Spell wand of basic level contains 10 charges, with each being able to produce a spell of its basic level. Spell wand regains one charge at dawn. You can use more valuable gem to receive enchanting bonus, each tier of which wand gains additional charge and allows to cast spell at a level higher, as if you're using spell slot of a higher level. If spell doesn't have ability to use spell slots of a higher level, then spell gains +1 bonus to attack, damage and DC for each tier over its basic level.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Gem's value</td><td class="col-5">Spell level</td></tr>
+				</thead>
+				<tr><td>500 gp</td><td class="col-5">Cantrip or 1st level</td></tr>
+				<tr><td>1000 gp</td><td class="col-5">2nd level</td></tr>
+				<tr><td>1500 gp</td><td class="col-5">3rd level</td></tr>
+				<tr><td>2000 gp</td><td class="col-5">4th level</td></tr>
+				<tr><td>2500 gp</td><td class="col-5">5th level</td></tr>
+				<tr><td>10000 gp</td><td class="col-5">6th level</td></tr>
+				<tr><td>20000 gp</td><td class="col-5">7th level</td></tr>
+				<tr><td>30000 gp</td><td class="col-5">8th level</td></tr>
+				<tr><td>100000 gp</td><td class="col-5">9th level</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Wand Making" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MAGIC_WAND_MASTER_WAND_MAKING">
+		<compendium display="false" />
+		<description>
+			<p>Using simple wooden stick or bar of any metal, a gem and a scroll with special pentagram (to create one you need blank scroll and something to draw pentagram with), Wizard can take 1 hour to transform these material components into one magic wand.</p>
+			<p class="indent">When you make a wand using scroll with pentagram, Wizard creates <i>Magic Wand of Accuracy</i>, which allows your spell attacks to ignore half cover and three-quarters cover. Additionally, wand can receive enchantment bonus to spell attack and DC, which depends on the value of the gem that was used in the process of wand making (see table below).</p>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Gem's value</td><td class="col-5">Enchantment bonus</td></tr>
+				</thead>
+				<tr><td>500 gp</td><td class="col-5">+1</td></tr>
+				<tr><td>5000 gp</td><td class="col-5">+2</td></tr>
+				<tr><td>50000 gp</td><td class="col-5">+3</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Using simple wooden stick or bar of any metal, a gem and a scroll with special pentagram (to create one you need blank scroll and something to draw pentagram with), you can take 1 hour to transform these material components into one Magic Wand of Accuracy. Additionally, wand can receive enchantment bonus to spell attack and DC, which depends on the value of the gem that was used in the process of wand making (see table in main description).</description>
+		</sheet>
+	</element>
+	<element name="Smart Wand" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MAGIC_WAND_MASTER_SMART_WAND">
+		<compendium display="false" />
+		<description>
+			<p>Anytime you can use your Reaction while holding a spell wand with enough charges, that wasn't used last round, to activate it. If you hold wand that doesn't contain a spell, you gain additional +1 bonus to attack, damage and DC of your next spell. You can use this ability number of times equal to your Intelligence modifier (minimum of 1) after each long rest.</p>
+			<p class="indent">Additionally, you can perform the somatic components of spells with any magic wand.</p>
+		</description>
+		<sheet action="Reaction" usage="{{smart wand:usage}}/Long Rest">
+			<description>When holding a spell wand with enough charges, that wasn't used last round, to activate it. If you hold wand that doesn't contain a spell, you gain additional +1 bonus to attack, damage and DC of your next spell. Additionally, you can perform the somatic components of spells with any magic wand.</description>
+		</sheet>
+		<rules>
+			<stat name="smart wand:usage" value="1" bonus="base"/>
+			<stat name="smart wand:usage" value="intelligence:modifier" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Mind Archive" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MIND_ARCHIVE">
+		<description>
+			<p style="margin-bottom:5px"><i>6th-level Cognitivist feature</i></p>
+			<p style="margin-top:0px">Your mind sorts every piece of information that it stores with ease, helping with access to needed memories and allowing you to imitate abilities of legendary historical figures.</p>
+			<p class="indent">After each long rest you can choose between any Metamagic or Expertise. When selecting Expertise, choose any skill that you're proficient with, your proficiency bonus is doubled for any checks you make with it. Alternatively, you can choose one Metamagic from ones described in Sorcerer class in <i>Player's Handbook</i> (on pages 101-102), you can use this Metamagic number of times equal to your Intelligence modifier. This effect lasts until you finish next long rest.</p>
+		</description>
+		<sheet>
+			<description>After each long rest you can choose between any Metamagic or Expertise. When selecting Expertise, choose any skill that you're proficient with, your proficiency bonus is doubled for any checks you make with it. Alternatively, you can choose one Metamagic and you can use it number of times equal to {{intelligence:modifier}}. This effect lasts until you finish next long rest.</description>
+		</sheet>
+	</element>
+	<element name="Secrets of the Bestiary" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_SECRETS_OF_THE_BESTIARY">
+		<description>
+			<p style="margin-bottom:5px"><i>10th-level Cognitivist feature</i></p>
+			<p style="margin-top:0px">You fill your bestiary with everything about monsters, races and other creatures that you know. With a bonus action, you shift your focus to search for info about enemies that stand before of you.</p>
+			<p class="indent">Choose number of enemies equal to your proficiency bonus, which you can see, you gain all knowledge from the stat-block based on a typical representatives of these creatures until you finish long rest. You can gain detailed information about a non-typical representative only if you already have enough knowledge about this enemy (DM decides).</p>
+			<p class="indent">Once you use this ability you need to finish long rest, before using it again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>Choose number of enemies equal to {{proficiency}}, which you can see, you gain all knowledge from the stat-block based on a typical representatives of these creatures until you finish long rest. You can gain detailed information about a non-typical representative only if you already have enough knowledge about this enemy (DM decides).</description>
+		</sheet>
+	</element>
+	<element name="One in a Million" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_ONE_IN_A_MILLION">
+		<description>
+			<p style="margin-bottom:5px"><i>14th-level Cognitivist feature</i></p>
+			<p style="margin-top:0px">Your research allows you to get around limits of your conscience and gain further control over your body. You gain following benefits:</p>
+			<ul>
+				<li><b>Limitless:</b> From this point on you mind enters a new phase of development, and you ignore natural limit of 20 Intelligence.</li>
+				<li><b>One Mind:</b> Full control over your conscience gives you advantage on saving throws against charming, dominating, and other mind-controlling effects, including those that take control over your body or paralyze you.</li>
+			</ul>
+		</description>
+		<sheet alt="One Mind">
+			<description>Full control over your conscience gives you advantage on saving throws against charming, dominating, and other mind-controlling effects, including those that take control over your body or paralyze you.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence:max" value="10" />
+		</rules>
+	</element>
+</elements>
