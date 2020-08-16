@@ -4,11 +4,12 @@
 		<name>Thanatologist Subclass</name>
 		<description>Wizard who studies healing practices, undead, and rituals of life and death.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="wizard-subclass-thanatologist.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/wizard-subclass-thanatologist.xml" />
 		</update>
 	</info>
 
+	<!-- version 1.1, thanks to Azzy on Discord for help with balancing and wording -->
 	<element name="Thanatologist" type="Archetype" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST">
 		<supports>Arcane Tradition</supports>
 		<description>
@@ -82,20 +83,15 @@
 	<element name="Vessel of Negative Energy" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_VESSEL_OF_NEGATIVE_ENERGY">
 		<description>
 			<p style="margin-bottom:5px"><i>2nd-level Thanatologist feature</i></p>
-			<p style="margin-top:0px">Your body starts to adapt and change under effect of negative energy of Necromancy school spells. You gain resistance to necrotic damage.</p>
-			<p class="indent">At 6th level, you're able to reject negative energy that is used both against you and undead you command. Any undead creatures that you raised gain resistance to necrotic damage.</p>
-			<p class="indent">At 10th level, your body fully adapts and allows manipulation of negative magic energy around you. You and any undead creatures that you raised gain immunity to necrotic damage and effects that reduce hit point maximum.</p>
-			<p class="indent">At 14th level, you achieve strikingly delicate balance between physical and negative energy. You and any undead creatures that you raised gain resistance to radiant damage.</p>
+			<p style="margin-top:0px">Your body starts to adapt and change under effect of negative energy of Necromancy school spells. You and any undead creatures that you raised gain resistance to necrotic damage. Additionally, undead creatures raised by you can receive healing from any healing spell.</p>
+			<p class="indent">At 14th level in this class, you achieve strikingly delicate balance between physical and negative energy. You and any undead creatures that you raised also gain resistance to radiant damage, and immunity to effects that reduce hit point maximum.</p>
 		</description>
 		<sheet>
-			<description>You gain resistance to necrotic damage.</description>
-			<description level="6">You and any undead creatures that you raised gain resistance to necrotic damage.</description>
-			<description level="10">You and any undead creatures that you raised gain immunity to necrotic damage and effects that reduce hit point maximum.</description>
-			<description level="14">You and any undead creatures that you raised gain resistance to radiant damage, immunity to necrotic damage and effects that reduce hit point maximum.</description>
+			<description>You and any undead creatures that you raised gain resistance to necrotic damage. Additionally, undead creatures raised by you can receive healing from any healing spell.</description>
+			<description level="14">You and any undead creatures that you raised gain resistance to necrotic and radiant damage, and immunity to effects that reduce hit point maximum. Additionally, undead creatures raised by you can receive healing from any healing spell.</description>
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" level="10" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" level="14" />
 		</rules>
 	</element>
@@ -103,14 +99,13 @@
 		<description>
 			<p style="margin-bottom:5px"><i>6th-level Thanatologist feature</i></p>
 			<p style="margin-top:0px">You gain ability to manipulate negative energy through touch. By grabbing enemy with one of the hands, Thanatologist able to drain physical energy from a creature and replace it with negative energy. As an action, you make melee spell attack against a creature.</p>
-			<p class="indent">If attack is successful, negative and physical energies transform into blueish-green flame that consumes your hand and target with it, dealing to it 2d8 + your Intelligence modifier of necrotic damage, target then must make successful Constitution saving throw against your DC, or become paralyzed until you stop draining energy from it or until it makes successful saving throw which it repeats at the end of its turns.</p>
-			<p class="indent">You can choose to continue draining energy from target every subsequent turn as a bonus action, if target is paralyzed. In that case, you're able to move with the target, as if you had it grappled (target magically levitates above the ground). At the start of its turn target receives additional damage.</p>
-			<p class="indent">If target's hit points drop to 0 or lower, flame turns his flesh to ash, leaving only skeletal remains behind and a soul under your control for 24 hours, allowing you to raise skeleton and control it. This effect is similar to spell <i>animate dead</i>, but this skeleton receives your proficiency bonus to its AC, saving throws, ability checks and attacks, while also gaining additional hit points equal to 4 times your level in Wizard class. After 24 hours since target's death, soul leaves the skeleton and it turns to ash.</p>
-			<p class="indent">When you first use this ability or if your hand was restored, you experience sharp pain, that doesn't damage you, while skin on that hand burns away. Skin that was burned in this way doesn't regenerate naturally, and can only be restored by <i>regenerate</i> and <i>wish</i> spells, or as a result of <i>reincarnate</i> spell. This skeletal hand has same abilities as your normal hand.</p>
-			<p class="indent">You must finish short or long rest, before using this ability again.</p>
+			<p class="indent">You don't lose use of this ability when you miss with this attack, but on hit, you start to drain physical energy of the target and replacing it with negative, dealing 2d8 + your Intelligence modifier of necrotic damage to it, target then must make a successful Constitution saving throw against your DC, or become paralyzed until you stop draining energy from it or until it makes successful saving throw which it repeats at the end of its turns.</p>
+			<p class="indent">If target is paralyzed, you can choose to continue draining energy from target every subsequent turn as a bonus action. In that case, you're able to move with the target, as if you had it grappled (target magically levitates above the ground). At the start of its turn target receives additional damage.</p>
+			<p class="indent">If target's hit points drop to 0 or lower, energy turns his flesh to ash, leaving only skeletal remains behind and a soul under your control for 24 hours, allowing you to raise skeleton and control it. This effect is similar to spell <i>animate dead</i>, but this skeleton receives your proficiency bonus to its AC, saving throws, ability checks and attacks, while also gaining additional hit points equal to 4 times your level in Wizard class. After 24 hours since target's death, soul leaves the skeleton and it turns to ash.</p>
+			<p class="indent">You must finish long rest, before using this ability again.</p>
 		</description>
-		<sheet action="Action" usage="1/Rest">
-			<description>You make melee spell attack against a creature, if attack is successful, flame consumes your hand and target with it, dealing to it 2d8 + {{intelligence:modifier}} of necrotic damage, target then must make successful Constitution saving throw against DC{{spellcasting:dc:int}}, or become paralyzed until you stop draining energy from it or until it makes successful saving throw which it repeats at the end of its turns. You can choose to continue draining energy from target every subsequent turn as a bonus action, if target is paralyzed. In that case, you're able to move with the target, as if you had it grappled (target magically levitates above the ground). At the start of its turn target receives additional damage. If target's hit points drop to 0 or lower, flame destroys it, leaving only skeletal remains behind and a soul under your control for 24 hours, allowing you to raise skeleton and control it. This effect is similar to spell <i>animate dead</i>, but this skeleton receives +{{proficiency}} bonus to its AC, saving throws, ability checks and attacks, while also gaining additional hit points equal to {{death grip:additional hp}}. After 24 hours since target's death, skeleton turns to ash.</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You make melee spell attack against a creature, you don't lose use of this ability when you miss with this attack, but on hit, you deal 2d8 + {{intelligence:modifier}} of necrotic damage to it, target then must make successful Constitution saving throw against DC{{spellcasting:dc:int}}, or become paralyzed until you stop draining energy from it or until it makes successful saving throw which it repeats at the end of its turns. If target is paralyzed, you can choose to continue draining energy from target every subsequent turn as a bonus action. In that case, you're able to move with the target, as if you had it grappled (target magically levitates above the ground). At the start of its turn target receives additional damage. If target's hit points drop to 0 or lower, energy destroys it, leaving only skeletal remains behind and a soul under your control for 24 hours, allowing you to raise skeleton and control it. This effect is similar to spell animate dead, but this skeleton receives +{{proficiency}} bonus to its AC, saving throws, ability checks and attacks, while also gaining additional hit points equal to {{death grip:additional hp}}. After 24 hours since target's death, skeleton turns to ash.</description>
 		</sheet>
 		<rules>
 			<stat name="death grip:additional hp" value="level:wizard" />
@@ -123,21 +118,24 @@
 		<description>
 			<p style="margin-bottom:5px"><i>10th-level Thanatologist feature</i></p>
 			<p style="margin-top:0px">You gain further knowledge on topics of energy manipulation and how it affects physical matter, which allows more effective healing, as well as causing more serious damage. Any spell of Necromancy school gains additional 1d8 of necrotic damage or, if it's a healing spell, points of healing.</p>
-			<p class="indent">Additionally, humanoids receive disadvantage on saving throws against your Necromancy spells and Thanatologist abilities.</p>
 		</description>
 		<sheet>
-			<description>Any spell of Necromancy school gains additional 1d8 of necrotic damage or, if it's a healing spell, points of healing. Additionally, humanoids receive disadvantage on saving throws against your Necromancy spells and Thanatologist abilities.</description>
+			<description>Any spell of Necromancy school gains additional 1d8 of necrotic damage or, if it's a healing spell, points of healing.</description>
 		</sheet>
 	</element>
 	<element name="Life Stream" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_LIFE_STREAM">
 		<description>
 			<p style="margin-bottom:5px"><i>14th-level Thanatologist feature</i></p>
 			<p style="margin-top:0px">You gain ability to move or transfer physical energy around you. If you or any other creature, excluding undead, elementals and constructs, in 60 feet range drops to 0 hit points or lower, you can use your reaction to transfer small amount of physical energy to them, allowing target to stay conscious with 1 hit point left.</p>
-			<p class="indent">You must finish short or long rest, before using this ability again.</p>
+			<p class="indent">You can use this ability number of times equal to your Intelligence modifier (minimum of 1) after each long rest.</p>
 		</description>
-		<sheet action="Reaction" usage="1/Rest">
+		<sheet action="Reaction" usage="{{life stream:usage}}/Rest">
 			<description>If you or any other creature, excluding undead, elementals and constructs, in 60 feet range drops to 0 hit points or lower, you can transfer small amount of physical energy to them, allowing target to stay conscious with 1 hit point left.</description>
 		</sheet>
+		<rules>
+			<stat name="life stream:usage" value="1" bonus="base" />
+			<stat name="life stream:usage" value="intelligence:modifier" bonus="base" />
+		</rules>
 	</element>
 
 	<!-- Spells for Thanatologist Wizard Subclass -->
