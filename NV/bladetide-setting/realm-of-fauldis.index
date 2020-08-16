@@ -4,16 +4,16 @@
 		<name>Realm of Fauldis Index</name>
 		<description>The content from the Realm of Fauldis.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="realm-of-fauldis.index" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis.index" />
 		</update>
 	</info>
 	<files>
-		<!-- Races, Sub-Races and Variations -->
-		<!-- <file name="human-subraces.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/human-subraces.xml" /> -->
-		<!-- <file name="tiefling-subraces.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/tiefling-subraces.xml" /> -->
-		<!-- <file name="race-undead.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/race-undead.xml" /> -->
+		<!-- Races, Sub-Races and Variants -->
+		<!-- <file name="subraces-human.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/human-subraces.xml" /> -->
+		<!-- <file name="subraces-tiefling.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/tiefling-subraces.xml" /> -->
 		<file name="race-hag.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/race-hag.xml" />
+		<!-- <file name="race-undead.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/races/race-undead.xml" /> -->
 
 		<!-- Classes -->
 		<!-- <file name="class-weapon-master.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/class-weapon-master.xml" /> -->
@@ -28,15 +28,21 @@
 				Second Feature - Eradicator can create glove with unique personalized circle, or you can carve it on your hand. Choose any circle from those that you already know (needs balancing, can't be just any spell at all) to include in your signature circle, while this circle is intact you don't expend spell slots or waste time to cast this circle. This circle also includes elements for other transmutation circles. You can use your signature circle as second transmutation circle if it's required to produce the effect (for example, "Blazing Beam" circle can be placed on a wall and you can use your hand to create beam between transmutation and your signature circles).
 			3. [Reconstruction] Shifter: First Feature - chooses new transmutation circles which grant Shifter the ability to change properties of already existent items by replacing one material component to another and making sure it perfectly fits (this is called shifting). For example, one of these circles (dev. name "Weight Mutation") can remove Heavy property from weapon.
 				Second to last/Last Feature "Matter Shifter" - now, every circle from this Archetype can also replace one property with the other, so "Weight Mutation" now can replace Heavy property of weapon to Light. -->
+		<file name="wizard-subclass-battlemage.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/wizard-subclass-battlemage.xml" />
 		<!-- <file name="wizard-subclass-chronomancer.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/wizard-subclass-chronomancer.xml" /> -->
-			<!-- Prestige Classes -->
-			<!-- <file name="prestige-class-titan-slayer.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/prestige-class-titan-slayer.xml" /> -->
-			<!-- <file name="prestige-class-shapechanger.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/prestige-class-shapechanger.xml" /> -->
-			<!-- <file name="prestige-class-vampire.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/prestige-class-vampire.xml" /> -->
-		<!-- /Classes -->
+		<file name="wizard-subclass-cognitivist.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/wizard-subclass-cognitivist.xml" />
+		<file name="wizard-subclass-thanatologist.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/wizard-subclass-thanatologist.xml" />
+
+		<!-- Prestige Classes -->
+		<!-- <file name="prestige-class-shapechanger.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/prestige-class-shapechanger.xml" /> -->
+		<!-- <file name="prestige-class-titan-slayer.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/prestige-class-titan-slayer.xml" /> -->
+		<!-- <file name="prestige-class-vampire.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/prestige-class-vampire.xml" /> -->
 
 		<!-- Backgrounds -->
 		<!-- <file name="-.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/backgrounds/-.xml" /> -->
+
+		<!-- Spells -->
+		<file name="spells.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/spells.xml" />
 
 		<!-- Items -->
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/items/items-weapons.xml" />

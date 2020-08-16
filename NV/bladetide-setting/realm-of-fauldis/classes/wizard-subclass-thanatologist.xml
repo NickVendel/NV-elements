@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Thanatologist Subclass</name>
+		<description>Wizard who studies healing practices, undead, and rituals of life and death.</description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.2">
+			<file name="wizard-subclass-thanatologist.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/wizard-subclass-thanatologist.xml" />
+		</update>
+	</info>
+
+	<!-- version 1.1, thanks to Azzy on Discord for help with balancing and wording -->
+	<element name="Thanatologist" type="Archetype" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>You spend huge amount of time not only on expanding your magical abilities, but also to study medical practices, analyze undead and research forbidden rituals linked with life and death. Some see you as a Necromancer, but not all Wizards who study Thanatology agree with that title. By combining your theoretical knowledge and magical abilities, not only you can animate fallen and long gone, but also heal living flesh. With this, you discover new techniques based on physical energy (also called "life energy") and magical negative energy, and your body adapts to harmful effects of Necromantic magic.</p>
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_KNOWLEDGE_OF_LIFE_AND_DEATH" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_VESSEL_OF_NEGATIVE_ENERGY" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_DEATH_GRIP" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_VITALISM_MASTER" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_LIFE_STREAM" />
+		</description>
+		<sheet>
+			<description>Some see you as a Necromancer, but not all Wizards who study Thanatology agree with that title. By combining your theoretical knowledge and magical abilities, not only you can animate fallen and long gone, but also heal living flesh.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_KNOWLEDGE_OF_LIFE_AND_DEATH" level="2"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_VESSEL_OF_NEGATIVE_ENERGY" level="2"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_DEATH_GRIP" level="6"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_VITALISM_MASTER" level="10"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_LIFE_STREAM" level="14"/>
+		</rules>
+	</element>
+
+	<element name="Knowledge of Life and Death" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_KNOWLEDGE_OF_LIFE_AND_DEATH">
+		<description>
+			<p>Your research into general biology, fatal ailments, undead, and methods of preventing death is bearing its first benefits. You gain the <i>spare the dying</i> cantrip and you can learn following spells, which count as Wizard spells of Necromancy school for you:</p>
+			<table>
+				<thead>
+					<tr><td>Wizard Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>bane, cure wounds, inflict wounds</em></td></tr>
+				<tr><td>3rd</td><td><em>aid, lesser restoration</em></td></tr>
+				<tr><td>5th</td><td><em>beacon of hope, revivify, speak with dead</em></td></tr>
+				<tr><td>7th</td><td><em>death ward</em></td></tr>
+				<tr><td>9th</td><td><em>contagion, greater restoration, mass cure wounds, raise dead, reincarnate</em></td></tr>
+				<tr><td>11th</td><td><em>harm, heal</em></td></tr>
+				<tr><td>13th</td><td><em>regenerate, resurrection</em></td></tr>
+				<tr><td>17th</td><td><em>mass heal, true resurrection</em></td></tr>
+			</table>
+			<p class="indent">You also gain proficiency in Medicine skill, if you already proficient with it, you double your proficiency bonus with it. Additionally, when you make a Medicine check, you can use your Intelligence modifier in place of your Wisdom modifier for it.</p>
+		</description>
+		<sheet>
+			<description>When you make a Medicine check, you can use your Intelligence modifier in place of your Wisdom modifier for it.</description>
+		</sheet>
+		<spellcasting name="Wizard" extend="true">
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_BANE</extend>
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_CURE_WOUNDS</extend>
+			<extend>ID_PHB_SPELL_INFLICT_WOUNDS</extend>
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_AID</extend>
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_LESSER_RESTORATION</extend>
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_BEACON_OF_HOPE</extend>
+			<extend>ID_PHB_SPELL_REVIVIFY</extend>
+			<extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_DEATH_WARD</extend>
+			<extend>ID_PHB_SPELL_CONTAGION</extend>
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_GREATER_RESTORATION</extend>
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_MASS_CURE_WOUNDS</extend>
+			<extend>ID_PHB_SPELL_RAISE_DEAD</extend>
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_REINCARNATE</extend>
+			<extend>ID_PHB_SPELL_HARM</extend>
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_HEAL</extend>
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_REGENERATE</extend>
+			<extend>ID_PHB_SPELL_RESURRECTION</extend>
+			<extend>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_MASS_HEAL</extend>
+			<extend>ID_PHB_SPELL_TRUE_RESURRECTION</extend>
+		</spellcasting>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" spellcasting="Wizard"/>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_MEDICINE" />
+		</rules>
+	</element>
+	<element name="Vessel of Negative Energy" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_VESSEL_OF_NEGATIVE_ENERGY">
+		<description>
+			<p style="margin-bottom:5px"><i>2nd-level Thanatologist feature</i></p>
+			<p style="margin-top:0px">Your body starts to adapt and change under effect of negative energy of Necromancy school spells. You and any undead creatures that you raised gain resistance to necrotic damage. Additionally, undead creatures raised by you can receive healing from any healing spell.</p>
+			<p class="indent">At 14th level in this class, you achieve strikingly delicate balance between physical and negative energy. You and any undead creatures that you raised also gain resistance to radiant damage, and immunity to effects that reduce hit point maximum.</p>
+		</description>
+		<sheet>
+			<description>You and any undead creatures that you raised gain resistance to necrotic damage. Additionally, undead creatures raised by you can receive healing from any healing spell.</description>
+			<description level="14">You and any undead creatures that you raised gain resistance to necrotic and radiant damage, and immunity to effects that reduce hit point maximum. Additionally, undead creatures raised by you can receive healing from any healing spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" level="14" />
+		</rules>
+	</element>
+	<element name="Death Grip" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_DEATH_GRIP">
+		<description>
+			<p style="margin-bottom:5px"><i>6th-level Thanatologist feature</i></p>
+			<p style="margin-top:0px">You gain ability to manipulate negative energy through touch. By grabbing enemy with one of the hands, Thanatologist able to drain physical energy from a creature and replace it with negative energy. As an action, you make melee spell attack against a creature.</p>
+			<p class="indent">You don't lose use of this ability when you miss with this attack, but on hit, you start to drain physical energy of the target and replacing it with negative, dealing 2d8 + your Intelligence modifier of necrotic damage to it, target then must make a successful Constitution saving throw against your DC, or become paralyzed until you stop draining energy from it or until it makes successful saving throw which it repeats at the end of its turns.</p>
+			<p class="indent">If target is paralyzed, you can choose to continue draining energy from target every subsequent turn as a bonus action. In that case, you're able to move with the target, as if you had it grappled (target magically levitates above the ground). At the start of its turn target receives additional damage.</p>
+			<p class="indent">If target's hit points drop to 0 or lower, energy turns his flesh to ash, leaving only skeletal remains behind and a soul under your control for 24 hours, allowing you to raise skeleton and control it. This effect is similar to spell <i>animate dead</i>, but this skeleton receives your proficiency bonus to its AC, saving throws, ability checks and attacks, while also gaining additional hit points equal to 4 times your level in Wizard class. After 24 hours since target's death, soul leaves the skeleton and it turns to ash.</p>
+			<p class="indent">You must finish long rest, before using this ability again.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You make melee spell attack against a creature, you don't lose use of this ability when you miss with this attack, but on hit, you deal 2d8 + {{intelligence:modifier}} of necrotic damage to it, target then must make successful Constitution saving throw against DC{{spellcasting:dc:int}}, or become paralyzed until you stop draining energy from it or until it makes successful saving throw which it repeats at the end of its turns. If target is paralyzed, you can choose to continue draining energy from target every subsequent turn as a bonus action. In that case, you're able to move with the target, as if you had it grappled (target magically levitates above the ground). At the start of its turn target receives additional damage. If target's hit points drop to 0 or lower, energy destroys it, leaving only skeletal remains behind and a soul under your control for 24 hours, allowing you to raise skeleton and control it. This effect is similar to spell animate dead, but this skeleton receives +{{proficiency}} bonus to its AC, saving throws, ability checks and attacks, while also gaining additional hit points equal to {{death grip:additional hp}}. After 24 hours since target's death, skeleton turns to ash.</description>
+		</sheet>
+		<rules>
+			<stat name="death grip:additional hp" value="level:wizard" />
+			<stat name="death grip:additional hp" value="level:wizard" />
+			<stat name="death grip:additional hp" value="level:wizard" />
+			<stat name="death grip:additional hp" value="level:wizard" />
+		</rules>
+	</element>
+	<element name="Vitalism Master" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_VITALISM_MASTER">
+		<description>
+			<p style="margin-bottom:5px"><i>10th-level Thanatologist feature</i></p>
+			<p style="margin-top:0px">You gain further knowledge on topics of energy manipulation and how it affects physical matter, which allows more effective healing, as well as causing more serious damage. Any spell of Necromancy school gains additional 1d8 of necrotic damage or, if it's a healing spell, points of healing.</p>
+		</description>
+		<sheet>
+			<description>Any spell of Necromancy school gains additional 1d8 of necrotic damage or, if it's a healing spell, points of healing.</description>
+		</sheet>
+	</element>
+	<element name="Life Stream" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_LIFE_STREAM">
+		<description>
+			<p style="margin-bottom:5px"><i>14th-level Thanatologist feature</i></p>
+			<p style="margin-top:0px">You gain ability to move or transfer physical energy around you. If you or any other creature, excluding undead, elementals and constructs, in 60 feet range drops to 0 hit points or lower, you can use your reaction to transfer small amount of physical energy to them, allowing target to stay conscious with 1 hit point left.</p>
+			<p class="indent">You can use this ability number of times equal to your Intelligence modifier (minimum of 1) after each long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{life stream:usage}}/Rest">
+			<description>If you or any other creature, excluding undead, elementals and constructs, in 60 feet range drops to 0 hit points or lower, you can transfer small amount of physical energy to them, allowing target to stay conscious with 1 hit point left.</description>
+		</sheet>
+		<rules>
+			<stat name="life stream:usage" value="1" bonus="base" />
+			<stat name="life stream:usage" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<!-- Spells for Thanatologist Wizard Subclass -->
+	<element name="Bane" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_BANE">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of blood</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Cure Wounds" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_CURE_WOUNDS">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Aid" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_AID">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target’s hit point maximum and current hit points increase by 5 for the duration.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, a target’s hit points increase by an additional 5 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiny strip of white cloth</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Lesser Restoration" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_LESSER_RESTORATION">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Beacon of Hope" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_BEACON_OF_HOPE">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Death Ward" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_DEATH_WARD">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You touch a creature and grant it a measure of protection from death. The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends. If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spells ends.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Greater Restoration" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_GREATER_RESTORATION">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target’s exhaustion level by one, or end one of the following effects on the target:</p>
+		<ul>
+			<li>One effect that charmed or petrified the target</li>
+			<li>One curse, including the target’s attunement to a cursed magic item</li>
+			<li>Any reduction to one of the target’s ability scores</li>
+			<li>One effect reducing the target’s hit point maximum</li>
+		</ul>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">diamond dust worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Mass Cure Wounds" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_MASS_CURE_WOUNDS">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Reincarnate" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_REINCARNATE">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body. If the target’s soul isn’t free or willing to do so, the spell fails. The magic fashions a new body for the creature to inhabit, which likely causes the creature’s race to change. The DM rolls a d100 and consults the following table to determine what form the creature takes when restored to life, or the DM chooses a form.</p>
+		<table>
+				<thead>
+					<tr><td>d100</td><td>Race</td></tr>
+				</thead>
+				<tr><td>01-04</td><td>Dragonborn</td></tr>
+				<tr><td>05-13</td><td>Dwarf, hill</td></tr>
+				<tr><td>14-21</td><td>Dwarf, mountain</td></tr>
+				<tr><td>22-25</td><td>Elf, dark</td></tr>
+				<tr><td>26-34</td><td>Elf, high</td></tr>
+				<tr><td>35-42</td><td>Elf, wood</td></tr>
+				<tr><td>43-46</td><td>Gnome, forest</td></tr>
+				<tr><td>47-52</td><td>Gnome, rock</td></tr>
+				<tr><td>53-56</td><td>Half-elf</td></tr>
+				<tr><td>57-60</td><td>Half-orc</td></tr>
+				<tr><td>61-68</td><td>Halfling, lightfoot</td></tr>
+				<tr><td>69-76</td><td>Halfling, stout</td></tr>
+				<tr><td>77-96</td><td>Human</td></tr>
+				<tr><td>97-00</td><td>Tiefling</td></tr>
+			</table>
+		 <p>The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 hour</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">rare oils and unguents worth at least 1,000 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Heal" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_HEAL">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. The spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on constructs or undead.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Regenerate" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_REGENERATE">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points. For the duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute). The target’s severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">7</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 minute</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a prayer wheel and holy water</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Mass Heal" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST_SPELL_MASS_HEAL">
+		<requirements>ID_NV_FLDS_WIZARD_SUBCLASS_THANATOLOGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them blinded or deafened. This spell has no effect on undead or constructs.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">9</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>

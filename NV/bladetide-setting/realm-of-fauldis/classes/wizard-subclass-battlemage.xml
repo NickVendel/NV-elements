@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Battlemage Subclass</name>
+		<description>Wizard who isn't scared to fight in melee.</description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.2">
+			<file name="wizard-subclass-battlemage.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/wizard-subclass-battlemage.xml" />
+		</update>
+	</info>
+
+	<!-- version 1.1, thanks to Azzy on Discord for help with balancing and wording -->
+	<element name="Battlemage" type="Archetype" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Battlemages, sometimes called Spellswords, use their magical abilities together with fighting skills and knowledge of war to overcome obstacles on their way.</p>
+			<p class="indent">Every wizard has a talent of using their knowledge and experience to achieve their goals, and you are no exception, but while many wizard focus on one school of magic or try to discover its hidden secrets, you use your time and energy to study martial arts, tactics and abilities which made warriors famous throughout the land.</p>
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_BATTLE_TRAINING" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGE_WEAPON" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_WEAPON_CHARGING" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_EXTRA_ATTACK" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MIGHT_AND_MAGIC" />
+			<div element="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_ARCANE_VESSEL" />
+		</description>
+		<sheet>
+			<description>Battlemages, sometimes called Spellswords, use their magical abilities together with fighting skills and knowledge of war to overcome obstacles on their way.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_BATTLE_TRAINING" level="2"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGE_WEAPON" level="2"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_WEAPON_CHARGING" level="2"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_EXTRA_ATTACK" level="6"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MIGHT_AND_MAGIC" level="10"/>
+			<grant type="Archetype Feature" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_ARCANE_VESSEL" level="14"/>
+		</rules>
+	</element>
+	<element name="Battle Training" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_BATTLE_TRAINING">
+		<description>
+			<p style="margin-bottom:5px"><i>2nd-level Battlemage feature</i></p>
+			<p style="margin-top:0px">Starting from when you receive this tradition at 2nd level, you decide to start combat training, that all warriors of your lands go through. Whether you go trough training with greatest masters of martial arts or sparring fights with your comrades, each day you feel more confident with a weapon in your hand. You receive proficiency with simple weapons, shortswords and light armor.</p>
+			<p class="indent">Additionally, at 10th level in this class, you improve your fighting skills further and gain proficiency with martial weapons, medium armor and shields.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" level="10" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" level="10" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" level="10" />
+		</rules>
+	</element>
+	<element name="Mage Weapon" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGE_WEAPON">
+		<description>
+			<p style="margin-bottom:5px"><i>2nd-level Battlemage feature</i></p>
+			<p style="margin-top:0px">You can form a bond with your weapon, and can summon it or dismiss it to safe location. Using special ritual you can create unique bond between yourself and one weapon with which you're proficient and that lacks two-handed property, this bond counts as attunement. You perform the ritual over the course of 1 hour, which can be done during a rest. The weapon must be within your reach throughout the ritual. Once bond is formed it becomes your favored weapon, using your bonus action you can summon favored weapon into your hand. Your attacks and damage with favored weapon can use Intelligence modifier instead of Strength or Dexterity.</p>
+			<p class="indent">The same way you bind weapon to yourself, you can bind it to a place where it'll be stored. You can perform same ritual to create a storage place for your weapon, it will return in the location of ritual whenever you dismiss it with a bonus action. If your weapon is destroyed while in the storage or gets caught inside an anti-magic field, you receive mental signal and can break your bond with it at any distance on your next rest, if you wish to do so.</p>
+			<p class="indent">If you wish to change your favored weapon, you can perform ritual to create bond with a different weapon. You also lose bond with your favored weapon if you die or decide to voluntary end the attunement to your favored weapon. Weapon loses any benefits from Battlemage features when bond is lost or ended.</p>
+			<p class="indent">At 6th level in this class, you fill favored weapon with your energy, giving it magical properties or enhancing them. Your favored weapon becomes magical, if it isn't already, and receives an additional enchantment bonus +1 to attack and damage.</p>
+		</description>
+		<sheet>
+			<description>Using special ritual you can create unique bond between yourself and one weapon with which you're proficient and that lacks two-handed property, this bond counts as attunement. Weapon becomes your favored weapon and you can summon it into your hand with bonus action.
+			Your attacks and damage with favored weapon can use Intelligence modifier instead of Strength or Dexterity.
+			The same way you bind weapon to yourself, you can bind it to a place where it'll be stored. You can perform same ritual to create a storage place for your weapon, it will return in the location of ritual whenever you dismiss it with a bonus action.
+			If you wish to change your favored weapon, you can perform ritual to create bond with a different weapon. You also lose bond with your favored weapon if you die or decide to voluntary end the attunement to your favored weapon. Weapon loses any benefits from Battlemage features when bond is lost or ended.</description>
+			<description level="6">Using special ritual you can create unique bond between yourself and one weapon with which you're proficient and that lacks two-handed property, this bond counts as attunement. Weapon becomes your favored weapon and you can summon it into your hand with bonus action.
+			Your favored weapon is magical, you gain +1 to attacks and damage with it, and you can use Intelligence modifier instead of Strength or Dexterity.
+			The same way you bind weapon to yourself, you can bind it to a place where it'll be stored. You can perform same ritual to create a storage place for your weapon, it will return in the location of ritual whenever you dismiss it with a bonus action.
+			If you wish to change your favored weapon, you can perform ritual to create bond with a different weapon. You also lose bond with your favored weapon if you die or decide to voluntary end the attunement to your favored weapon. Weapon loses any benefits from Battlemage features when bond is lost or ended.</description>
+		</sheet>
+	</element>
+	<element name="Weapon Charging" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_WEAPON_CHARGING">
+		<description>
+			<p style="margin-bottom:5px"><i>2nd-level Battlemage feature</i></p>
+			<p style="margin-top:0px">You gain ability to charge your weapon with powerful short burst of school-based magic, when you make an attack.</p>
+			<p class="indent"><b><i>Magical Charges.</i></b> Choose 2 types of magical charges from "Magical Charges" list below. Charges are special magical attacks, that you use while making an attack with your favored weapon, but before results of the attack are known, effect of which depends on it's school of magic. You can use only one magical charge per attack, and after this attack charge fades from a weapon.</p>
+			<!-- check if ability to use multiple charges per turn is too much -->
+			<p class="indent">You receive additional 2 charges at 6th, 10th, and 14th level. Each time you learn new magical charges, you can also replace one magical charge you know with a different one. After you gain 14th level, you can change magical charges after each long rest.</p>
+			<p class="indent"><b><i>Charge Points.</i></b> You gain charge points equal to double your Intelligence modifier (minimum of 2). Each time you use magical charge you must expend charge point to power chosen attack. You regain all lost charge points at the end of long rest.</p>
+		</description>
+		<sheet action="Attack" usage="{{weapon charging:charge points}}/Long Rest">
+			<description>Charges are special attacks, that you use while making an attack, but before results of the attack are known, effect of which depends on it's school of magic. You can use only one magical charge per attack and only with your favored weapon.</description>
+		</sheet>
+		<rules>
+			<stat name="weapon charging:charge points:int" value="intelligence:modifier" />
+			<stat name="weapon charging:charge points:int" value="intelligence:modifier" />
+			<stat name="weapon charging:charge points" value="weapon charging:charge points:int" bonus="base" />
+			<stat name="weapon charging:charge points" value="2" bonus="base" />
+			<select type="Archetype Feature" name="Weapon Charging (Level 2)" supports="Magical Charges" number="2" />
+			<select type="Archetype Feature" name="Weapon Charging (Level 6)" supports="Magical Charges" number="2" level="6" />
+			<select type="Archetype Feature" name="Weapon Charging (Level 10)" supports="Magical Charges" number="2" level="10" />
+			<select type="Archetype Feature" name="Weapon Charging (Level 14)" supports="Magical Charges" number="2" level="14" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_EXTRA_ATTACK">
+		<description>
+			<p style="margin-bottom:5px"><i>6th-level Battlemage feature</i></p>
+			<p style="margin-top:0px">Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Might and Magic" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MIGHT_AND_MAGIC">
+		<description>
+			<p style="margin-bottom:5px"><i>10th-level Battlemage feature</i></p>
+			<p style="margin-top:0px">You find a way to combine your magic and favored weapon attacks, using unique fighting style. When you use your action to cast a cantrip, you can make one weapon attack with your favored weapon as a bonus action.</p>
+			<p class="indent">At 14th level in this class, you improve your style, allowing you to focus on more powerful spells. When you use your action to cast a spell of 1st level or higher, you can make one weapon attack with your favored weapon as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>When you use your action to cast a cantrip, you can make one weapon attack with your favored weapon as a bonus action.</description>
+			<description level="14">When you use your action to cast a spell of 1st level or higher, you can make one weapon attack with your favored weapon as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Vessel" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_ARCANE_VESSEL">
+		<description>
+			<p style="margin-bottom:5px"><i>14th-level Battlemage feature</i></p>
+			<p style="margin-top:0px">Your body starts to absorb natural energy that surrounds you, fueling your magical powers. When you roll initiative and have no charge points, you regain 2 charge points.</p>
+		</description>
+		<sheet>
+			<description>When you roll initiative and have no charge points, you regain 2 charge points.</description>
+		</sheet>
+	</element>
+
+	<!-- Magical Charges -->
+	<element name="Bewildering Force (Enchantment)" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGICAL_CHARGE_BEWILDERING_FORCE">
+		<supports>Magical Charges</supports>
+		<description>
+			<p>If attack is successful, you deal normal amount of damage and target's vision becomes obscured and focused on you. Until the start of your next turn, target has disadvantage on any attack roll that isn’t against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack or a spell.</p>
+		</description>
+		<sheet alt="Bewildering Force">
+			<description>If attack is successful, you deal normal amount of damage and target's vision becomes obscured and focused on you. Until the start of your next turn, target has disadvantage on any attack roll that isn’t against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack or a spell.</description>
+		</sheet>
+	</element>
+	<element name="Blade of Dichotomy (Necromancy)" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGICAL_CHARGE_BLADE_OF_DICHOTOMY">
+		<supports>Magical Charges</supports>
+		<description>
+			<p>You charge your weapon with energy of life and death. Before the attack, select one effect from following two: healing or damaging. When you select healing, and targeted creature is willing, you automatically make a successful attack against it and target gains temporary hit points equal to your weapon damage + additional 1d6 points. If you select healing and creature isn't willing, you must make a successful attack for the effect to take place. If you select damaging, on hit, you deal additional 1d6 damage and all damage from this attack is transformed into necrotic, if target is undead and has resistance to necrotic damage, this attack ignores that resistance.</p>
+			<p class="indent">Additional damage or temporary hit points of this magical charge increase by 1d6 when you reach 6th (2d6) and 14th level in this class (3d6).</p>
+			<!-- play-test, if too powerful reduce damage to 2d6 at 10th level -->
+		</description>
+		<sheet alt="Blade of Dichotomy">
+			<description>Before the attack, select one effect from following two: healing or damaging. When you select healing, and targeted creature is willing, you automatically make a successful attack against it and target gains temporary hit points equal to your weapon damage + additional 1d6 points. If you select healing and creature isn't willing, you must make a successful attack for the effect to take place. If you select damaging, on hit, you deal additional 1d6 damage and all damage from this attack is transformed into necrotic, if target is undead and has resistance to necrotic damage, this attack ignores that resistance.</description>
+			<description level="6">Before the attack, select one effect from following two: healing or damaging. When you select healing, and targeted creature is willing, you automatically make a successful attack against it and target gains temporary hit points equal to your weapon damage + additional 2d6 points. If you select healing and creature isn't willing, you must make a successful attack for the effect to take place. If you select damaging, on hit, you deal additional 2d6 damage and all damage from this attack is transformed into necrotic, if target is undead and has resistance to necrotic damage, this attack ignores that resistance. </description>
+			<description level="14">Before the attack, select one effect from following two: healing or damaging. When you select healing, and targeted creature is willing, you automatically make a successful attack against it and target gains temporary hit points equal to your weapon damage + additional 3d6 points. If you select healing and creature isn't willing, you must make a successful attack for the effect to take place. If you select damaging, on hit, you deal additional 4d6 damage and all damage from this attack is transformed into necrotic, if target is undead and has resistance to necrotic damage, this attack ignores that resistance.</description>
+		</sheet>
+	</element>
+	<element name="Elemental Burst (Evocation)" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGICAL_CHARGE_ELEMENTAL_BURST">
+		<supports>Magical Charges</supports>
+		<description>
+			<p>You charge your weapon with elemental energy. If attack is successful, choose one of the following damage types: acid, cold, fire, lightning or thunder. You deal additional 1d6 damage and all damage from this attack is transformed into chosen damage type.</p>
+			<p class="indent">Additional damage of this magical charge increase by 1d6 when you reach 6th (2d6) and 14th level in this class (3d6).</p>
+			<!-- play-test, if too powerful reduce damage to 2d6 at 10th level -->
+		</description>
+		<sheet alt="Elemental Burst">
+			<description>If attack is successful, choose one of the following damage types: acid, cold, fire, lightning or thunder. You deal additional 1d6 damage and all damage from this attack is transformed into chosen damage type.</description>
+			<description level="6">If attack is successful, choose one of the following damage types: acid, cold, fire, lightning or thunder. You deal additional 2d6 damage and all damage from this attack is transformed into chosen damage type.</description>
+			<description level="14">If attack is successful, choose one of the following damage types: acid, cold, fire, lightning or thunder. You deal additional 3d6 damage and all damage from this attack is transformed into chosen damage type.</description>
+		</sheet>
+	</element>
+	<element name="Essence Shield (Abjuration)" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGICAL_CHARGE_ESSENCE_SHIELD">
+		<supports>Magical Charges</supports>
+		<description>
+			<p>If attack is successful, you slice your enemy open dealing normal amount of damage, draw it's essence (blood of humanoid, energy of magical creatures, etc.) from the wound and, after hardening it, you surround yourself with it to protect you from the damage. Essence Shield has hit points equal to 1d4 + your Intelligence modifier and lasts until the end of your long rest. Whenever you take damage you can decide how much of it takes the shield. If this damage reduces shield to 0 hit points, it disappears and you take any remaining damage. If you hit creature with this magical charge while already having essence shield, shield regains number of hit points equal to 1d4 + your Intelligence modifier. Shield cannot be healed any other way.</p>
+			<p class="indent">Hit points of essence shield and hit points it regains increase by 1d4 when you reach 6th (2d4), 10th (3d4), and 14th level in this class (4d4).</p>
+			<!-- play-test, if too weak increase hit die by 2d6 at 6th level, 3d8 at 10th and 4d10 at 14th level and play-test again -->
+		</description>
+		<sheet alt="Essence Shield">
+			<description>If attack is successful, you slice your enemy open dealing normal amount of damage, and you surround yourself with it to protect you from the damage. Essence Shield has hit points equal to 1d4 + {{intelligence:modifier}} and lasts until the end of your long rest. Whenever you take damage you can decide how much of it takes the shield. If this damage reduces shield to 0 hit points, it disappears and you take any remaining damage. If you hit creature with this magical charge while already having essence shield, shield regains number of hit points equal to 1d4 + {{intelligence:modifier}}.</description>
+			<description level="6">If attack is successful, you slice your enemy open dealing normal amount of damage, and you surround yourself with it to protect you from the damage. Essence Shield has hit points equal to 2d4 + {{intelligence:modifier}} and lasts until the end of your long rest. Whenever you take damage you can decide how much of it takes the shield. If this damage reduces shield to 0 hit points, it disappears and you take any remaining damage. If you hit creature with this magical charge while already having essence shield, shield regains number of hit points equal to 2d4 + {{intelligence:modifier}}.</description>
+			<description level="10">If attack is successful, you slice your enemy open dealing normal amount of damage, and you surround yourself with it to protect you from the damage. Essence Shield has hit points equal to 3d4 + {{intelligence:modifier}} and lasts until the end of your long rest. Whenever you take damage you can decide how much of it takes the shield. If this damage reduces shield to 0 hit points, it disappears and you take any remaining damage. If you hit creature with this magical charge while already having essence shield, shield regains number of hit points equal to 3d4 + {{intelligence:modifier}}.</description>
+			<description level="14">If attack is successful, you slice your enemy open dealing normal amount of damage, and you surround yourself with it to protect you from the damage. Essence Shield has hit points equal to 4d4 + {{intelligence:modifier}} and lasts until the end of your long rest. Whenever you take damage you can decide how much of it takes the shield. If this damage reduces shield to 0 hit points, it disappears and you take any remaining damage. If you hit creature with this magical charge while already having essence shield, shield regains number of hit points equal to 4d4 + {{intelligence:modifier}}.</description>
+		</sheet>
+	</element>
+	<element name="Phantom Multiattack (Illusion)" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGICAL_CHARGE_PHANTOM_MULTIATTACK">
+		<supports>Magical Charges</supports>
+		<description>
+			<p>If attack is successful, you deal normal damage and your weapon creates mirror images of yourself that distracts target, making it easier for you and your allies to strike. Until the end of your turn, all your attacks against the target are made with advantage. Additionally, one ally within 5ft of the target can use their reaction to make one melee weapon attack against the target.</p>
+		</description>
+		<sheet alt="Phantom Multiattack">
+			<description>If attack is successful, you deal normal damage and until the end of your turn, all your attacks against the target are made with advantage. Additionally, one ally within 5ft of the target can use their reaction to make one melee weapon attack with advantage against the target.</description>
+		</sheet>
+	</element>
+	<element name="Leaping Blow (Conjuration)" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGICAL_CHARGE_LEAPING_BLOW">
+		<supports>Magical Charges</supports>
+		<description>
+			<p>Before the attack, you charge your weapon with teleportation magic. Choose one creature that you can see within 100 feet, you make one attack against that creature as if it stands in your reach. On successful hit, your weapon magically jumps through space and strikes the enemy with additional 1d6 weapon damage, after which it teleports back to your hand. If attack is unsuccessful, your weapon jumps into targets space and falls on the ground.</p>
+		</description>
+		<sheet alt="Leaping Blow">
+			<description>Before the attack, choose one creature that you can see within 100 feet, you make one attack against that creature as if it stands in your reach. On successful hit, your weapon magically jumps through space and strikes the enemy with additional 1d6 weapon damage, after which it teleports back to your hand. If attack is unsuccessful, your weapon jumps into targets space and falls on the ground.</description>
+		</sheet>
+	</element>
+	<element name="Strike of Future Sight (Divination)" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGICAL_CHARGE_STRIKE_OF_FUTURE_SIGHT">
+		<supports>Magical Charges</supports>
+		<description>
+			<p>If attack is successful, you deal normal amount of damage and can see few seconds into the future from the perspective of the target, sensing what its next move will be. Until the end of your next turn, target has disadvantage on any attack rolls against you and you get advantage on any saving throws that is forced upon you by the target's actions.</p>
+		</description>
+		<sheet alt="Strike of Future Sight">
+			<description>If attack is successful, you deal normal amount of damage and until the end of your next turn, target has disadvantage on any attack rolls against you and you get advantage on any saving throws that is forced upon you by the target's actions.</description>
+		</sheet>
+	</element>
+	<element name="Philosopher's Weapon (Transmutation)" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGICAL_CHARGE_PHILOSOPHERS_WEAPON">
+		<supports>Magical Charges</supports>
+		<description>
+			<p>Before the attack, you channel energy of transmutation magic, when doing so you transform your weapon for next number of attacks equal to your Intelligence modifier or until you use this magical charge again. Some forms require material components, while other can require specific types of weapons. Select one of the following benefits for your favored weapon:</p>
+			<ul>
+				<li><b>Adamantine Form.</b> You use small amount of adamantine dust to magically fuse it into a material of your melee weapon or your weapon's ammunition, while sustaining its weight and other properties. When you hit an object with your favored weapon it's a critical hit.</li>
+				<li><b>Long Form.</b> You magically change size of your melee weapon while sustaining its weight and other properties. Reach of your melee weapon increases by 5 feet.</li>
+				<li><b>Silver Form.</b> You use small amount of silver dust to magically fuse it into a material of your melee weapon or your weapon's ammunition, while sustaining its weight and other properties. Your weapon counts as silver weapon for the purposes of overcoming the damage resistances.</li>
+			</ul>
+		</description>
+		<sheet alt="Strike of Future Sight">
+			<description>Before the attack, you channel energy of transmutation magic, when doing so you transform your weapon for next {{intelligence:modifier}} attacks or until you use this magical charge again. Some forms require material components, while other can require specific types of weapons. Select one of the following benefits for your favored weapon: Adamantine Form, you use small amount of adamantine dust to magically fuse it into a material of your melee weapon or your weapon's ammunition, while sustaining its weight and other properties, when you hit an object with your favored weapon it's a critical hit; Long Form, you magically change size of your melee weapon while sustaining its weight and other properties, reach of your melee weapon increases by 5 feet; Silver Form, you use small amount of silver dust to magically fuse it into a material of your melee weapon or your weapon's ammunition, while sustaining its weight and other properties, your weapon counts as silver weapon for the purposes of overcoming the damage resistances.</description>
+		</sheet>
+	</element>
+</elements>
