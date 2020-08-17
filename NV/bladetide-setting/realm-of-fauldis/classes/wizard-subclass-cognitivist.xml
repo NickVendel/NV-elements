@@ -4,7 +4,7 @@
 		<name>Cognitivist Subclass</name>
 		<description>Wizard who studies mind, thought and conscience.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="wizard-subclass-cognitivist.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/wizard-subclass-cognitivist.xml" />
 		</update>
 	</info>
@@ -153,23 +153,27 @@
 			<p class="indent">These benefits last 1 hour, unless specified otherwise. Once you use this ability you need to finish short or long rest, before using it again.</p>
 		</description>
 		<sheet action="1 Minute" usage="1/Rest">
-			<description>You and number of your allies equal to 2 + {{intelligence:modifier}}, that can hear you, gain one benefit that you choose from the following list: 
-			• Aberration – one time you fail a saving throw forced upon you by an Aberration, you can choose to succeed instead, if not used you lose this ability after 1 hour; 
-			• Beast – you gain advantage on saving throws against being poisoned, knocked prone or grappled which forced upon you by a Beast creature; 
-			• Celestial – your spells and magical abilities ignore Magical Resistance trait of Celestial creatures, or when you hit Celestial creature that doesn't have this trait with a spell, magical ability or magical attack, you can add a d8 to one damage roll; 
-			• Construct – when dealing damage to Constructs you ignore their resistances and immunities to bludgeoning, piercing, and slashing damage; 
-			• Dragon – one time, whenever you fail a saving throw forced upon you by Breath (or any other Rechargeable) action of a Dragon creature, you can choose to succeed instead, if not used you lose this ability after 1 hour. Additionally, you gain advantage on saving throws against Frightful Presence; 
-			• Elemental – when you deal damage to an Elemental, you ignore their resistances to acid, cold, fire, lightning, poison or thunder damage types, and you treat immunities to those types of damage as resistances; 
-			• Fey – You gain advantage on any Wisdom or Intelligence saving throw forced upon you by a Fey creature; 
-			• Fiend – Your spells and magical abilities ignore Magical Resistance trait of Fiends, or when you hit Fiend creature that doesn't have this trait with a spell, magical ability or magical attack, you can add a d8 to one damage roll; 
-			• Giant – If your size is equal or larger than size of the Giant creature, your attacks score a critical hit on a roll of 19 or 20 against it, or if you're smaller than Giant you can go through its space and exit its range without provoking opportunity attacks, but you must end your turn in unoccupied space; 
-			• Humanoid – when you hit Humanoid creature, you can add a d12 to one damage roll, if attack was made with advantage; 
-			Monstrosity – when Monstrosity hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that Monstrosity for the rest of the turn; 
-			• Ooze – you deal double fire damage to all Oozes, but resistances and immunities to fire damage still applies. Additionally, one time when Ooze creature uses its reaction to Split, you can use your reaction to attack it with advantage before it multiplies, if this attack drops creature to lower than 10 hit points Ooze wastes its reaction and is unable to Split, if not used you lose this ability after 1 hour; 
-			• Plant – If you deal fire damage to Plant creature that doesn't have resistance or immunity to fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn. Additionally, if your Passive Perception is higher than 10 + Plant creature's CR, you can see through its False Appearance; 
-			• Undead – whenever you deal critical hit to Undead creature whose CR less or equal to half your level, it is automatically destroyed, or if its CR is higher, you deal four times the damage instead of double. 
-			These benefits last 1 hour, unless specified otherwise.</description>
+			<description><![CDATA[You and number of your allies equal to {{secrets of the bestiary:allies}}, that can hear you, gain one benefit that you choose from the following list: <br />
+			&nbsp;&nbsp;• Aberration – one time you fail a saving throw forced upon you by an Aberration, you can choose to succeed instead, if not used you lose this ability after 1 hour; <br />
+			&nbsp;&nbsp;• Beast – you gain advantage on saving throws against being poisoned, knocked prone or grappled which forced upon you by a Beast creature; <br />
+			&nbsp;&nbsp;• Celestial – your spells and magical abilities ignore Magical Resistance trait of Celestial creatures, or when you hit Celestial creature that doesn't have this trait with a spell, magical ability or magical attack, you can add a d8 to one damage roll; <br />
+			&nbsp;&nbsp;• Construct – when dealing damage to Constructs you ignore their resistances and immunities to bludgeoning, piercing, and slashing damage; <br />
+			&nbsp;&nbsp;• Dragon – one time, whenever you fail a saving throw forced upon you by Breath (or any other Rechargeable) action of a Dragon creature, you can choose to succeed instead, if not used you lose this ability after 1 hour. Additionally, you gain advantage on saving throws against Frightful Presence; <br />
+			&nbsp;&nbsp;• Elemental – when you deal damage to an Elemental, you ignore their resistances to acid, cold, fire, lightning, poison or thunder damage types, and you treat immunities to those types of damage as resistances; <br />
+			&nbsp;&nbsp;• Fey – You gain advantage on any Wisdom or Intelligence saving throw forced upon you by a Fey creature; <br />
+			&nbsp;&nbsp;• Fiend – Your spells and magical abilities ignore Magical Resistance trait of Fiends, or when you hit Fiend creature that doesn't have this trait with a spell, magical ability or magical attack, you can add a d8 to one damage roll; <br />
+			&nbsp;&nbsp;• Giant – If your size is equal or larger than size of the Giant creature, your attacks score a critical hit on a roll of 19 or 20 against it, or if you're smaller than Giant you can go through its space and exit its range without provoking opportunity attacks, but you must end your turn in unoccupied space; <br />
+			&nbsp;&nbsp;• Humanoid – when you hit Humanoid creature, you can add a d12 to one damage roll, if attack was made with advantage; <br />
+			&nbsp;&nbsp;• Monstrosity – when Monstrosity hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that Monstrosity for the rest of the turn; <br />
+			&nbsp;&nbsp;• Ooze – you deal double fire damage to all Oozes, but resistances and immunities to fire damage still applies. Additionally, one time when Ooze creature uses its reaction to Split, you can use your reaction to attack it with advantage before it multiplies, if this attack drops creature to lower than 10 hit points Ooze wastes its reaction and is unable to Split, if not used you lose this ability after 1 hour; <br />
+			&nbsp;&nbsp;• Plant – If you deal fire damage to Plant creature that doesn't have resistance or immunity to fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn. Additionally, if your Passive Perception is higher than 10 + Plant creature's CR, you can see through its False Appearance; <br />
+			&nbsp;&nbsp;• Undead – whenever you deal critical hit to Undead creature whose CR less or equal to half your level, it is automatically destroyed, or if its CR is higher, you deal four times the damage instead of double. <br />
+			These benefits last 1 hour, unless specified otherwise.]]></description>
 		</sheet>
+		<rules>
+			<stat name="secrets of the bestiary:allies" value="2" bonus="base" />
+			<stat name="secrets of the bestiary:allies" value="intelligence:modifier" />
+		</rules>
 	</element>
 	<element name="One in a Million" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_ONE_IN_A_MILLION">
 		<description>

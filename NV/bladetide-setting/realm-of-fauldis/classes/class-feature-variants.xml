@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Class Feature Variants</name>
+		<description>Class Feature Variants from the Realm of Fauldis</description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.1">
+			<file name="class-feature-variants.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/class-feature-variants.xml" />
+		</update>
+	</info>
+
+	<!-- Option -->
+	<element name="RoF: Class Feature Variants" type="Option" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_OPTION_CLASS_FEATURE_VARIANTS">
+		<description>
+			<p>Optional class features from the Realm of Fauldis that either enhance already existing features or replace features with something new.</p>
+		</description>
+		<setters>
+			<set name="short">Class Feature Variants from the Realm of Fauldis.</set>
+		</setters>
+	</element>
+
+	<!-- Druid -->
+	<!-- Circle Spells Variants -->
+	<element name="Shadewoods Circle" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_CFV_ARCHETYPE_FEATURE_CIRCLE_SPELLS_SHADEWOODS">
+		<requirements>ID_NV_FLDS_OPTION_CLASS_FEATURE_VARIANTS</requirements>
+		<supports>Circle Spells</supports>
+		<description>
+			<p style="margin-bottom:5px"><i>2nd-level Circle of the Land feature (enhances Circle Spells)</i></p>
+			<p style="margin-top:0px">Unusual magical forests, whose trees are incredibly sturdy, huge and cover everything around with their shadow. Being druid of shadewoods circle you gain following spells, that count as druid spells for you,are always prepared, and do not count against the number of spells you can prepare each day:</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>darkness, invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>spirit shroud∗, spirit guardians</em></td></tr>
+				<tr><td>7th</td><td><em>greater invisibility, shadow of moil</em></td></tr>
+				<tr><td>9th</td><td><em>dispel evil and good, far step</em></td></tr>
+			</table>
+			<p class="indent"><i>Symbol (∗) in this table refers to a spell (or spells) from <b>Unearthed Arcana 2020: Spells and Magic Tattoos</b>.</i></p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_UA20200326_SPELL_SPIRIT_SHROUD" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SHADOW_OF_MOIL" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_FAR_STEP" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<!-- Wizard -->
+	<!-- Artifact Researcher -->
+	<element name="Class Feature Variant: Polyglot Replacement" type="Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_ITEM_CFV_WIZARD_SUBCLASS_COGNITIVIST_POLYGLOT">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p><i>2nd-level Cognitivist feature (replaces Polyglot)</i></p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_NV_FLDS_CFV_WIZARD_SUBCLASS_COGNITIVIST_POLYGLOT" requirements="ID_NV_FLDS_OPTION_CLASS_FEATURE_VARIANTS" />
+			<select type="Archetype Feature" name="Polyglot Replacement" supports="CFV Polyglot" requirements="ID_NV_FLDS_OPTION_CLASS_FEATURE_VARIANTS" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Polyglot Replacement" type="Grants" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_CFV_WIZARD_SUBCLASS_COGNITIVIST_POLYGLOT" />
+
+	<element name="Artifact Researcher" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_CFV_WIZARD_SUBCLASS_COGNITIVIST_ARTIFACT_RESEARCHER">
+		<supports>CFV Polyglot</supports>
+		<description>
+			<p style="margin-bottom:5px"><i>2nd-level Cognitivist feature (replaces Polyglot)</i></p>
+			<p style="margin-top:0px">You've read enough books of ancient lore and historical notes to easily distinguish truly valuable items from fakes, especially when it comes to magical items. When you touch an item, you can use your action to study the object and discover its functions, similar to the effects of <i>identify</i> spell, you also gain knowledge on approximate cost of the object.</p>
+			<p class="indent">You can use this ability number of times equal to your Intelligence modifier (minimum of 1) after each long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{artifact researcher:usage}}/Long Rest">
+			<description>When you touch an item, you can use your action to study the object and discover its functions, similar to the effects of identify spell, you also gain knowledge on approximate cost of the object.</description>
+		</sheet>
+		<rules>
+			<stat name="artifact researcher:usage" value="1" bonus="base" />
+			<stat name="artifact researcher:usage" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+
+</elements>
