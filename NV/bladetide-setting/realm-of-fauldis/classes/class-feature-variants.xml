@@ -54,6 +54,7 @@
 	<!-- Wizard -->
 	<!-- Artifact Researcher -->
 	<element name="Class Feature Variant: Polyglot Replacement" type="Item" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_ITEM_CFV_WIZARD_SUBCLASS_COGNITIVIST_POLYGLOT">
+		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p><i>2nd-level Cognitivist feature (replaces Polyglot)</i></p>
@@ -68,7 +69,9 @@
 		</rules>
 	</element>
 
-	<element name="Polyglot Replacement" type="Grants" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_CFV_WIZARD_SUBCLASS_COGNITIVIST_POLYGLOT" />
+	<element name="Polyglot Replacement" type="Grants" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_CFV_WIZARD_SUBCLASS_COGNITIVIST_POLYGLOT">
+		<compendium display="false" />
+	</element>
 
 	<element name="Artifact Researcher" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_CFV_WIZARD_SUBCLASS_COGNITIVIST_ARTIFACT_RESEARCHER">
 		<supports>CFV Polyglot</supports>
