@@ -4,7 +4,7 @@
 		<name>Realm of Fauldis Index</name>
 		<description>The content from the Realm of Fauldis.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="realm-of-fauldis.index" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis.index" />
 		</update>
 	</info>
@@ -43,6 +43,9 @@
 
 		<!-- Backgrounds -->
 		<!-- <file name="-.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/backgrounds/-.xml" /> -->
+
+		<!-- Deities -->
+		<file name="deities.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/deities.xml" />
 
 		<!-- Spells -->
 		<file name="spells.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/spells.xml" />

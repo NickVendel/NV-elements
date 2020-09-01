@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Deities</name>
+		<description>Deities from The Realm of Fauldis.</description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.1">
+		    <file name="deities.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/deities.xml" />
+		</update>
+	</info>
+
+    <!-- Old Human Pantheon -->
+	<element name="Berzarch" type="Deity" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_DEITY_BERZARCH">
+		<description>
+			<p class="flavor">old human neutral-evil god of war and revenge</p>
+		</description>
+		<setters>
+			<set name="setting">Bladetide: Realm of Fauldis</set>
+			<set name="alignment">NE</set>
+			<set name="domains">War, Revenge</set>
+			<set name="symbol">Red shining cat eye</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>old human god of war and revenge</description>
+		</sheet>
+	</element>
+
+	<element name="Maffei" type="Deity" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_DEITY_MAFFEI">
+		<description>
+			<p class="flavor">old human neutral-good god of life and healing</p>
+			<p>also known as "Green Hand", older brother of Mengar "Vision of Change".</p>
+		</description>
+		<setters>
+			<set name="setting">Bladetide: Realm of Fauldis</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Life, Healing</set>
+			<set name="symbol">Green hand which creates golden beam of healing</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>old human god of life and healing</description>
+		</sheet>
+	</element>
+
+	<element name="Mengar" type="Deity" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_DEITY_MENGAR">
+		<description>
+			<p class="flavor">old human true-neutral god of animals and change</p>
+			<p>also known as "Vision of Change", younger brother of Maffei "Green Hand".</p>
+		</description>
+		<setters>
+			<set name="setting">Bladetide: Realm of Fauldis</set>
+			<set name="alignment">N</set>
+			<set name="domains">Animals, Change</set>
+			<set name="symbol">Two eyes — brown and green, or one eye that changes color from brown to green and vice-versa.</set>
+			<set name="gender">typically a male, sometimes woman</set>
+		</setters>
+		<sheet>
+			<description>old human god of animals and change</description>
+		</sheet>
+	</element>
+
+	<element name="Zirkar" type="Deity" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_DEITY_ZIRKAR">
+		<description>
+			<p class="flavor">old human chaotic-neutral god of fire and madness</p>
+			<p>also known as "Burning Man".</p>
+		</description>
+		<setters>
+			<set name="setting">Bladetide: Realm of Fauldis</set>
+			<set name="alignment">CN</set>
+			<set name="domains">Fire, Madness</set>
+			<set name="symbol">Scared human eye that is pierced through with flamberge</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>old human god of fire and madness</description>
+		</sheet>
+	</element>
+
+</elements>
