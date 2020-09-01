@@ -3,7 +3,7 @@
 	<info>
 		<name>Spells from the Realm of Fauldis</name>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/spells.xml" />
 		</update>
 	</info>
@@ -11,8 +11,8 @@
 	<element name="Arcane Coat" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_SPELL_ARCANE_COAT">
 		<supports>Wizard, Warlock, Sorcerer</supports>
 		<description>
-			<p><b>History:</b> This cantrip was created by a powerful Human Wizard Nemira Coldash and was later named <i>Nemira's Black Staff</i> by her colleagues, due to Nemira's skills when fighting with a quarterstaff and using this spell to cover staff with black coat. Later, after it was recreated for use by Sorcerers and, incidentally, Warlocks, spell became famous as <i>Arcane Blade</i>, due to increased usage among orders of Battlemages. It was finally included in Tomes of Magic under a name <i>Arcane Coat</i>, as a compromise between actual spell mechanics and famous nickname.</p>
-			<p>When you touch a melee weapon, which lacks two-handed or heavy property, you cover it with a magical coating, which increases weapon's durability and power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of that weapon, and the weapon’s damage die becomes a d6. The weapon also becomes magical, if it isn’t already. The spell ends at the end of the turn if you let go of the weapon.</p>
+			<p><b>History:</b> This cantrip was created by a powerful Human Wizard Nemira Coldash, and was later named <i>Nemira's Black Staff</i> by her colleagues, due to Nemira's skills when fighting with a quarterstaff and using this spell to cover her staff with black coat. Later, after it was recreated for use by Sorcerers and, incidentally, Warlocks, spell became famous as <i>Arcane Blade</i>, because of its increased usage among orders of Battlemages. It was finally included in Tomes of Magic under a name <i>Arcane Coat</i>, as a compromise between actual spell mechanics and famous nickname.</p>
+			<p>When you touch a melee weapon which lacks two-handed or heavy property, you cover it with a magical coating, which increases weapon's durability and power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of that weapon, and the weapon’s damage die becomes a d6. The weapon also becomes magical, if it isn’t already. The spell ends at the end of the turn if you let go of the weapon.</p>
 			<p class="indent">The damage die of the weapon affected by this spell increases to a d8 at 11th level.</p>
 		</description>
 		<setters>
@@ -31,5 +31,29 @@
 		</setters>
 	</element>
 
+	<element name="Spiritual Scout" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_SPELL_SPIRITUAL_SCOUT">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<p>You summon a spiritual copy of a friendly beast that you've met previously.</p>
+			<p class="indent">A partially incorporeal copy of the animal appears in an unoccupied space within range. This spiritual copy can fully interact with its summoner and can be affected by magic but it cannot attack, use the Help action, touch any creatures, carry or interact with objects. This form makes the same sounds as its real form would. Your spiritual scout has 1 hit point, an AC of 15, is immune to all non-magical damage and has advantage on any Dexterity (Stealth) checks due to its translucent image.</p>
+			<p class="indent">You can telepathically communicate with your scout and give it simple commands, as long as it's within 1 mile of you. If not given any commands, it will return to your side and follow you. As an action, you can see through your scout’s eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that animal has. During this time, you are deaf and blind with regard to your own senses. Additionally, your scout can use its action to wake you and any other creatures within 30 feet of it, from non-magical sleep with an audible sound.</p>
+			<p class="indent">You can’t have more than one spiritual scout at a time. If you cast this spell again with the same material component, your current scout reappears within range, if you cast this spell again using another material component, the previous copy disappears and a different one is created within range.</p>
+			<p class="indent">If spiritual form is destroyed or if it finds itself further than 1 mile from you, the spell ends.  When the spell ends, all memories and experiences of this copy flow into the mind of the real animal it's associated with.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">up to 8 hours</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a hair, a feather or a scale from the body of the beast you summon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 
 </elements>

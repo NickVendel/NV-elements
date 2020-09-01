@@ -4,7 +4,7 @@
 		<name>Class Feature Variants</name>
 		<description>Class Feature Variants from the Realm of Fauldis</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-feature-variants.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/class-feature-variants.xml" />
 		</update>
 	</info>
@@ -62,6 +62,7 @@
 		<setters>
 			<set name="category">Additional Feature</set>
 			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
 			<grant type="Grants" id="ID_NV_FLDS_CFV_WIZARD_SUBCLASS_COGNITIVIST_POLYGLOT" requirements="ID_NV_FLDS_OPTION_CLASS_FEATURE_VARIANTS" />
