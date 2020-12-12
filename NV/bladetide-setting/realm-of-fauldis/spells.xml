@@ -11,7 +11,7 @@
 	<element name="Arcane Coat" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_SPELL_ARCANE_COAT">
 		<supports>Bard, Wizard, Warlock, Sorcerer</supports>
 		<description>
-			<p><b>History:</b> This cantrip was created by a powerful Human Wizard Nemira Coldash, and was later named <i>Nemira's Black Staff</i> by her colleagues, due to Nemira's skills when fighting with a quarterstaff and using this spell to cover her staff with black coat. Later, after it was recreated for use by Sorcerers and, incidentally, Warlocks, spell became famous as <i>Arcane Blade</i>, because of its increased usage among orders of Battlemages. It was finally included in Tomes of Magic under a name <i>Arcane Coat</i>, as a compromise between actual spell mechanics and famous nickname.</p>
+			<p><b>History:</b> This cantrip was created by a powerful Human Wizard Nemira Coldash, and was later named <i>Nemira's Black Staff</i> by her colleagues, due to Nemira's skills when fighting with a quarterstaff and using this spell to cover her staff with black coat. Later, after it was recreated for use by Sorcerers, Bards and Warlocks, spell became famous as <i>Arcane Blade</i>, because of its increased usage among orders of Battlemages. It was finally included in Tomes of Magic under a name <i>Arcane Coat</i>, as a compromise between actual spell mechanics and famous nickname.</p>
 			<p>When you touch a melee weapon which lacks two-handed or heavy property, you cover it with a magical coating, which increases weapon's durability and power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of that weapon, and the weapon’s damage die becomes a d6. The weapon also becomes magical, if it isn’t already. The spell ends at the end of the turn if you let go of the weapon.</p>
 			<p class="indent">The damage die of the weapon affected by this spell increases to a d8 at 11th level.</p>
 		</description>
@@ -34,20 +34,21 @@
 	<element name="Illusory Wall" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_SPELL_ILLUSORY_WALL">
 		<supports>Bard, Wizard, Warlock, Sorcerer</supports>
 		<description>
-			<p>You create an image of a wall, floor, ceiling, or similar surface at a point you choose within range. This image can be no more than 10 feet in each dimension. It seems real to the observers, but physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC.</p>
+			<p>You create an image of a wall, floor, ceiling, or similar surface at a point you choose within range. The wall is 5 inches thick and is composed of ten 10-foot-by-10-foot panels or less. Each panel must be contiguous with at least one other panel. It seems real to the observers, but physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC.</p>
+			<p class="indent">If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">4</set>
 			<set name="school">Illusion</set>
 			<set name="time">1 action</set>
-			<set name="duration">Until dispelled</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
 			<set name="range">30 feet</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent"></set>
-			<set name="isConcentration">false</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
