@@ -4,7 +4,7 @@
 		<name>Cognitivist Subclass</name>
 		<description>Wizard who studies mind, thought and conscience.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="wizard-subclass-cognitivist.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/wizard-subclass-cognitivist.xml" />
 		</update>
 	</info>
@@ -54,8 +54,8 @@
 			<p style="margin-bottom:5px"><i>2nd-level Cognitivist feature</i></p>
 			<p style="margin-top:0px">In each generation of Wizards you can find concepts and instructions on how to create and use magical wands, you adapt best parts for your own process. You gain following benefits:</p>
 			<ul>
-				<li><b>Wand Making:</b> Whenever you finish short or long rest, you can create <i>Wand of Accuracy</i> with following materials: a scroll on which you draw a transmutation pentagram, small wooden stick (or any metal bar) and leather strips. <i>Wand of Accuracy</i> allows user's spell attacks to ignore half cover and three-quarters cover.
-				When you gain 6th level in this class, you can create or re-enchant previously created (doesn't require new materials) <i>Wand of Accuracy</i> that, in addition to previous properties, also gains enchantment bonus +1 to user's spell attacks and spell DC. Enchantment bonus of newly created or re-enchanted wands increases further to +2 at 12th, and to +3 at 18th level in this class.</li>
+				<li><b>Wand Making:</b> Whenever you finish short or long rest, you can create <i>Wand of Accuracy</i> with following materials: a scroll on which you draw a transmutation pentagram, small wooden stick (or any metal bar) and leather strips. Once attuned, <i>Wand of Accuracy</i> allows user's spell attacks to ignore half cover and three-quarters cover.
+				When you gain 6th level in this class, you can create or re-enchant previously created (doesn't require new materials) <i>Wand of Accuracy</i> that, in addition to previous properties, also gains enchantment bonus +1 to attuned user's spell attacks and spell DC. Enchantment bonus of newly created or re-enchanted wands increases further to +2 at 12th, and to +3 at 18th level in this class.</li>
 				<li><b>Smart Wand:</b> Whenever you're targeted by a harmful spell or receive damage from a harmful spell, and hold a wand in your hand, you can use your reaction to collect and use residual energy of the spell to power your wand. If you're holding a spell wand, for example Wand of Magic Missile, and it has needed amount of charges, you can activate and use it. Otherwise, you gain additional +1 bonus to attack, DC and damage of your next spell. You can use this ability number of times equal to your Intelligence modifier (minimum of 1) after each long rest.
 				Additionally, you can perform the somatic components of spells with any magic wand.</li>
 			</ul>
@@ -89,12 +89,12 @@
 	<element name="Wand Making" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_COGNITIVIST_MAGIC_WAND_MASTER_WAND_MAKING">
 		<compendium display="false" />
 		<description>
-			<p>Whenever you finish short or long rest, you can create <i>Wand of Accuracy</i> with following items: a scroll on which you draw a transmutation pentagram, small wooden stick (or any metal bar) and leather strips. <i>Wand of Accuracy</i> allows user's spell attacks to ignore half cover and three-quarters cover.</p>
-			<p class="indent">When you gain 6th level in this class, you can create or re-enchant previously created (doesn't require new components) <i>Wand of Accuracy</i> that, in addition to previous properties, also gains enchantment bonus +1 to user's spell attacks and spell DC. Enchantment bonus of newly created or re-enchanted wands increases further to +2 at 12th, and to +3 at 18th level in this class.</p>
+			<p>Whenever you finish short or long rest, you can create <i>Wand of Accuracy</i> with following materials: a scroll on which you draw a transmutation pentagram, small wooden stick (or any metal bar) and leather strips. Once attuned, <i>Wand of Accuracy</i> allows user's spell attacks to ignore half cover and three-quarters cover.</p>
+			<p class="indent">When you gain 6th level in this class, you can create or re-enchant previously created (doesn't require new materials) <i>Wand of Accuracy</i> that, in addition to previous properties, also gains enchantment bonus +1 to attuned user's spell attacks and spell DC. Enchantment bonus of newly created or re-enchanted wands increases further to +2 at 12th, and to +3 at 18th level in this class.</p>
 		</description>
 		<sheet>
-			<description>Whenever you finish short or long rest, you can create Wand of Accuracy with following items: a scroll on which you draw a transmutation pentagram, small wooden stick (or any metal bar) and leather strips. Wand of Accuracy allows user's spell attacks to ignore half cover and three-quarters cover.</description>
-			<description level="6">Whenever you finish short or long rest, you can create Wand of Accuracy with following items: a scroll on which you draw a transmutation pentagram, small wooden stick (or any metal bar) and leather strips. Wand of Accuracy allows user's spell attacks to ignore half cover and three-quarters cover. Additionally, newly created or re-enchanted Wands of Accuracy gain enchantment bonus +{{wand making:enchantment bonus}} to user's spell attacks and spell DC.</description>
+			<description>Whenever you finish short or long rest, you can create Wand of Accuracy with following items: a scroll on which you draw a transmutation pentagram, small wooden stick (or any metal bar) and leather strips. Once attuned, Wand of Accuracy allows user's spell attacks to ignore half cover and three-quarters cover.</description>
+			<description level="6">Whenever you finish short or long rest, you can create Wand of Accuracy with following items: a scroll on which you draw a transmutation pentagram, small wooden stick (or any metal bar) and leather strips. Once attuned, Wand of Accuracy allows user's spell attacks to ignore half cover and three-quarters cover. Additionally, newly created or re-enchanted Wands of Accuracy gain enchantment bonus +{{wand making:enchantment bonus}} to attuned user's spell attacks and spell DC.</description>
 		</sheet>
 		<rules>
 			<stat name="wand making:enchantment bonus" value="1" bonus="base" />
