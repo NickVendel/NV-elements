@@ -4,7 +4,7 @@
 		<name>Battlemage Subclass</name>
 		<description>Wizard who isn't scared to fight in melee.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="wizard-subclass-battlemage.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/classes/wizard-subclass-battlemage.xml" />
 		</update>
 	</info>
@@ -53,18 +53,18 @@
 	<element name="Mage Weapon" type="Archetype Feature" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_WIZARD_SUBCLASS_BATTLEMAGE_MAGE_WEAPON">
 		<description>
 			<p style="margin-bottom:5px"><i>2nd-level Battlemage feature</i></p>
-			<p style="margin-top:0px">You can form a bond with your weapon, and can summon it or dismiss it to safe location. Using special ritual you can create unique bond between yourself and one weapon with which you're proficient and that lacks two-handed property, this bond counts as attunement. You perform the ritual over the course of 1 hour, which can be done during a rest. The weapon must be within your reach throughout the ritual. Once bond is formed it becomes your favored weapon, using your bonus action you can summon favored weapon into your hand. Your attacks and damage with favored weapon can use Intelligence modifier instead of Strength or Dexterity.</p>
+			<p style="margin-top:0px">You can form a bond with your weapon, and can summon it or dismiss it to safe location. Using special ritual you can create unique bond between yourself and one weapon with which you're proficient and that lacks two-handed property, this bond counts as attunement. You perform the ritual over the course of 1 hour, which can be done during a rest. The weapon must be within your reach throughout the ritual. Once bond is formed it becomes your favored weapon, using your bonus action you can summon favored weapon into your hand. Your attacks and damage with favored weapon can use Intelligence modifier instead of Strength or Dexterity, and you can use hand that holds favored weapon to perform somatic components of your spells.</p>
 			<p class="indent">The same way you bind weapon to yourself, you can bind it to a place where it'll be stored. You can perform same ritual to create a storage place for your weapon, it will return in the location of ritual whenever you dismiss it with a bonus action. If your weapon is destroyed while in the storage or gets caught inside an anti-magic field, you receive mental signal and can break your bond with it at any distance on your next rest, if you wish to do so.</p>
 			<p class="indent">If you wish to change your favored weapon, you can perform ritual to create bond with a different weapon. You also lose bond with your favored weapon if you die or decide to voluntary end the attunement to your favored weapon. Weapon loses any benefits from Battlemage features when bond is lost or ended.</p>
 			<p class="indent">At 6th level in this class, you fill favored weapon with your energy, giving it magical properties or enhancing them. Your favored weapon becomes magical, if it isn't already, and receives an additional enchantment bonus +1 to attack and damage.</p>
 		</description>
 		<sheet>
 			<description>Using special ritual you can create unique bond between yourself and one weapon with which you're proficient and that lacks two-handed property, this bond counts as attunement. Weapon becomes your favored weapon and you can summon it into your hand with bonus action.
-			Your attacks and damage with favored weapon can use Intelligence modifier instead of Strength or Dexterity.
+			Your attacks and damage with favored weapon can use Intelligence modifier instead of Strength or Dexterity, and you can use hand that holds favored weapon to perform somatic components of your spells.
 			The same way you bind weapon to yourself, you can bind it to a place where it'll be stored. You can perform same ritual to create a storage place for your weapon, it will return in the location of ritual whenever you dismiss it with a bonus action.
 			If you wish to change your favored weapon, you can perform ritual to create bond with a different weapon. You also lose bond with your favored weapon if you die or decide to voluntary end the attunement to your favored weapon. Weapon loses any benefits from Battlemage features when bond is lost or ended.</description>
 			<description level="6">Using special ritual you can create unique bond between yourself and one weapon with which you're proficient and that lacks two-handed property, this bond counts as attunement. Weapon becomes your favored weapon and you can summon it into your hand with bonus action.
-			Your favored weapon is magical, you gain +1 to attacks and damage with it, and you can use Intelligence modifier instead of Strength or Dexterity.
+			Your favored weapon is magical, you gain +1 to attacks and damage with it, and you can use Intelligence modifier instead of Strength or Dexterity, and you can use hand that holds favored weapon to perform somatic components of your spells.
 			The same way you bind weapon to yourself, you can bind it to a place where it'll be stored. You can perform same ritual to create a storage place for your weapon, it will return in the location of ritual whenever you dismiss it with a bonus action.
 			If you wish to change your favored weapon, you can perform ritual to create bond with a different weapon. You also lose bond with your favored weapon if you die or decide to voluntary end the attunement to your favored weapon. Weapon loses any benefits from Battlemage features when bond is lost or ended.</description>
 		</sheet>
