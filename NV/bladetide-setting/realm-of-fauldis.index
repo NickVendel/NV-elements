@@ -53,7 +53,7 @@
 		<!-- Items -->
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/items/items-weapons.xml" />
 		<file name="items-magic-weapons.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/items/items-magic-weapons.xml" />
-		<file name="magic-items.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/items/magic-items.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/items/items-wondrous.xml" />
 
 		<!-- Languages -->
 		<file name="languages.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/languages.xml" />

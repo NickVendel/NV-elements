@@ -18,18 +18,10 @@
 		<file name="member-of-the-great-house-background.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/backgrounds/member-of-the-great-house-background.xml" />
 
 		<!-- Items -->
-		<file name="magic-items.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/magic-items.xml" />
-		<!-- <file name="weapon-types.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/items/weapon-types.xml" /> -->
-		<!-- <file name="armor-types.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/items/armor-types.xml" /> -->
-		<!-- <file name="wondrous-items.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/items/wondrous-items.xml" /> -->
-		<!-- include this when enchantments are implemented in Aurora -->
-		<!-- <file name="enchantments.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/items/enchantments.xml" /> -->
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/items-wondrous.xml" />
 
 		<!-- Companions/Monsters -->
 		<file name="companions.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/companions.xml" />
-
-		<!-- Deities -->
-		<!-- <file name="deities.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/deities.xml" /> -->
 
 		<!-- Feats -->
 		<!-- <file name="feats.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/feats.xml" /> -->
