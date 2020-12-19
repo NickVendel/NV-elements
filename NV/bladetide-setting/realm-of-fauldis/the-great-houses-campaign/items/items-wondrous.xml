@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Magic Items</name>
+		<description>Magic Items from The Great Houses Campaign.</description>
+		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
+		<update version="0.0.1">
+		    <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/items-wondrous.xml" />
+		</update>
+	</info>
+
+	<element name="Manual of Hidden Talents" type="Magic Item" source="Fauldis: The Great Houses Campaign" id="ID_NV_TGHC_MAGIC_ITEM_MANUAL_OF_HIDDEN_TALENTS">
+		<description>
+			<p>This thin notebook bound by black leather, has empty cover page. Looking through it average person wouldn't think much of it, unable to read gibberish written inside, unless they succeed on Intelligence (Arcana) check against DC25, which uncovers that book contains arcane writings that hide number of spells. Any Artificer, Bard, Sorcerer, Warlock, Wizard, or any other class with spellcasting based upon one of the previously mentioned classes, recognizes arcane nature of the book automatically. With very precise font this notebook reads as a short learning manual for spellcasters of arcane nature, notebook contains the following spells: <i>animate dead</i>, <i>detect magic</i>, <i>dimension door</i>, <i>dispel magic</i>, <i>identify</i>, <i>illusory wall</i>, and <i>revivify</i>.</p>
+			<p class="indent">While you are attuned to this manual, you can use your action to cast these spells without any material components, but when you do so, you must make an ability check using your spellcasting ability against DC equal to 12 + level of the spell you're casting. On a failure, enchantment within the book unleashes upon you and forces you to stop casting a spell. On a success you produce effect of the chosen spell and can't cast that spell using this book again until you finish a long rest.</p>
+			<p class="indent">Additionally, while you are holding the manual, you can use it as a spellcasting focus for your spells. Wizards who're using this manual as their spellcasting focus gain a +1 bonus to spell attack rolls and to the saving throw DCs of their wizard spells.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer, bard, sorcerer, warlock, wizard, spellcasting focus</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="wizard:spellcasting:attack" value="1" />
+			<stat name="wizard:spellcasting:dc" value="1" />
+		</rules>
+	</element>
+
+</elements>
