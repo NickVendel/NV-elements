@@ -4,7 +4,7 @@
 		<name>The Great Houses Campaign Index</name>
 		<description>The content from The Great Houses Campaign, set in the Realm of Fauldis of Bladetide Multiverse.</description>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="the-great-houses-campaign.index" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign.index" />
 		</update>
 	</info>
@@ -18,7 +18,7 @@
 		<file name="member-of-the-great-house-background.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/backgrounds/member-of-the-great-house-background.xml" />
 
 		<!-- Items -->
-		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/items-wondrous.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/items/items-wondrous.xml" />
 
 		<!-- Companions/Monsters -->
 		<file name="companions.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/the-great-houses-campaign/companions.xml" />
