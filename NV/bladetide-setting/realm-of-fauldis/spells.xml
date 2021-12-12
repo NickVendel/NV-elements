@@ -3,31 +3,32 @@
 	<info>
 		<name>Spells from the Realm of Fauldis</name>
 		<author url="https://www.reddit.com/user/Nick_Vendel/">Nick Vendel</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/NickVendel/NV-elements/master/NV/bladetide-setting/realm-of-fauldis/spells.xml" />
 		</update>
 	</info>
 
-	<element name="Arcane Coat" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_SPELL_ARCANE_COAT">
+	<element name="Arcane Coating" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_SPELL_ARCANE_COATING">
 		<supports>Bard, Wizard, Warlock, Sorcerer</supports>
 		<description>
-			<p><b>History:</b> This cantrip was created by a powerful Human Wizard Nemira Coldash, and was later named <i>Nemira's Black Staff</i> by her colleagues, due to Nemira's skills when fighting with a quarterstaff and using this spell to cover her staff with black coat. Later, after it was recreated for use by Sorcerers, Bards and Warlocks, spell became famous as <i>Arcane Blade</i>, because of its increased usage among orders of Battlemages. It was finally included in Tomes of Magic under a name <i>Arcane Coat</i>, as a compromise between actual spell mechanics and famous nickname.</p>
-			<p>When you touch a melee weapon which lacks two-handed or heavy property, you cover it with a magical coating, which increases weapon's durability and power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of that weapon, and the weapon’s damage die becomes a d6. The weapon also becomes magical, if it isn’t already. The spell ends at the end of the turn if you let go of the weapon.</p>
-			<p class="indent">The damage die of the weapon affected by this spell increases to a d8 at 11th level.</p>
+			<p>You cover a melee weapon you're holding that lacks the two-handed and heavy properties with a layer of magical energy, increasing weapon's overall effectiveness. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of that weapon, and the weapon's damage die becomes a d6, if it isn't higher already. The weapon also becomes magical, if it wasn't already. The spell ends at the end of the turn if you let go of the weapon.</p>
+			<p class="indent">The damage die of the weapon affected by this spell increases to a d8 at 11th level, if it isn't higher already.</p>
+			<div class="sidebar">
+				<h5>HISTORY</h5>
+				<p>This cantrip was created by a powerful human wizard Nemira Coldash, and was later named <i>Nemira's Black Staff</i> by her colleagues, as a nod to Nemira's fighting skills with a quarterstaff and the fact spell covered her staff with black coating. Later, after it was recreated for use by Sorcerers, Bards and Warlocks, spell became known as <i>Arcane Blade</i>, because of its increased usage among orders of Battlemages. It was finally included in several mass-produced magic tomes under a name <i>Arcane Coating</i>, as a compromise between actual spell mechanics and famous nickname.</p>
+			</div>
 		</description>
 		<setters>
 			<set name="keywords">weapon, Nemira's black staff, arcane blade</set>
 			<set name="level">0</set>
-			<set name="school">Evocation</set>
+			<set name="school">Transmutation</set>
 			<set name="time">1 bonus action</set>
-			<set name="duration">1 minute</set>
 			<set name="range">Touch</set>
 			<set name="hasVerbalComponent">false</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent">small natural sponge, and a weapon that caster holds in their hand</set>
-			<set name="isConcentration">false</set>
-			<set name="isRitual">false</set>
+			<set name="materialComponent">small sponge</set>
+			<set name="duration">1 minute</set>
 		</setters>
 	</element>
 
@@ -42,14 +43,13 @@
 			<set name="level">4</set>
 			<set name="school">Illusion</set>
 			<set name="time">1 action</set>
-			<set name="duration">Concentration, up to 10 minutes</set>
 			<set name="range">30 feet</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent"></set>
+			<set name="duration">Concentration, up to 10 minutes</set>
 			<set name="isConcentration">true</set>
-			<set name="isRitual">false</set>
 		</setters>
 	</element>
 
@@ -58,23 +58,41 @@
 		<description>
 			<p>You summon a spiritual copy of a friendly beast that you've met previously.</p>
 			<p class="indent">A partially incorporeal copy of the animal appears in an unoccupied space within range. This spiritual copy can fully interact with its summoner and can be affected by magic but it cannot attack, use the Help action, touch any creatures, carry or interact with objects. This form makes the same sounds as its real form would. Your spiritual scout has 1 hit point, an AC of 15, is immune to all non-magical damage and has advantage on any Dexterity (Stealth) checks due to its translucent image.</p>
-			<p class="indent">You can telepathically communicate with your scout and give it simple commands, as long as it's within 1 mile of you. If not given any commands, it will return to your side and follow you. As an action, you can see through your scout’s eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that animal has. During this time, you are deaf and blind with regard to your own senses. Additionally, your scout can use its action to wake you and any other creatures within 30 feet of it, from non-magical sleep with an audible sound.</p>
-			<p class="indent">You can’t have more than one spiritual scout at a time. If you cast this spell again with the same material component, your current scout reappears within range, if you cast this spell again using another material component, the previous copy disappears and a different one is created within range.</p>
+			<p class="indent">You can telepathically communicate with your scout and give it simple commands, as long as it's within 1 mile of you. If not given any commands, it will return to your side and follow you. As an action, you can see through your scout's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that animal has. During this time, you are deaf and blind with regard to your own senses. Additionally, your scout can use its action to wake you and any other creatures within 30 feet of it, from non-magical sleep with an audible sound.</p>
+			<p class="indent">You can't have more than one spiritual scout at a time. If you cast this spell again with the same material component, your current scout reappears within range, if you cast this spell again using another material component, the previous copy disappears and a different one is created within range.</p>
 			<p class="indent">If spiritual form is destroyed or if it finds itself further than 1 mile from you, the spell ends.  When the spell ends, all memories and experiences of this copy flow into the mind of the real animal it's associated with.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">1</set>
 			<set name="school">Conjuration</set>
+			<set name="isRitual">true</set>
 			<set name="time">1 action</set>
-			<set name="duration">up to 8 hours</set>
 			<set name="range">30 feet</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a hair, a feather or a scale from the body of the beast you summon</set>
-			<set name="isConcentration">false</set>
-			<set name="isRitual">true</set>
+			<set name="duration">up to 8 hours</set>
+		</setters>
+	</element>
+
+	<element name="Blindsight" type="Spell" source="Bladetide: Realm of Fauldis" id="ID_NV_FLDS_SPELL_BLINDSIGHT">
+		<supports>Artificer, Druid, Ranger, Sorcerer, Wizard</supports>
+		<description>
+			<p>You touch a willing creature to grant it the ability to feel its surroundings without relying on sight. The target gains blindsight to a range of 60 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">pinch of diamond dust, which is consumed by the spell</set>
+			<set name="duration">1 hour</set>
 		</setters>
 	</element>
 
